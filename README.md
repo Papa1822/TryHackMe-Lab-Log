@@ -9,3 +9,10 @@ This repository documents my journey through  multiple  Cyber-security labs comp
 | **Moniker** | Exploitation | Local File Inclusion (LFI) | ✅ Completed |
 | **Metasploit Intro** | Tools | Exploitation & Payload delivery | 🚧 In Progress |
 
+
+## 💼 Virtual Internships (Job Simulations)
+
+| Company | Program | Task Completed | Key Skill |
+| :--- | :--- | :--- | :--- |
+| **Mastercard** | [Cybersecurity](https://www.theforage.com) | Phishing Analysis (Task 1) | Threat Detection & Social Engineering |
+
