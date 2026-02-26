@@ -9,6 +9,11 @@ This repository documents my journey through  multiple  Cyber-security labs comp
 | **Moniker** | Exploitation | Local File Inclusion (LFI) | ✅ Completed |
 | **Metasploit Intro** | Tools | Exploitation & Payload delivery | 🚧 In Progress |
 
+| Lab Name | Category | Key Skill Learned |
+| :--- | :--- | :--- |
+| **Moniker** | Exploitation | Exploiting CVE-2024-21413 (MonikerLink) to leak NTLM hashes via SMB. |
+| **Cryptography** | Security | Mastered Hashing (SHA-256) vs Encryption (AES/RSA) for data integrity. |
+| **Metasploit Intro**| Tools | **Currently Mastering...** |
 
 ## 💼 Virtual Internships (Job Simulations)
 
