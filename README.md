@@ -10,6 +10,10 @@ This repository documents my journey through  multiple  Cyber-security labs comp
 | **Moniker** | Exploitation | Exploiting CVE-2024-21413 (MonikerLink) to leak NTLM hashes via SMB. | ✅ Completed |
 | **Metasploit Intro** | Tools | Mastered the MSF Framework: Exploit selection, Payload configuration (Meterpreter), and Database (msfdb) management. |  ✅ Completed |
 | **Metasploit Exploitation** | Tools | 	SMB Enumeration & Credential Auditing (Brute-force) | In progress |
+#### **Technical Evidence: SMB Credential Audit**
+Successfully identified weak credentials for user `penny` using a dictionary attack.
+
+![SMB Login Success](images/msf-smb-success.png)
 
 
 
