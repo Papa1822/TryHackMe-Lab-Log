@@ -8,8 +8,8 @@ This repository documents my journey through  multiple  Cyber-security labs comp
 | **Nmap Basics** | Enumeration | Network Scanning & Port Discovery | ✅ Completed |
 | **Cryptography** | Security | Mastered Hashing (SHA-256) vs Encryption (AES/RSA) for data integrity. |  ✅ Completed |
 | **Moniker** | Exploitation | Exploiting CVE-2024-21413 (MonikerLink) to leak NTLM hashes via SMB. | ✅ Completed |
-| **Metasploit Intro** | Tools | Exploitation & Payload delivery | Mastered the MSF Framework: Exploit selection, Payload configuration (Meterpreter), and Database (msfdb) management. |
-| **Metasploit Exploitation** | Tools | Exploitation | 	SMB Enumeration & Credential Auditing (Brute-force) | In progress |
+| **Metasploit Intro** | Tools | Mastered the MSF Framework: Exploit selection, Payload configuration (Meterpreter), and Database (msfdb) management. |  ✅ Completed |
+| **Metasploit Exploitation** | Tools | 	SMB Enumeration & Credential Auditing (Brute-force) | In progress |
 
 
 
