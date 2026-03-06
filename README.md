@@ -20,7 +20,7 @@ Successfully identified weak credentials for user `penny` using a dictionary att
 - **Payload:** `windows/x64/meterpreter/reverse_tcp`
 - **Result:** Successfully gained **NT AUTHORITY\SYSTEM** privileges on the target Windows machine.
 
-![Exploitation Success](screenshots/msf-exploitation-system-access.png)
+![Exploitation Success](images/msf-exploitation-system-access.png)
 
 
 
