@@ -15,6 +15,15 @@ Successfully identified weak credentials for user `penny` using a dictionary att
 
 ![SMB Login Success](images/msf-smb-success.png)
 
+### **Phase 3: Exploitation (Task 5)**
+- **Vulnerability:** MS17-010 (EternalBlue)
+- **Payload:** `windows/x64/meterpreter/reverse_tcp`
+- **Result:** Successfully gained **NT AUTHORITY\SYSTEM** privileges on the target Windows machine.
+
+![Exploitation Success](screenshots/msf-exploitation-system-access.png)
+
+
+
 
 
 ## 💼 Virtual Internships (Job Simulations)
