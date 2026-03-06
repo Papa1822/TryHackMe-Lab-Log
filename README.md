@@ -22,6 +22,11 @@ Successfully identified weak credentials for user `penny` using a dictionary att
 
 ![Exploitation Success](images/msf-exploitation-system-access.png)
 
+#### **Post-Exploitation & Data Exfiltration**
+After gaining SYSTEM access, I performed the following actions to demonstrate impact:
+- **Proof of Access:** Located and read `flag.txt` using Meterpreter's `cat` command.
+- **Credential Harvesting:** Executed `hashdump` to extract NTLM hashes.
+- **Finding:** Successfully retrieved the NTLM hash for user `pirate`, which could be used for further "Pass-the-Hash" attacks.
 
 
 
