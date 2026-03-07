@@ -32,6 +32,11 @@ After gaining SYSTEM access, I performed the following actions to demonstrate im
 - **Method:** Local Privilege Escalation via `sudo` misconfiguration.
 - **Action:** Leveraged root-level permissions to access restricted system files.
 - **Finding:** Successfully extracted Linux password hashes (SHA-512) for offline cracking.
+
+> [!IMPORTANT]
+> **Internship-Level Insight:** 
+> "While standard Metasploit post-exploitation modules were restricted by the environment's security , I successfully pivoted to manual Linux enumeration. By identifying a sudoers misconfiguration, I achieved full system compromise and credential harvesting, demonstrating the ability to maintain operational momentum when automated tools reach their limits."
+
 [!Root Access Proof](images/linux-priv-esc.png)
 
 
