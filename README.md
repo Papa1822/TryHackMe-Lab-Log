@@ -28,7 +28,11 @@ After gaining SYSTEM access, I performed the following actions to demonstrate im
 - **Credential Harvesting:** Executed `hashdump` to extract NTLM hashes.
 - **Finding:** Successfully retrieved the NTLM hash for user `pirate`, which could be used for further "Pass-the-Hash" attacks.
 
-
+### **Phase 5: Privilege Escalation & Credential Harvesting**
+- **Method:** Local Privilege Escalation via `sudo` misconfiguration.
+- **Action:** Leveraged root-level permissions to access restricted system files.
+- **Finding:** Successfully extracted Linux password hashes (SHA-512) for offline cracking.
+[!Root Access Proof](images/linux-priv-esc.png)
 
 
 ## 💼 Virtual Internships (Job Simulations)
