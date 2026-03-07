@@ -9,7 +9,7 @@ This repository documents my journey through  multiple  Cyber-security labs comp
 | **Cryptography** | Security | Mastered Hashing (SHA-256) vs Encryption (AES/RSA) for data integrity. |  ✅ Completed |
 | **Moniker** | Exploitation | Exploiting CVE-2024-21413 (MonikerLink) to leak NTLM hashes via SMB. | ✅ Completed |
 | **Metasploit Intro** | Tools | Mastered the MSF Framework: Exploit selection, Payload configuration (Meterpreter), and Database (msfdb) management. |  ✅ Completed |
-| **Metasploit Exploitation** | Tools | 	SMB Enumeration & Credential Auditing (Brute-force) | In progress |
+| **Metasploit Exploitation** | Tools | 	SMB Enumeration & Credential Auditing (Brute-force) | ✅ Completed  |
 #### **Technical Evidence: SMB Credential Audit**
 Successfully identified weak credentials for user `penny` using a dictionary attack.
 
