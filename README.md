@@ -46,6 +46,8 @@ After gaining SYSTEM access, I performed the following actions to demonstrate im
 ![GetSystem](images/meterpreter-getsys)
 ## 3. Hashes
 ![Hashdump](images/meterpreter-hashdump)
+## 4. Exfiltration
+![Cat Secrets](images/cat_secrets)
 
 
 
