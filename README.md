@@ -43,11 +43,11 @@ After gaining SYSTEM access, I performed the following actions to demonstrate im
 ### 1. Recon
 ![Sys info Proof](images/meterpreter-sys-info.png)
 ## 2. PrivEsc
-![GetSystem](images/meterpreter-getsys)
+![GetSystem](images/meterpreter-getsys.png)
 ## 3. Hashes
-![Hashdump](images/meterpreter-hashdump)
+![Hashdump](images/meterpreter-hashdump.png)
 ## 4. Exfiltration
-![Cat Secrets](images/cat_secrets)
+![Cat Secrets](images/cat_secrets.png)
 
 
 
