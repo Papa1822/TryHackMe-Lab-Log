@@ -41,6 +41,10 @@ After gaining SYSTEM access, I performed the following actions to demonstrate im
 
 | **Metasploit Meterpreter**| Post Exploitation | Advanced Session Control: Process Migration, NTLM hash dumping, and automated system enumeration. | ✅ Completed  |
 
+![Sys info Proof](images/meterpreter-sys-info.png)
+
+
+
 
 ## 💼 Virtual Internships (Job Simulations)
 
