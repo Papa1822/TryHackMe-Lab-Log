@@ -42,8 +42,10 @@ After gaining SYSTEM access, I performed the following actions to demonstrate im
 | **Metasploit Meterpreter**| Post Exploitation | Advanced Session Control: Process Migration, NTLM hash dumping, and automated system enumeration. | ✅ Completed  |
 ### 1. Recon
 ![Sys info Proof](images/meterpreter-sys-info.png)
-## 2.PrivEsc
+## 2. PrivEsc
 ![GetSystem](images/meterpreter-getsys)
+## 3. Hashes
+![Hashdump](images/meterpreter-hashdump)
 
 
 
