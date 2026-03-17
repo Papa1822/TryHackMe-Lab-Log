@@ -39,6 +39,8 @@ After gaining SYSTEM access, I performed the following actions to demonstrate im
 
 ![Root Access Proof](images/linux-priv-esc.png)
 
+| **Metasploit Meterpreter**| Post Exploitation | Advanced Session Control: Process Migration, NTLM hash dumping, and automated system enumeration. | ✅ Completed  |
+
 
 ## 💼 Virtual Internships (Job Simulations)
 
