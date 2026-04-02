@@ -48,6 +48,7 @@ After gaining SYSTEM access, I performed the following actions to demonstrate im
 ![Hashdump](images/meterpreter-hashdump.png)
 ## 4. Exfiltration
 ![Cat Secrets](images/cat_secrets.png)
+| **Blue(Task 1)** | Recon | 	Identified MS17-0101 via Nmap Scripting Engine(NSE) | 	🚧 In Progress |
 
 
 
