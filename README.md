@@ -48,8 +48,11 @@ After gaining SYSTEM access, I performed the following actions to demonstrate im
 ![Hashdump](images/meterpreter-hashdump.png)
 ## 4. Exfiltration
 ![Cat Secrets](images/cat_secrets.png)
-| **Blue(Task 1)** | Recon | 	Identified MS17-0101 via Nmap Scripting Engine(NSE) | 	🚧 In Progress |
 
+| **Blue(MS17-010)** | Exploitation | 	Recon(Nmap/NSE) and initial access via meterpreter ) | 	🚧 In Progress |
+### 📑 Lab Notes: Blue
+* **Phase 1:** Identified MS17-010 vulnerability using Nmap scripts.
+* **Phase 2:** Successfully bypassed security using Metasploit and established a Meterpreter session.
 
 
 
