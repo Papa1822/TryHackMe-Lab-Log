@@ -14,7 +14,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | **Metasploit Intro** | Tools | MSF Framework, Meterpreter, and msfdb management | ✅ Completed |
 | **Metasploit Exploitation** | Tools | SMB Enumeration & Credential Auditing | ✅ Completed |
 | **Metasploit Meterpreter** | Post Exploitation | Process Migration, Hash dumping, and Enumeration | ✅ Completed |
-| **Blue (MS17-010)** | Exploitation | Meterpreter Access, Process Migration & PrivEsc. | 🚧 In Progress |
+| **Blue (MS17-010)** | Exploitation | Meterpreter,PrivEsc, & Offline Hash Cracking(NTLM) | 🚧 In Progress |
 
 ---
 
@@ -77,6 +77,15 @@ To ensure a permanent foothold, I migrated the Meterpreter session into the **ls
 
 *   **Migration Target:** lsass.exe (System Process)
 *   **Access Level:** NT AUTHORITY\SYSTEM
+
+### 4. Credential Harvesting & Cracking
+After gaining SYSTEM access, I dumped the local SAM database hashes. I then performed an offline dictionary attack against the user **Jon's** NTLM hash.
+
+![Cracking NTLM Hash with John the Ripper](images/blue-hash-crack.png)
+
+*   **Tool:** John the Ripper
+*   **Wordlist:** rockyou.txt
+*   **Result:** Successfully recovered plain-text password for user: **Jon**
 
 
   
