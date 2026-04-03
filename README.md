@@ -70,6 +70,15 @@ After confirming the vulnerability, I used the `ms17_010_eternalblue` Metasploit
 *   **Target OS:** Windows 7 (64-bit)
 *   **Access Level:** NT AUTHORITY\SYSTEM
 
+  ### 3. Process Migration & Stability
+To ensure a stable connection, I migrated the Meterpreter session into a permanent Windows system process.
+
+![Process Migration Proof](images/blue-migration.png)
+
+*   **Migration Target:** spoolsv.exe (System Print Spooler)
+*   **Status:** Successful Persistence Established
+
+
   
 
 
