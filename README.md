@@ -61,7 +61,15 @@ After scanning the target with Nmap, I ran a vulnerability script to check for c
  **Vulnerability Scan:** ![Nmap Scan showing VULNERABLE](images/blue-vuln-scan.png)
  *The scan confirms the target is vulnerable to MS17-010 (EternalBlue).*
 
-* **Phase 2:** Successfully bypassed security using Metasploit and established a Meterpreter session.
+### 2. Exploitation & System Information
+After confirming the vulnerability, I used the `ms17_010_eternalblue` Metasploit module to gain a stable Meterpreter session. 
+
+**System Verification:**
+![Meterpreter Sysinfo & GetUID](images/blue-system-access.png)
+
+*   **Target OS:** Windows 7 (64-bit)
+*   **Access Level:** NT AUTHORITY\SYSTEM
+
   
 
 
