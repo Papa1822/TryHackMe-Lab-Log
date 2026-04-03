@@ -14,7 +14,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | **Metasploit Intro** | Tools | MSF Framework, Meterpreter, and msfdb management | ✅ Completed |
 | **Metasploit Exploitation** | Tools | SMB Enumeration & Credential Auditing | ✅ Completed |
 | **Metasploit Meterpreter** | Post Exploitation | Process Migration, Hash dumping, and Enumeration | ✅ Completed |
-| **Blue (MS17-010)** | Exploitation | Recon (Nmap/NSE) & Initial access via Meterpreter | 🚧 In Progress |
+| **Blue (MS17-010)** | Exploitation | Meterpreter Access, Process Migration & PrivEsc. | 🚧 In Progress |
 
 ---
 
