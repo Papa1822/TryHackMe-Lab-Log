@@ -55,9 +55,14 @@ Successfully identified weak credentials for user `penny` using a dictionary att
 ---
 
 ### 📑 Lab Notes: Blue (MS17-010)
-* **Phase 1:** Identified MS17-010 vulnerability using Nmap scripts.
-* **Phase 2:** Successfully bypassed security using Metasploit and established a Meterpreter session.
+* **Phase 1(Recon):
+After scanning the target with Nmap, I ran a vulnerability script to check for common SMB flaws.
 
+ **Vulnerability Scan:** ![Nmap Scan showing VULNERABLE](images/blue-vuln-scan.png)
+ *The scan confirms the target is vulnerable to MS17-010 (EternalBlue).*
+
+* **Phase 2:** Successfully bypassed security using Metasploit and established a Meterpreter session.
+  
 
 
 ## 💼 Virtual Internships (Job Simulations)
