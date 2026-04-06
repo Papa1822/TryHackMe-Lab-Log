@@ -13,6 +13,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | :--- | :--- | :--- | :--- |
 | Computer Fundamentals | Sec 4 |  | 🔄 In Progress |
 
+###**Cyber-101**
 
 | Lab Name | Category | Key Skill Learned | Status |
 | :--- | :--- | :--- | :--- |
