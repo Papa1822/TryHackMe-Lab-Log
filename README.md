@@ -11,7 +11,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 
 | Lab Name | Section | Key Skill Learned | Status |
 | :--- | :--- | :--- | :--- |
-| Computer Fundamentals | Sec 4 | Hardware ID & BIOS/UEFI Boot Process | 🔄 In Progress |
+| Computer Fundamentals | Sec 4 | Hardware ID & BIOS/UEFI Boot Process | ✅ Completed  |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
