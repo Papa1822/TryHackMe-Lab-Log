@@ -3,6 +3,8 @@ This repository documents my journey through multiple Cyber-security labs comple
 
 ### 📊 Lab Progress Summary
 
+> 💡 **Strategy Note:** While progressing through **Cyber101**, I am concurrently completing the updated **Pre-Security (Sections 4-7)**. This ensures I have a deep-dive understanding of OS Internals and Web Architecture, which strengthens my ability to perform manual exploitation and privilege escalation in the Cyber101 labs.
+
 
 | Lab Name | Category | Key Skill Learned | Status |
 | :--- | :--- | :--- | :--- |
