@@ -11,7 +11,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 
 | Lab Name | Section | Key Skill Learned | Status |
 | :--- | :--- | :--- | :--- |
-| Computer Fundamentals | Sec 4 | Hardware ID | 🔄 In Progress |
+| Computer Fundamentals | Sec 4 | Hardware ID & BIOS/UEFI Boot Process | 🔄 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -30,6 +30,22 @@ This lab covers the physical hardware components of a computer and the logical s
 | **PSU** | Converts AC power to DC for components. | The "Heart" |
 ---
 ![Hardware-Identification](images/hardware-identification(motherboard).png)
+---
+## ⚡ The Boot Process (Step-by-Step)
+Understanding the boot sequence is critical for identifying where a system might be failing or where an exploit could be injected.
+
+1. **Power On**: The PSU sends power to the Motherboard.
+2. **POST (Power-On Self Test)**: The BIOS/UEFI checks if the CPU, RAM, and Video Card are working.
+3. **BIOS/UEFI**: The firmware initializes the hardware and looks for a bootable device.
+4. **Bootloader**: The system hands off control to a small program (like GRUB or Windows Boot Manager) that knows how to load the OS.
+5. **OS Kernel**: The "heart" of the Operating System is loaded into RAM, taking full control of the hardware.
+
+## 🔍 Key Takeaways
+- **Volatile vs. Non-Volatile**: Learned that RAM loses data without power, while SSDs keep it.
+- **BIOS/UEFI Security**: These are the first lines of defense; if the BIOS is compromised, the entire OS above it is untrustworthy.
+- **Peripherals**: Distinguished between input (Mouse/Keyboard) and output (Monitor/Speakers) devices.
+  ---
+  ![Boot-Sequence](images/Boot-Sequence.png)
 
  ----
  ----
