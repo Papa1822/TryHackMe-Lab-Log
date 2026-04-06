@@ -14,7 +14,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Computer Fundamentals | Sec 4 | Hardware ID | 🔄 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
-# Lab: Inside a Computer System (TryHackMe)
+## Lab: Inside a Computer System (TryHackMe)
 
 ## 🖥️ Overview
 This lab covers the physical hardware components of a computer and the logical sequence of events that occur from the moment the power button is pressed until the Operating System (OS) is ready for use.
@@ -32,7 +32,7 @@ This lab covers the physical hardware components of a computer and the logical s
  ----
  ----
 
-## **Cyber-101**
+# **Cyber-101**
 
 | Lab Name | Category | Key Skill Learned | Status |
 | :--- | :--- | :--- | :--- |
