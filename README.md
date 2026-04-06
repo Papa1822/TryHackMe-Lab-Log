@@ -44,6 +44,7 @@ Understanding the boot sequence is critical for identifying where a system might
 - **Volatile vs. Non-Volatile**: Learned that RAM loses data without power, while SSDs keep it.
 - **BIOS/UEFI Security**: These are the first lines of defense; if the BIOS is compromised, the entire OS above it is untrustworthy.
 - **Peripherals**: Distinguished between input (Mouse/Keyboard) and output (Monitor/Speakers) devices.
+
   ---
   ![Boot-Sequence](images/Boot-Sequence.png)
 
