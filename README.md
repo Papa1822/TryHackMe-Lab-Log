@@ -11,9 +11,26 @@ This repository documents my journey through multiple Cyber-security labs comple
 
 | Lab Name | Section | Key Skill Learned | Status |
 | :--- | :--- | :--- | :--- |
-| Computer Fundamentals | Sec 4 |  | 🔄 In Progress |
+| Computer Fundamentals | Sec 4 | Hardware ID | 🔄 In Progress |
+---
+### 🔍 Technical Evidence & Writeups
+# Lab: Inside a Computer System (TryHackMe)
 
- ---
+## 🖥️ Overview
+This lab covers the physical hardware components of a computer and the logical sequence of events that occur from the moment the power button is pressed until the Operating System (OS) is ready for use.
+
+## 🏗️ Hardware Component Breakdown
+
+| Component | Function | Analogy |
+| :--- | :--- | :--- |
+| **Motherboard** | The main circuit board that connects all parts. | The "Skeleton/Nervous System" |
+| **CPU** | Performs all calculations and instructions. | The "Brain" |
+| **RAM** | Short-term, volatile memory for active tasks. | The "Work Desk" |
+| **Storage (HDD/SSD)** | Long-term, non-volatile data storage. | The "Filing Cabinet" |
+| **PSU** | Converts AC power to DC for components. | The "Heart" |
+
+ ----
+ ----
 
 ## **Cyber-101**
 
