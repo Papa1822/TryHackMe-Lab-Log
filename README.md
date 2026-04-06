@@ -28,6 +28,7 @@ This lab covers the physical hardware components of a computer and the logical s
 | **RAM** | Short-term, volatile memory for active tasks. | The "Work Desk" |
 | **Storage (HDD/SSD)** | Long-term, non-volatile data storage. | The "Filing Cabinet" |
 | **PSU** | Converts AC power to DC for components. | The "Heart" |
+![Hardware-Identification](images/hardware-identification(motherboard).png)
 
  ----
  ----
