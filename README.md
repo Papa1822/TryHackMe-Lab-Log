@@ -49,6 +49,21 @@ Understanding the boot sequence is critical for identifying where a system might
   ---
   ![Boot-Sequence](images/Boot-Sequence.png)
 
+  ---
+  
+## Lab: Computer Types (TryHackMe)
+## 🖥️ Overview
+This module explores the diverse landscape of computing hardware, from everyday devices to high-powered enterprise infrastructure. Understanding these types is the first step in identifying "attack surfaces."
+
+| Computer Type | Purpose | Security Perspective |
+| :--- | :--- | :--- |
+| **Personal Computers** | Laptops/Desktops for individual use. | High risk of social engineering (phishing). |
+| **Workstations** | High-performance machines (NASA, Video Editing). | Targets for high-value data theft. |
+| **Servers** | Provide services (Web, Email, File storage). | The "Main Prize" for hackers; requires strict access control. |
+| **Mainframes** | Bulk data processing (Banks, Census). | Legacy systems that are often hard to patch. |
+| **Supercomputers** | Complex calculations (Weather, Physics). | Extremely rare; high physical security. |
+| **Embedded / IoT** | Single-purpose (Toasters, Smart Watches). | Often lack updates; easy entry point into a network. |
+
  ----
  ----
 
