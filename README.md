@@ -12,7 +12,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Lab Name | Section | Key Skill Learned | Status |
 | :--- | :--- | :--- | :--- |
 | Computer Fundamentals | Sec 4 | Hardware ID & BIOS/UEFI Boot Process | ✅ Completed  |
-| Computer Types | Section 5 | Getting to know the various computer systems | In Progress|
+| Computer Types | Section 5 | Getting to know the various computer systems | ✅ Completed |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -64,6 +64,16 @@ This module explores the diverse landscape of computing hardware, from everyday 
 | **Supercomputers** | Complex calculations (Weather, Physics). | Extremely rare; high physical security. |
 | **Embedded / IoT** | Single-purpose (Toasters, Smart Watches). | Often lack updates; easy entry point into a network. |
 
+
+## 🔍 Key Takeaways
+-Anything with a microchip is a computer,if a device is not segmented properly in a network ,it will create a doorway for an attacker into the system.
+-Redundant power reduces a single failure point.
+-Laptops throttle more than desktops due to less cooling space.
+-Smartphones are optimized for efficiency hence have long lasting batteries compared to laptops.
+-ECC RAM and certified drivers are more common in workstations.
+-A hub or cloud server coordinates devices in smart homes.
+
+ ----
  ----
  ----
 
