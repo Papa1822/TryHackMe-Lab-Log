@@ -66,12 +66,12 @@ This module explores the diverse landscape of computing hardware, from everyday 
 
 
 ## 🔍 Key Takeaways
--Anything with a microchip is a computer,if a device is not segmented properly in a network ,it will create a doorway for an attacker into the system.
--Redundant power reduces a single failure point.
--Laptops throttle more than desktops due to less cooling space.
--Smartphones are optimized for efficiency hence have long lasting batteries compared to laptops.
--ECC RAM and certified drivers are more common in workstations.
--A hub or cloud server coordinates devices in smart homes.
+- Anything with a microchip is a computer,if a device is not segmented properly in a network ,it will create a doorway for an attacker into the system.
+- Redundant power reduces a single failure point.
+- Laptops throttle more than desktops due to less cooling space.
+- Smartphones are optimized for efficiency hence have long lasting batteries compared to laptops.
+- ECC RAM and certified drivers are more common in workstations.
+- A hub or cloud server coordinates devices in smart homes.
 
  ----
  ----
