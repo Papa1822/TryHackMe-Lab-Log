@@ -87,6 +87,16 @@ This module explores the diverse landscape of computing hardware, from everyday 
 - **Protocol:** The set of rules (like HTTP or HTTPS) that both the client and server agree to use so they can understand each other.
 - **Security Insight:** Because servers are centralized hubs for data, they are primary targets for attacks like Denial of Service (DoS) or unauthorized access.
 
+### 🌐 Web Communication in Practice (Lab)
+
+In this lab, I simulated a real web request to see how data travels between my browser (the client) and the hosting server.
+
+- **Status Code 200 OK:** Confirmed the request was successful and the server delivered the resource.
+- **GET Method:** Used this protocol command to retrieve data from the host.
+- **Loopback Address (127.0.0.1):** Identified that the server was hosted locally for this simulation.
+
+![Lab Screenshot](images/web-comm-practice.png)
+
 
  ----
  ----
