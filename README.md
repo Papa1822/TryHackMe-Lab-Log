@@ -74,6 +74,20 @@ This module explores the diverse landscape of computing hardware, from everyday 
 - ECC RAM and certified drivers are more common in workstations.
 - A hub or cloud server coordinates devices in smart homes.
 
+  ---
+  ## Lab: Client-Server Basics
+  ## 🖥️ Overview
+  This lab explores the fundamental relationship that powers the internet—the interaction between a requester (Client) and a provider (Server). It transitions from isolated computing to networked environments, focusing on how devices offer and consume services across a network.
+  ## 🔍 Key Takeaways
+  - **Client:** The device or software (like your web browser) that initiates a request for data or a service.
+- **Server:** A powerful machine that "listens" for requests and provides the resource (like a website or file) back to the client.
+- **Request-Response Cycle:** The fundamental way the web works—a client asks, and the server answers.
+- **IP Address:** The unique numerical "home address" used to identify a server on the network so the client knows where to send requests.
+- **Port:** A specific "doorway" on a server used for different services (e.g., Port 80 for web traffic, Port 25 for email).
+- **Protocol:** The set of rules (like HTTP or HTTPS) that both the client and server agree to use so they can understand each other.
+- **Security Insight:** Because servers are centralized hubs for data, they are primary targets for attacks like Denial of Service (DoS) or unauthorized access.
+
+
  ----
  ----
  ----
