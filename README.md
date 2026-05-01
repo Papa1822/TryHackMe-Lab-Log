@@ -13,6 +13,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | :--- | :--- | :--- | :--- |
 | Computer Fundamentals | Sec 4 | Hardware ID & BIOS/UEFI Boot Process | ✅ Completed  |
 | Computer Types | Section 5 | Getting to know the various computer systems | ✅ Completed |
+| Client Server Basics | Sec 6 | In Progress | In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
