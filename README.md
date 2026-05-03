@@ -101,8 +101,17 @@ In this lab, I simulated a real web request to see how data travels between my b
 --
 
 ## Lab: Virtualization Basics
-##📖 Module Overview
+## 📖 Module Overview
 This room explains how virtualization solves the problem of expensive, underutilized physical hardware. It introduces the Hypervisor—the "referee" software that manages and isolates multiple Virtual Machines (VMs) on a single host machine.
+
+## 🧠 Key Takeaways:
+- **Virtualization:** Technology that enables one physical computer to act as multiple separate, isolated systems.
+- **Hypervisor:** The "manager" software that creates and runs VMs. There are two types:
+- **Type 1:** Runs directly on hardware (best for big data centers).
+- **Type 2 (Hosted):** Runs as an app on your regular OS (best for learning/home labs).
+- **Virtual Machine (VM):** A complete, isolated computer running inside your real one, with its own CPU, RAM, and OS.
+- **Container:** A lightweight "room" that shares the host's OS kernel to run a single app quickly—more efficient than a full VM.
+** Security Insight:** Virtualization is essential for security because it allows you to run malicious files in an isolated sandbox where they can't harm your actual computer.
 
 
  ----
