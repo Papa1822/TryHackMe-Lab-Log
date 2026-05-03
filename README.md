@@ -14,7 +14,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Computer Fundamentals | Sec 4 | Hardware ID & BIOS/UEFI Boot Process | ✅ Completed  |
 | Computer Types | Section 5 | Getting to know the various computer systems | ✅ Completed |
 | Client Server Basics | Sec 6 | How client server communication occurs using IPs, ports and protocols | ✅ Completed |
-| Virtualization Basics | Sec 7 | In Progress | In Progress|
+| Virtualization Basics | Sec 7 | Hardware Optimization, Lab Building & Environment Management | ✅ Completed |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -112,6 +112,13 @@ This room explains how virtualization solves the problem of expensive, underutil
 - **Virtual Machine (VM):** A complete, isolated computer running inside your real one, with its own CPU, RAM, and OS.
 - **Container:** A lightweight "room" that shares the host's OS kernel to run a single app quickly—more efficient than a full VM.
 ** Security Insight:** Virtualization is essential for security because it allows you to run malicious files in an isolated sandbox where they can't harm your actual computer.
+
+  ### 🛠️ Practical Lab: Virtualization Management
+Successfully managed a simulated virtual environment for "AutoGalo" to resolve infrastructure issues:
+- **Troubleshooting:** Identified a halted 'Mail-SERVER' and restored service to a running state.
+- **Provisioning:** Created a new 'Marketing-VM' with specific resource allocations (4 CPU Cores, 8GB RAM, 100GB Disk).
+- **Environment Audit:** Monitored host performance across physical servers (HV-PROD-01/02) to ensure hardware utilization.
+
 
 
  ----
