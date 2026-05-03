@@ -98,6 +98,12 @@ In this lab, I simulated a real web request to see how data travels between my b
 
 ![Lab Screenshot](images/web-comm-practice.png)
 
+--
+
+## Lab: Virtualization Basics
+##📖 Module Overview
+This room explains how virtualization solves the problem of expensive, underutilized physical hardware. It introduces the Hypervisor—the "referee" software that manages and isolates multiple Virtual Machines (VMs) on a single host machine.
+
 
  ----
  ----
