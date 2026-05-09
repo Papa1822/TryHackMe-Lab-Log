@@ -120,6 +120,11 @@ Successfully managed a simulated virtual environment for "AutoGalo" to resolve i
 - **Provisioning:** Created a new 'Marketing-VM' with specific resource allocations (4 CPU Cores, 8GB RAM, 100GB Disk).
 - **Environment Audit:** Monitored host performance across physical servers (HV-PROD-01/02) to ensure hardware utilization.
 
+--
+## Cloud Computing Fundamentals
+## Module Overview
+This module explains how companies rent computing power over the internet instead of owning physical servers and also focuses on the different "as-a-Service" models (IaaS, PaaS, SaaS) .
+
 
 
  ----
