@@ -121,9 +121,17 @@ Successfully managed a simulated virtual environment for "AutoGalo" to resolve i
 - **Environment Audit:** Monitored host performance across physical servers (HV-PROD-01/02) to ensure hardware utilization.
 
 --
-## Cloud Computing Fundamentals
+## Lab: Cloud Computing Fundamentals
 ## Module Overview
 This module explains how companies rent computing power over the internet instead of owning physical servers and also focuses on the different "as-a-Service" models (IaaS, PaaS, SaaS) .
+
+## 🔍 Key Takeaways:
+- **Service Models:** 
+  - **IaaS:** Provider gives the hardware; I manage the OS and apps.
+  - **PaaS:** Provider manages the OS; I just provide the code.
+  - **SaaS:** Provider manages everything; I just use the software.
+- **Shared Responsibility:** A critical security concept where the Cloud Provider secures the physical infrastructure, but the user is responsible for securing their own data and access credentials.
+- **Deployment:** Differentiated between Public (shared), Private (dedicated), and Hybrid (mixed) cloud environments.
 
 
 
