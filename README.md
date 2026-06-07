@@ -16,6 +16,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Client Server Basics | Sec 6 | How client server communication occurs using IPs, ports and protocols | ✅ Completed |
 | Virtualization Basics | Sec 7 | Hardware Optimization, Lab Building & Environment Management | ✅ Completed |
 | Cloud Computing Fundamentals | Sec 8 | Cloud Service Models & shared responsibility framework | ✅ Completed  |
+| Operating System Introduction | Sec 9 | OS Architecture,Privilege Seperation,Process Isolation,Access Control and Resource Management | In Progress
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
