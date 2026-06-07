@@ -134,6 +134,21 @@ This module explains how companies rent computing power over the internet instea
 - **Shared Responsibility:** A critical security concept where the Cloud Provider secures the physical infrastructure, but the user is responsible for securing their own data and access credentials.
 - **Deployment:** Differentiated between Public (shared), Private (dedicated), and Hybrid (mixed) cloud environments.
 
+--
+## Lab: Introduction to Operating Systems (TryHackMe)
+## 🖥️ Overview
+This module explores how an operating system (OS) acts as the vital bridge between a computer's physical hardware and user applications. Understanding the core structure of an OS is essential for identifying how systems protect themselves and where vulnerabilities can emerge.
+
+
+| OS Component | Purpose | Security Perspective |
+| :--- | :--- | :--- |
+| **The Kernel** | Core program with complete, unrestricted hardware control. | High-value target; a compromise here grants total system control. |
+| **User Space** | Restricted area where standard user programs and apps run. | Low-level privilege area; prevents buggy apps from crashing the whole system. |
+| **Process Management** | Allocates CPU time and memory slices to active apps. | Ensures process isolation so malware in one app can't steal data from another. |
+| **User Management** | Manages accounts, authentication, and file permissions. | Enforces the "Principle of Least Privilege" to restrict unauthorized file access. |
+| **Device Management** | Uses drivers to communicate with hardware peripherals. | Malicious or unverified drivers can bypass security to inject malware. |
+
+
 
 
  ----
