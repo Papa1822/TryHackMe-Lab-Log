@@ -149,7 +149,13 @@ This module explores how an operating system (OS) acts as the vital bridge betwe
 | **Device Management** | Uses drivers to communicate with hardware peripherals. | Malicious or unverified drivers can bypass security to inject malware. |
 
 
-
+## 🔍 Key Takeaways
+- The kernel handles the heavy lifting, while user space keeps regular applications isolated.
+- Applications must use "System Calls" to request the kernel to perform tasks like reading a file.
+- Process isolation ensures that if one application crashes, it does not bring down the entire OS.
+- File permissions are the primary defense against users accessing data they shouldn't see.
+- Antivirus software requires high-level privileges close to the kernel to monitor system threats effectively.
+- Hardware is useless without an OS to coordinate resources and schedule CPU tasks.
 
  ----
  ----
