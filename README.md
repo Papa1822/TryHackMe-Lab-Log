@@ -172,6 +172,21 @@ This lab provides a foundational look into the Windows Operating System environm
 | **Windows Security** | Built-in central hub for antivirus, firewall, and device health status. | The first line of defense; security analysts monitor this to ensure real-time protection isn't disabled. |
 | **Control Panel / Settings** | Centralized interfaces for adjusting system configuration settings. | Targets for administrative modification; hardening a system involves locking these menus down. |
 ---
+## 📖 Key Terminology & Applications (Security Perspective)
+
+*   **Desktop:** The primary visual workspace. *Security Context:* Often cluttered by users with sensitive files or credentials exposed in plain sight.
+*   **Taskbar:** The bottom control strip for quick access. *Security Context:* Used to quickly launch critical defensive tools like Task Manager or terminal instances during an incident response.
+*   **Start Menu:** The central launchpad for applications and power controls. *Security Context:* Attackers often target the "Startup" folder hidden within here to maintain persistence after a reboot.
+*   **Search:** The built-in indexing tool. *Security Context:* Allows defenders to rapidly locate deeply buried system administrative utilities or configuration panels.
+*   **File Explorer:** The native file management interface. *Security Context:* Crucial for navigating the directory structure to audit NTFS permissions, locate hidden folders, or find malicious payloads.
+*   **Windows Update:** The OS patch management system. *Security Context:* The single most critical tool for closing security gaps and fixing critical vulnerabilities before they can be weaponized.
+*   **Microsoft Store:** The repository for trusted, signed applications. *Security Context:* Minimizes "shadow IT" risks by ensuring users download verified software instead of untrusted internet binaries.
+*   **Windows Settings:** The modern configuration hub. *Security Context:* The go-to menu for managing user account privacy configurations, app permissions, and basic system hardening.
+*   **Control Panel:** The legacy system management interface. *Security Context:* A high-value target for attackers looking to manipulate deeper network settings, device drivers, or local user accounts.
+*   **Task Manager:** The real-time system monitoring tool. *Security Context:* Used to hunt for anomalous processes, detect unauthorized resource spikes, and forcibly terminate suspected malware executables.
+*   **Windows Security:** The centralized defensive dashboard. *Security Context:* Provides an immediate health check on real-time antivirus protection, ransomware mitigations, and account security.
+*   **Windows Defender Firewall:** The native network traffic filter. *Security Context:* Configured to enforce strict inbound and outbound rules, blocking unauthorized network connections and lateral movement.
+---
 
  ----
  ----
