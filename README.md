@@ -17,6 +17,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Virtualization Basics | Sec 7 | Hardware Optimization, Lab Building & Environment Management | ✅ Completed |
 | Cloud Computing Fundamentals | Sec 8 | Cloud Service Models & shared responsibility framework | ✅ Completed  |
 | Operating System Introduction | Sec 9 | OS Architecture,Privilege Seperation,Process Isolation,Access Control and Resource Management |  ✅ Completed |
+| Windows Basics | Sec 10 | Windows GUI navigation, NTFS permissions, and essential administrative/security tools | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -156,6 +157,21 @@ This module explores how an operating system (OS) acts as the vital bridge betwe
 - File permissions are the primary defense against users accessing data they shouldn't see.
 - Antivirus software requires high-level privileges close to the kernel to monitor system threats effectively.
 - Hardware is useless without an OS to coordinate resources and schedule CPU tasks.
+
+## Lab: Windows Basics (TryHackMe)
+
+## 🖥️ Overview
+This lab provides a foundational look into the Windows Operating System environment, focusing on navigating the Graphical User Interface (GUI), understanding how files are organized and secured, and monitoring system behavior using native tools.
+
+## ⚙️ Core Windows Components & Security
+
+| Tool / Concept | Function | Security Perspective |
+| :--- | :--- | :--- |
+| **NTFS File System** | The standard file system structure for Windows NT branch. | Allows granular access control lists (ACLs) like Read, Write, and Execute permissions. |
+| **Task Manager** | Provides real-time metrics on CPU, Memory, Disk, and Network usage. | Crucial for identifying unauthorized background processes, resource spikes, or persistent malware. |
+| **Windows Security** | Built-in central hub for antivirus, firewall, and device health status. | The first line of defense; security analysts monitor this to ensure real-time protection isn't disabled. |
+| **Control Panel / Settings** | Centralized interfaces for adjusting system configuration settings. | Targets for administrative modification; hardening a system involves locking these menus down. |
+---
 
  ----
  ----
