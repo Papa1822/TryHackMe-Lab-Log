@@ -233,6 +233,22 @@ Understanding how to construct search strings is essential for both privilege es
 
 ---
 
+## Lab: Windows CLI Basics (TryHackMe)
+
+## 🖥️ Overview
+This lab covers the essential utilities of the Windows Command Line Interface, bridging the gap between legacy Command Prompt (CMD) and modern, object-oriented PowerShell. It focuses on command-line system navigation, configuration discovery, and administrative management.
+
+## ⚙️ Core Windows CLI Commands & Security Context
+
+| Command | Function | Security Perspective |
+| :--- | :--- | :--- |
+| **`whoami`** | Displays the domain and username of the currently logged-in user. | The very first command execution run by both red teams (reconnaissance) and blue teams (audit) to confirm current privileges. |
+| **`dir`** | Lists the contents, subdirectories, and files within the current directory. | Used to inspect file creation dates and look for hidden or unexpected executable payloads (`.exe`, `.bat`). |
+| **`cd`** | Changes the current working directory path. | Crucial for traversing administrative file trees to locate system configurations or log directories. |
+| **`type`** | Displays the contents of a text file directly on the command screen. | The Windows equivalent to Linux `cat`; allows rapid manual inspection of scripts, batch files, or text logs without a GUI editor. |
+| **`cls`** | Clears the visible screen buffer of the command prompt window. | Standard housekeeping command used to keep the workspace clean and remove historical command outputs from immediate view. |
+
+---
 ---
 
  ----
