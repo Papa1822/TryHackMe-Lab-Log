@@ -194,6 +194,17 @@ This lab provides a foundational look into the Windows Operating System environm
 ## 🖥️ Overview
 This lab introduces the Linux Command Line Interface (CLI), focusing on text-based system navigation, file management, and understanding how the Linux operating system handles data structure without a graphical user interface.
 
+## ⚙️ Core Linux Commands & Security Context
+
+| Command | Function | Security Perspective |
+| :--- | :--- | :--- |
+| **`pwd`** (Print Working Directory) | Displays the exact absolute path of the current directory. | Helps orientation during a terminal session to ensure commands aren't executed in the wrong system folder. |
+| **`ls`** (List) | Lists directory contents. Frequently used with `-la` flags. | Used to reveal hidden files (like `.bash_history` or hidden scripts) and audit file permissions. |
+| **`cd`** (Change Directory) | Navigates between folders in the file system hierarchy. | Essential for moving into system configuration directories (like `/etc`) to inspect system settings. |
+| **`cat`** (Concatenate) | Displays the contents of a text file directly in the terminal. | Used to quickly read configuration files, logs, or scripts without opening a heavy text editor. |
+| **`find`** (Search Tool) | Recursively searches the directory tree for files matching specific criteria. | A critical tool for hunting down hidden web shells, unusual files, or specific logs across the system. |
+
+---
 
  ----
  ----
