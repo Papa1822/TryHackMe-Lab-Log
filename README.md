@@ -204,6 +204,18 @@ This lab introduces the Linux Command Line Interface (CLI), focusing on text-bas
 | **`cat`** (Concatenate) | Displays the contents of a text file directly in the terminal. | Used to quickly read configuration files, logs, or scripts without opening a heavy text editor. |
 | **`find`** (Search Tool) | Recursively searches the directory tree for files matching specific criteria. | A critical tool for hunting down hidden web shells, unusual files, or specific logs across the system. |
 
+## 🔍 Deep Dive: Master the `find` Command
+
+Understanding how to construct search strings is essential for both privilege escalation and malware hunting. 
+
+*   **Syntax Breakdown (`find ~ -name "filename"`)**:
+    *   `find`: Invokes the search utility.
+    *   `~` (The Tilde): Specifies the starting location. This tells Linux to look *only* inside the current user's **Home Directory**.
+    *   `-name`: A flag telling the system to look for files based on their literal text name.
+*   **Example Usage**: `find ~ -name "*.txt"` will scan your home folder and pull up every single plain text file, helping you quickly identify hidden notes or unencrypted credentials.
+
+---
+
 ---
 
  ----
