@@ -243,6 +243,9 @@ This lab covers the essential utilities of the Windows Command Line Interface, b
 | Command | Function | Security Perspective |
 | :--- | :--- | :--- |
 | **`whoami`** | Displays the domain and username of the currently logged-in user. | The very first command execution run by both red teams (reconnaissance) and blue teams (audit) to confirm current privileges. |
+| **`hostname`** | Prints the netbios name assigned to the specific local computer system. | Used to quickly identify where you are in a network infrastructure during pivot or lateral movement operations. |
+| **`systeminfo`** | Displays detailed configuration data including OS version, patch levels, and hardware specs. | A goldmine for attackers looking for missing security updates/patches to plan local privilege escalation exploits. |
+| **`ipconfig`** | Displays all current TCP/IP network configuration values and refreshes DHCP/DNS settings. | Vital for mapping out the local network footprint, identifying gateways, and finding internal IP subnets to target. |
 | **`dir`** | Lists the contents, subdirectories, and files within the current directory. | Used to inspect file creation dates and look for hidden or unexpected executable payloads (`.exe`, `.bat`). |
 | **`cd`** | Changes the current working directory path. | Crucial for traversing administrative file trees to locate system configurations or log directories. |
 | **`type`** | Displays the contents of a text file directly on the command screen. | The Windows equivalent to Linux `cat`; allows rapid manual inspection of scripts, batch files, or text logs without a GUI editor. |
