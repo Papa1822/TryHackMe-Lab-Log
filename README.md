@@ -18,7 +18,8 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Cloud Computing Fundamentals | Sec 8 | Cloud Service Models & shared responsibility framework | ✅ Completed  |
 | Operating System Introduction | Sec 9 | OS Architecture,Privilege Seperation,Process Isolation,Access Control and Resource Management |  ✅ Completed |
 | Windows Basics | Sec 10 | Windows GUI navigation, NTFS permissions, and essential administrative/security tools | ✅ Completed  |
-| Linux CLI Basics | Sec 11 | Linux CLI navigation and investigating the linux system | In progress 
+| Linux CLI Basics | Sec 11 | Linux directory navigation, file manipulation, and fundamental terminal commands | ✅ Completed |
+| Windows CLI Basics | Sec 12 | Command Prompt (CMD) and PowerShell core commands, file structure management, and system queries | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
