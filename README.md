@@ -17,7 +17,8 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Virtualization Basics | Sec 7 | Hardware Optimization, Lab Building & Environment Management | ✅ Completed |
 | Cloud Computing Fundamentals | Sec 8 | Cloud Service Models & shared responsibility framework | ✅ Completed  |
 | Operating System Introduction | Sec 9 | OS Architecture,Privilege Seperation,Process Isolation,Access Control and Resource Management |  ✅ Completed |
-| Windows Basics | Sec 10 | Windows GUI navigation, NTFS permissions, and essential administrative/security tools | 🟩 In Progress |
+| Windows Basics | Sec 10 | Windows GUI navigation, NTFS permissions, and essential administrative/security tools | ✅ Completed  |
+| Linux CLI Basics | Sec 11 | Linux CLI navigation and investigating the linux system | In progress 
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -187,6 +188,12 @@ This lab provides a foundational look into the Windows Operating System environm
 *   **Windows Security:** The centralized defensive dashboard. *Security Context:* Provides an immediate health check on real-time antivirus protection, ransomware mitigations, and account security.
 *   **Windows Defender Firewall:** The native network traffic filter. *Security Context:* Configured to enforce strict inbound and outbound rules, blocking unauthorized network connections and lateral movement.
 ---
+
+## Lab: Linux CLI Basics (TryHackMe)
+
+## 🖥️ Overview
+This lab introduces the Linux Command Line Interface (CLI), focusing on text-based system navigation, file management, and understanding how the Linux operating system handles data structure without a graphical user interface.
+
 
  ----
  ----
