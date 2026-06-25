@@ -215,6 +215,22 @@ Understanding how to construct search strings is essential for both privilege es
 *   **Example Usage**: `find ~ -name "*.txt"` will scan your home folder and pull up every single plain text file, helping you quickly identify hidden notes or unencrypted credentials.
 
 ---
+## 📖 Key Linux Terminology
+
+*   **The Shell:** The command language interpreter that executes commands read from standard input devices like keyboards.
+*   **Root Directory (`/`):** The top-most directory in a Linux system. Every single file and folder branches out from here.
+*   **Home Directory (`~`):** The personal workspace storage area designated for the currently logged-in user.
+*   **Flags/Switches:** Extra arguments added to commands (e.g., `-h` or `--help`) to modify their behavior or output format.
+
+---
+
+## 🔍 Key Takeaways
+- **The Power of CLI**: Operating via the terminal is significantly faster and consumes fewer system resources than a GUI, making it ideal for remote server management.
+- **Case Sensitivity**: Unlike Windows, Linux is strictly case-sensitive. Filenames like `Secret.txt` and `secret.txt` are treated as completely different files.
+- **Absolute vs. Relative Paths**: Learned to distinguish between referencing a file from the root directory (`/var/log/syslog`) versus referencing it from the current working folder (`./syslog`).
+- **Targeted Searching**: Using the `find` command allows security operators to sift through thousands of system files in seconds instead of clicking through directories manually.
+
+---
 
 ---
 
