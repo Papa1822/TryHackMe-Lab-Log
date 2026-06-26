@@ -278,6 +278,12 @@ Securing an operating system requires turning off unnecessary features and locki
 *   **Disabling Unused Services:** Every active service running in the background is a potential entry point. If a server does not need a web interface, turning off HTTP services removes that vector entirely.
 *   **Patch Management:** Routinely applying security updates ensures that known vulnerabilities (CVEs) are closed before threat actors can weaponize them.
 *   **Host-Based Firewalls:** Configuring strict inbound and outbound traffic filtering rules on the local machine prevents lateral movement within an internal network.
+  ---
+
+## 🔍 Key Takeaways
+- **Defense in Depth**: Relying on a single password isn't enough. True OS security combines strict user permissions, robust logging, host firewalls, and active endpoint monitoring.
+- **The Human Element**: Implementing technical blocks like UAC helps save users from accidentally executing malicious attachments or modifying critical system settings.
+- **Continuous Auditing**: Systems change constantly. Regularly auditing who belongs to administrative groups is vital for catching privilege creeping.
 
  ----
  ----
