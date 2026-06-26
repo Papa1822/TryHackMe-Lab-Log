@@ -271,6 +271,14 @@ This lab focuses on the principles of operating system hardening, defensive conf
 | **Endpoint Security** | Deploying anti-malware, host-based firewalls, and monitoring tools directly onto target systems. | Detects, blocks, and alerts security teams to malicious behavior right at the workstation level. |
 
 ---
+## 🛡️ Operating System Hardening Techniques
+
+Securing an operating system requires turning off unnecessary features and locking down access points to shrink the system's "attack surface."
+
+*   **Disabling Unused Services:** Every active service running in the background is a potential entry point. If a server does not need a web interface, turning off HTTP services removes that vector entirely.
+*   **Patch Management:** Routinely applying security updates ensures that known vulnerabilities (CVEs) are closed before threat actors can weaponize them.
+*   **Host-Based Firewalls:** Configuring strict inbound and outbound traffic filtering rules on the local machine prevents lateral movement within an internal network.
+
  ----
  ----
  ----
