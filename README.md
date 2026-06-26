@@ -19,7 +19,8 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Operating System Introduction | Sec 9 | OS Architecture,Privilege Seperation,Process Isolation,Access Control and Resource Management |  ✅ Completed |
 | Windows Basics | Sec 10 | Windows GUI navigation, NTFS permissions, and essential administrative/security tools | ✅ Completed  |
 | Linux CLI Basics | Sec 11 | Linux directory navigation, file manipulation, and fundamental terminal commands | ✅ Completed |
-| Windows CLI Basics | Sec 12 | Command Prompt (CMD) and PowerShell core commands, file structure management, and system queries | 🟩 In Progress |
+| Windows CLI Basics | Sec 12 | Command Prompt (CMD) and PowerShell core commands, file structure management, and system queries | ✅ Completed  |
+| Operating System Security | Sec 13 | OS hardening, user privileges, firewall configurations, and endpoint protection layers | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -253,7 +254,24 @@ This lab covers the essential utilities of the Windows Command Line Interface, b
 
 ---
 ---
+---
 
+## Lab: Operating System Security (TryHackMe)
+
+## 🖥️ Overview
+This lab focuses on the principles of operating system hardening, defensive configurations, and securing both Windows and Linux environments against unauthorized access, privilege escalation, and network-based threats.
+
+## ⚙️ Core OS Security Concepts & Controls
+
+| Concept / Tool | Function | Defensive Objective |
+| :--- | :--- | :--- |
+| **Principle of Least Privilege (PoLP)** | Restricting user access rights to only the absolute minimum necessary to perform a job. | Limits the blast radius if an individual user account becomes compromised by an attacker. |
+| **User Account Control (UAC)** | A Windows security feature that prevents unauthorized changes to the operating system. | Forces applications to run in a standard user context until an administrator explicitly authorizes elevated rights. |
+| **Authentication & Authorization** | Verifying identity (Passwords/MFA) and determining what resources that identity can access. | Ensures threat actors cannot easily spoof user profiles or access restricted system resources. |
+| **Endpoint Security** | Deploying anti-malware, host-based firewalls, and monitoring tools directly onto target systems. | Detects, blocks, and alerts security teams to malicious behavior right at the workstation level. |
+
+---
+ ----
  ----
  ----
  ----
