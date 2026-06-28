@@ -21,6 +21,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Linux CLI Basics | Sec 11 | Linux directory navigation, file manipulation, and fundamental terminal commands | ✅ Completed |
 | Windows CLI Basics | Sec 12 | Command Prompt (CMD) and PowerShell core commands, file structure management, and system queries | ✅ Completed  |
 | Operating System Security | Sec 13 | OS hardening, user privileges, firewall configurations, and endpoint protection layers | 🟩 In Progress |
+| Data Representation | Sec 14 | Base numbering systems (binary, hex), character encoding (ASCII), and data types | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
