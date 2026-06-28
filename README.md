@@ -286,6 +286,20 @@ Securing an operating system requires turning off unnecessary features and locki
 - **The Human Element**: Implementing technical blocks like UAC helps save users from accidentally executing malicious attachments or modifying critical system settings.
 - **Continuous Auditing**: Systems change constantly. Regularly auditing who belongs to administrative groups is vital for catching privilege creeping.
 
+  ---
+  ## 🖥️ Overview
+This lab covers how computing systems store, manipulate, and interpret raw data. Understanding these low-level concepts is crucial for protocol analysis, cryptography, and detecting obfuscated malicious code.
+
+## ⚙️ Core Numbering Systems & Encodings
+
+| Data Type / Base | Representation | Cybersecurity Significance |
+| :--- | :--- | :--- |
+| **Binary (Base 2)** | Composed entirely of `0`s and `1`s (Bits). | The fundamental language of computer processors and the basis for logical bitwise operations. |
+| **Hexadecimal (Base 16)** | Uses digits `0-9` and letters `A-F`. | Simplifies long binary strings; frequently used to view raw memory dumps, MAC addresses, and file headers. |
+| **ASCII / Unicode** | Character encoding schemes mapping numbers to text characters. | Crucial for identifying human-readable text hidden inside compiled binary files during reverse engineering. |
+| **Base64** | An encoding scheme that represents binary data in an ASCII string format. | Frequently abused by threat actors to obfuscate malicious PowerShell scripts or hide payloads in network traffic. |
+
+ ----
  ----
  ----
  ----
