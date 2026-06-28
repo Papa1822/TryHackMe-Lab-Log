@@ -299,6 +299,23 @@ This lab covers how computing systems store, manipulate, and interpret raw data.
 | **ASCII / Unicode** | Character encoding schemes mapping numbers to text characters. | Crucial for identifying human-readable text hidden inside compiled binary files during reverse engineering. |
 | **Base64** | An encoding scheme that represents binary data in an ASCII string format. | Frequently abused by threat actors to obfuscate malicious PowerShell scripts or hide payloads in network traffic. |
 
+---
+## 🔍 Security Context: Decoding & Obfuscation
+
+In security operations, data rarely looks plain. Attackers use different data representations to bypass signature-based detection systems.
+
+*   **File Signatures (Magic Bytes):** The first few bytes of a file in hexadecimal tell the operating system what the file actually is. For example, an executable file always starts with `4D 5A` (`MZ` in ASCII). Security analysts check these to ensure a malicious `.exe` isn't masquerading as a harmless `.jpg`.
+*   **Encoding vs. Encryption:** Learned that encoding (like Base64 or ASCII) is **NOT** security. It simply changes the data format for compatibility and can be decoded instantly by anyone without a secret key.
+
+---
+
+## 🔍 Key Takeaways
+- **Computers Only Speak Numbers**: Everything from a picture to a password is text or data translated down into base numbering systems.
+- **Payload Inspection**: Being comfortable with Hex and Base64 allows an analyst to look at a suspicious network packet and quickly decode it to see what the attacker is trying to execute.
+- **Data Integrity**: Understanding data sizes (bits and bytes) lays the foundation for hashing algorithms used to prove files haven't been tampered with.
+
+---
+
  ----
  ----
  ----
