@@ -323,6 +323,15 @@ In security operations, data rarely looks plain. Attackers use different data re
 ## 🖥️ Overview
 This lab focuses deeply on text-based encoding standards, analyzing how computers map numeric byte structures to human-readable text. It breaks down the history, mechanics, and structural limitations of ASCII and Unicode.
 
+## ⚙️ Text Encoding Standards & Security Implications
+
+| Encoding Standard | Bit Width / Structure | Technical Character Capacity | Cybersecurity Perspective |
+| :--- | :--- | :--- | :--- |
+| **ASCII** | Fixed 7-bit (or extended 8-bit) structure. | 128 (or 256) basic English characters, numbers, and control codes. | Standard baseline; easy to analyze but completely lacks global language support. |
+| **Unicode (UTF-8)** | Variable-width (1 to 4 bytes per character). | Over 1.1 million symbols, foreign scripts, and emojis. | Backward-compatible with ASCII. Complex mapping allows for "Homograph Attacks." |
+| **Unicode (UTF-16)** | Variable-width (2 or 4 bytes per character). | Over 1.1 million characters; used natively in Windows internals. | Commonly manipulated by malware to bypass simple ASCII-only security detection strings. |
+
+
  ----
  ----
  ----
