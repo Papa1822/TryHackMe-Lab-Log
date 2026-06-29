@@ -22,7 +22,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Windows CLI Basics | Sec 12 | Command Prompt (CMD) and PowerShell core commands, file structure management, and system queries | ✅ Completed  |
 | Operating System Security | Sec 13 | OS hardening, user privileges, firewall configurations, and endpoint protection layers |  ✅ Completed  |
 | Data Representation | Sec 14 | Base numbering systems (binary, hex), character encoding (ASCII), and data types |  ✅ Completed  |
-| Data Encoding | Sec 15 | Practical data transformation, binary-to-text encodings, and decoding mechanisms | 🟩 In Progress |
+| Data Encoding | Sec 15 | Practical data transformation, binary-to-text encodings, and decoding mechanisms | ✅ Completed  |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -330,6 +330,12 @@ This lab focuses deeply on text-based encoding standards, analyzing how computer
 | **ASCII** | Fixed 7-bit (or extended 8-bit) structure. | 128 (or 256) basic English characters, numbers, and control codes. | Standard baseline; easy to analyze but completely lacks global language support. |
 | **Unicode (UTF-8)** | Variable-width (1 to 4 bytes per character). | Over 1.1 million symbols, foreign scripts, and emojis. | Backward-compatible with ASCII. Complex mapping allows for "Homograph Attacks." |
 | **Unicode (UTF-16)** | Variable-width (2 or 4 bytes per character). | Over 1.1 million characters; used natively in Windows internals. | Commonly manipulated by malware to bypass simple ASCII-only security detection strings. |
+
+## 🔍 Key Takeaways
+- **Fixed vs. Variable Width:** Learned that while ASCII strictly assigns one byte per character, Unicode dynamically expands its size (up to 4 bytes) depending on the complexity of the symbol being rendered.
+- **Null Byte Variations:** In UTF-16, standard English characters are padded with an extra zero byte (`00`). This padding often breaks or prematurely terminates old legacy strings and logging filters configured only for ASCII.
+- **Visual Validation is Insufficient:** Understood that what a human sees on a computer screen is merely a rendered font; defensive parsing tools must evaluate the raw underlying byte representation to verify safety.
+
 
 
  ----
