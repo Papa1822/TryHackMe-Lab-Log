@@ -20,8 +20,9 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Windows Basics | Sec 10 | Windows GUI navigation, NTFS permissions, and essential administrative/security tools | ✅ Completed  |
 | Linux CLI Basics | Sec 11 | Linux directory navigation, file manipulation, and fundamental terminal commands | ✅ Completed |
 | Windows CLI Basics | Sec 12 | Command Prompt (CMD) and PowerShell core commands, file structure management, and system queries | ✅ Completed  |
-| Operating System Security | Sec 13 | OS hardening, user privileges, firewall configurations, and endpoint protection layers | 🟩 In Progress |
-| Data Representation | Sec 14 | Base numbering systems (binary, hex), character encoding (ASCII), and data types | 🟩 In Progress |
+| Operating System Security | Sec 13 | OS hardening, user privileges, firewall configurations, and endpoint protection layers |  ✅ Completed  |
+| Data Representation | Sec 14 | Base numbering systems (binary, hex), character encoding (ASCII), and data types |  ✅ Completed  |
+| Data Encoding | Sec 15 | Practical data transformation, binary-to-text encodings, and decoding mechanisms | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -315,6 +316,12 @@ In security operations, data rarely looks plain. Attackers use different data re
 - **Data Integrity**: Understanding data sizes (bits and bytes) lays the foundation for hashing algorithms used to prove files haven't been tampered with.
 
 ---
+---
+
+## Lab: Data Encoding - Text Standards (TryHackMe)
+
+## 🖥️ Overview
+This lab focuses deeply on text-based encoding standards, analyzing how computers map numeric byte structures to human-readable text. It breaks down the history, mechanics, and structural limitations of ASCII and Unicode.
 
  ----
  ----
