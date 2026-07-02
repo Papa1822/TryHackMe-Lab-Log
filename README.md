@@ -357,6 +357,13 @@ This lab introduces foundational software development logic using Python. It exp
 ![Python-Simple-Demo](images/python-simple-demo.png)
 ---
 
+## 🔍 Code Execution Breakdown: Building Logic
+
+The core project in this room involves layering multiple fundamental logic blocks to build an interactive application (such as a game logic sequence):
+
+1. **Initialization:** Setting up counter variables (e.g., tracking a user's number of attempts/guesses) and pinning data goals.
+2. **Data Manipulation:** Handling the dynamic input processing flow—reading raw user data strings, typecasting strings into integers, and mathematically updating the state variables.
+3. **Branching Decisions:** Testing values against upper and lower bounds using logical inequalities to route the system to the correct execution pathway.
 
 
 
