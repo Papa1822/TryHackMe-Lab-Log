@@ -343,6 +343,17 @@ This lab focuses deeply on text-based encoding standards, analyzing how computer
 ## 🖥️ Overview
 This lab introduces foundational software development logic using Python. It explores combining dynamic variables, loops, conditional statements, and user inputs to build a functional interactive program, laying the groundwork for custom security scripting.
 
+## ⚙️ Core Programming Mechanics & Security Intent
+
+| Syntax Component | Functional Purpose | Cybersecurity Application |
+| :--- | :--- | :--- |
+| **`variables`** | Temporarily stores and modifies data (integers, strings, etc.) dynamically during runtime. | Tracking system states, holding exploit payloads, or storing target IP lists. |
+| **`input()`** | Pauses the script execution to collect text input directly from the user console. | Interactive security tooling execution, configuration prompts, or password intake. |
+| **`int()`** | A built-in typecasting method that converts strings or float numbers into integers. | Formatter validation; prevents type mismatches during mathematical logic evaluation. |
+| **`while` Loops** | Keeps a block of code executing repeatedly as long as a specified condition remains true. | Building listening daemons, persistent connections, or continuous log monitoring scripts. |
+| **`if / elif / else`** | Executes specific blocks of code depending on whether a given condition evaluates to true or false. | Rule-based filtering (e.g., triggering alerts when a suspicious log pattern is identified). |
+
+
 
 
  ----
