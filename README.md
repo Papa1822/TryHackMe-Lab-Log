@@ -353,6 +353,10 @@ This lab introduces foundational software development logic using Python. It exp
 | **`while` Loops** | Keeps a block of code executing repeatedly as long as a specified condition remains true. | Building listening daemons, persistent connections, or continuous log monitoring scripts. |
 | **`if / elif / else`** | Executes specific blocks of code depending on whether a given condition evaluates to true or false. | Rule-based filtering (e.g., triggering alerts when a suspicious log pattern is identified). |
 
+---
+![Python-Simple-Demo](images/python-simple-demo.png)
+---
+
 
 
 
