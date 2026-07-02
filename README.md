@@ -23,6 +23,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Operating System Security | Sec 13 | OS hardening, user privileges, firewall configurations, and endpoint protection layers |  ✅ Completed  |
 | Data Representation | Sec 14 | Base numbering systems (binary, hex), character encoding (ASCII), and data types |  ✅ Completed  |
 | Data Encoding | Sec 15 | Practical data transformation, binary-to-text encodings, and decoding mechanisms | ✅ Completed  |
+| Python: Simple Demo | Sec 16 | Foundational logic, dynamic variables, condition handling, and input processing | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -335,9 +336,16 @@ This lab focuses deeply on text-based encoding standards, analyzing how computer
 - **Fixed vs. Variable Width:** Learned that while ASCII strictly assigns one byte per character, Unicode dynamically expands its size (up to 4 bytes) depending on the complexity of the symbol being rendered.
 - **Null Byte Variations:** In UTF-16, standard English characters are padded with an extra zero byte (`00`). This padding often breaks or prematurely terminates old legacy strings and logging filters configured only for ASCII.
 - **Visual Validation is Insufficient:** Understood that what a human sees on a computer screen is merely a rendered font; defensive parsing tools must evaluate the raw underlying byte representation to verify safety.
+ ---
+
+## Lab: Python: Simple Demo (TryHackMe)
+
+## 🖥️ Overview
+This lab introduces foundational software development logic using Python. It explores combining dynamic variables, loops, conditional statements, and user inputs to build a functional interactive program, laying the groundwork for custom security scripting.
 
 
 
+ ----
  ----
  ----
  ----
