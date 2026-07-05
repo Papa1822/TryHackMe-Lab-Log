@@ -381,6 +381,11 @@ The core project in this room involves layering multiple fundamental logic block
 ## 🖥️ Overview
 This lab introduces fundamental client-side web application programming using JavaScript. It explores how the browser executes interactive logic, processes user-driven variables, and handles conditional event routing.
 
+---
+
+![JavaScript-Simple-Demo](images/javascript-simple-demo.png)
+---
+
 
 
  ----
