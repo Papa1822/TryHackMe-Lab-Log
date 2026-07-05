@@ -24,6 +24,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Data Representation | Sec 14 | Base numbering systems (binary, hex), character encoding (ASCII), and data types |  ✅ Completed  |
 | Data Encoding | Sec 15 | Practical data transformation, binary-to-text encodings, and decoding mechanisms | ✅ Completed  |
 | Python: Simple Demo | Sec 16 | Foundational logic, dynamic variables, condition handling, and input processing | ✅ Completed  |
+| JavaScript: Simple Demo | Sec 17 | Client-side scripting execution, variables, event logic, and web application flow | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -373,6 +374,12 @@ The core project in this room involves layering multiple fundamental logic block
 - **Logical Flow**: Understood how loops control execution flow continuously until an explicit breaking parameter or termination state is met.
 
 ---
+---
+
+## Lab: JavaScript: Simple Demo (TryHackMe)
+
+## 🖥️ Overview
+This lab introduces fundamental client-side web application programming using JavaScript. It explores how the browser executes interactive logic, processes user-driven variables, and handles conditional event routing.
 
 
 
