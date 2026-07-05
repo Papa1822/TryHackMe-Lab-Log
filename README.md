@@ -385,7 +385,21 @@ This lab introduces fundamental client-side web application programming using Ja
 
 ![JavaScript-Simple-Demo](images/javascript-simple-demo.png)
 ---
+## 🔍 Security Context: The Client-Side Attack Surface
 
+Unlike Python scripts which usually execute securely on a closed server or local machine, JavaScript runs **directly inside the user's web browser**. 
+
+*   **Attacker Visibility:** Because JavaScript is client-side, any user or attacker can right-click a web page, inspect the source code, and read the entire script logic. This means secret keys or sensitive logic should never be hardcoded into JavaScript files.
+*   **Input Validation Bypass:** Front-end validations written in JavaScript are purely for user experience. Because an attacker has absolute control over their local browser, they can easily disable, alter, or completely bypass JavaScript input rules to inject malicious payloads straight into the backend server.
+
+---
+
+## 🔍 Key Takeaways
+- **Browser Execution Environment**: Understood that JavaScript is interpreted live by the browser, making web pages dynamic and interactive rather than completely static.
+- **Client vs. Server Logic**: Learned that client-side logic cannot be trusted for ultimate system security; backend systems must always re-verify any data sent by the browser.
+- **Syntax Adaptability**: Transitioned smoothly from Python's indentation-based structure to JavaScript's use of curly braces `{}` and explicit statement terminators.
+
+---
 
 
  ----
