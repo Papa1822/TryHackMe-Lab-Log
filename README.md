@@ -408,6 +408,15 @@ Unlike Python scripts which usually execute securely on a closed server or local
 ## 🖥️ Overview
 This lab covers the essential structural operations of relational databases using Structured Query Language (SQL). It focuses on the fundamental concepts of tables, data attributes, data formatting, and constructing basic queries to manipulate and extract specific information sets.
 
+## ⚙️ Core SQL Components & Security Context
+
+| Keyword / Concept | Operational Function | Security Analyst Perspective |
+| :--- | :--- | :--- |
+| **`SELECT`** | Dictates exactly which fields or columns to output from a query statement. | Explicitly defining columns instead of using wildcard `*` limits data exposure and preserves system performance. |
+| **`FROM`** | Identifies the targeted source database table to extract metrics from. | Essential structural locator; defenders map high-value target tables (like `Users` or `CreditCards`) to spot access threats. |
+| **`WHERE`** | Contextually filters database records using conditional constraints. | The frontline vector for SQL Injection (SQLi); input parameters inside WHERE clauses must be strictly parameterized. |
+| **`ORDER BY`** | Organizes returned records in ascending or descending alphanumeric sequence. | Can be abused by blind attackers injecting logical sorting variations to guess table values character by character. |
+
 
 
  ----
