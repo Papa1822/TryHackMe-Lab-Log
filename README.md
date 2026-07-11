@@ -25,6 +25,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Data Encoding | Sec 15 | Practical data transformation, binary-to-text encodings, and decoding mechanisms | ✅ Completed  |
 | Python: Simple Demo | Sec 16 | Foundational logic, dynamic variables, condition handling, and input processing | ✅ Completed  |
 | JavaScript: Simple Demo | Sec 17 | Client-side scripting execution, variables, event logic, and web application flow | ✅ Completed  |
+| Database & SQL Basics | Sec 18 | Relational structures, Data Query Language (DQL), data selection, and conditional filters | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -400,6 +401,13 @@ Unlike Python scripts which usually execute securely on a closed server or local
 - **Syntax Adaptability**: Transitioned smoothly from Python's indentation-based structure to JavaScript's use of curly braces `{}` and explicit statement terminators.
 
 ---
+---
+
+## Lab: Database & SQL Basics (TryHackMe)
+
+## 🖥️ Overview
+This lab covers the essential structural operations of relational databases using Structured Query Language (SQL). It focuses on the fundamental concepts of tables, data attributes, data formatting, and constructing basic queries to manipulate and extract specific information sets.
+
 
 
  ----
