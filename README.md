@@ -417,6 +417,10 @@ This lab covers the essential structural operations of relational databases usin
 | **`WHERE`** | Contextually filters database records using conditional constraints. | The frontline vector for SQL Injection (SQLi); input parameters inside WHERE clauses must be strictly parameterized. |
 | **`ORDER BY`** | Organizes returned records in ascending or descending alphanumeric sequence. | Can be abused by blind attackers injecting logical sorting variations to guess table values character by character. |
 
+----
+![Database-SQL-Basics](images/database-sql-basics.png)
+----
+
 
 
  ----
