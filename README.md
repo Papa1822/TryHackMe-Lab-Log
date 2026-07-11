@@ -25,7 +25,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Data Encoding | Sec 15 | Practical data transformation, binary-to-text encodings, and decoding mechanisms | ✅ Completed  |
 | Python: Simple Demo | Sec 16 | Foundational logic, dynamic variables, condition handling, and input processing | ✅ Completed  |
 | JavaScript: Simple Demo | Sec 17 | Client-side scripting execution, variables, event logic, and web application flow | ✅ Completed  |
-| Database & SQL Basics | Sec 18 | Relational structures, Data Query Language (DQL), data selection, and conditional filters | 🟩 In Progress |
+| Database & SQL Basics | Sec 18 | Relational structures, Data Query Language (DQL), data selection, and conditional filters | ✅ Completed |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -421,7 +421,14 @@ This lab covers the essential structural operations of relational databases usin
 ![Database-SQL-Basics](images/database-sql-basics.png)
 ----
 
+---
 
+## 🔍 Key Takeaways
+- **The Backend Source of Truth**: Databases are the brain of enterprise web architectures, managing everything from session tokens to payment profiles.
+- **Data Filtering Efficiency**: Utilizing structured keywords like `WHERE` enables automated applications to extract specific pieces of evidence from millions of database records in milliseconds.
+- **Structural Mapping Mindset**: Understanding native table configurations sets up the prerequisite knowledge needed to audit systems for flawed logic or misconfigured read privileges.
+
+---
 
  ----
  ----
