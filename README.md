@@ -449,6 +449,11 @@ This lab covers the CIA Triad, the ultimate foundational model for information s
 ---
 ![CIA-Triad-Model](images/cia-triad-basics.png)
 ---
+## 🔍 Key Takeaways
+- **The Core Baseline:** Everything in security (like passwords or firewalls) is built to protect either Confidentiality, Integrity, or Availability.
+- **Spotting Unauthorized Changes:** Learned that if someone tempers with or changes a file, its cryptographic fingerprint (hash) will change completely.
+- **Keeping Systems Alive:** Availability means setting up backup systems so the network stays up, even during hardware failures or cyber attacks.
+
  ----
  ----
  ----
