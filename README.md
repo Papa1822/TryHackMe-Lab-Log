@@ -447,7 +447,8 @@ This lab covers the CIA Triad, the ultimate foundational model for information s
 | **Availability** | Ensuring that authorized users have continuous, reliable access to resources and data when needed. | Hardened server redundancy, load balancers, reliable offsite backups, DDoS mitigation solutions. |
 
 ---
-
+![CIA-Triad-Model](images/cia-triad-basics.png)
+---
  ----
  ----
  ----
