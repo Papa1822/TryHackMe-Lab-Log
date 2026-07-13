@@ -438,6 +438,16 @@ This lab covers the essential structural operations of relational databases usin
 ## 🖥️ Overview
 This lab covers the CIA Triad, the ultimate foundational model for information security. It explores how to balance data privacy, system accuracy, and resource accessibility when designing or auditing modern digital infrastructures.
 
+## ⚙️ Core Pillars & Security Implementations
+
+| Pillar | Core Objective | Technical Controls / Safeguards |
+| :--- | :--- | :--- |
+| **Confidentiality** | Ensuring that sensitive information is strictly hidden from unauthorized eyes. | Strong symmetric/asymmetric encryption (AES), Access Control Lists (ACLs), multi-factor authentication (MFA). |
+| **Integrity** | Guaranteeing that data remains accurate, complete, and un-tampered with during storage or transit. | Cryptographic hashing algorithms (SHA-256), digital signatures, file checksum verifications. |
+| **Availability** | Ensuring that authorized users have continuous, reliable access to resources and data when needed. | Hardened server redundancy, load balancers, reliable offsite backups, DDoS mitigation solutions. |
+
+---
+
  ----
  ----
  ----
