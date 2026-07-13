@@ -26,6 +26,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Python: Simple Demo | Sec 16 | Foundational logic, dynamic variables, condition handling, and input processing | ✅ Completed  |
 | JavaScript: Simple Demo | Sec 17 | Client-side scripting execution, variables, event logic, and web application flow | ✅ Completed  |
 | Database & SQL Basics | Sec 18 | Relational structures, Data Query Language (DQL), data selection, and conditional filters | ✅ Completed |
+| Introduction to the CIA Triad | Sec 19 | Core security frameworks, data protection models, and risk management baselines | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -429,6 +430,13 @@ This lab covers the essential structural operations of relational databases usin
 - **Structural Mapping Mindset**: Understanding native table configurations sets up the prerequisite knowledge needed to audit systems for flawed logic or misconfigured read privileges.
 
 ---
+---
+---
+
+## Lab: Introduction to the CIA Triad (TryHackMe)
+
+## 🖥️ Overview
+This lab covers the CIA Triad, the ultimate foundational model for information security. It explores how to balance data privacy, system accuracy, and resource accessibility when designing or auditing modern digital infrastructures.
 
  ----
  ----
