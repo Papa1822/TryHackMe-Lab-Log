@@ -455,6 +455,20 @@ This lab covers the CIA Triad, the ultimate foundational model for information s
 - **Spotting Unauthorized Changes:** Learned that if someone tempers with or changes a file, its cryptographic fingerprint (hash) will change completely.
 - **Keeping Systems Alive:** Availability means setting up backup systems so the network stays up, even during hardware failures or cyber attacks.
 
+  ---
+
+## Lab: Cryptography Concepts (TryHackMe)
+
+## 🖥️ Overview
+This lab covers the basic foundations of cryptography. It explains how mathematical rules and secret keys are used to turn readable information into unreadable text to protect sensitive data over the internet.
+
+## 📖 Key Terms
+*   **Plaintext:** A normal, readable message that anyone can look at (e.g., `HELLO`).
+*   **Ciphertext:** A scrambled, unreadable version of the message that does not make sense (e.g., `KHOOR`).
+*   **Key:** The secret password used to lock (encrypt) and unlock (decrypt) the message.
+*   **Algorithm:** The public, step-by-step instructions or "recipe" that uses the key to scramble the text.
+
+
  ----
  ----
  ----
