@@ -26,7 +26,8 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Python: Simple Demo | Sec 16 | Foundational logic, dynamic variables, condition handling, and input processing | ✅ Completed  |
 | JavaScript: Simple Demo | Sec 17 | Client-side scripting execution, variables, event logic, and web application flow | ✅ Completed  |
 | Database & SQL Basics | Sec 18 | Relational structures, Data Query Language (DQL), data selection, and conditional filters | ✅ Completed |
-| Introduction to the CIA Triad | Sec 19 | Core security frameworks, data protection models, and risk management baselines | 🟩 In Progress |
+| Introduction to the CIA Triad | Sec 19 | Core security frameworks, data protection models, and risk management baselines | ✅ Completed |
+| Cryptography Concepts | Sec 20 | Encryption basics, keys, algorithms, symmetric vs. asymmetric systems | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
