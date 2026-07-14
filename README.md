@@ -468,6 +468,10 @@ This lab covers the basic foundations of cryptography. It explains how mathemati
 *   **Key:** The secret password used to lock (encrypt) and unlock (decrypt) the message.
 *   **Algorithm:** The public, step-by-step instructions or "recipe" that uses the key to scramble the text.
 
+---
+![Cryptography-Lab](images/cryptography-concepts.png)
+---
+
 
  ----
  ----
