@@ -472,6 +472,14 @@ This lab covers the basic foundations of cryptography. It explains how mathemati
 ![Cryptography-Lab](images/cryptography-concepts.png)
 ---
 
+## ⚙️ Symmetric vs. Asymmetric Encryption
+
+| Feature | Symmetric Encryption | Asymmetric Encryption |
+| :--- | :--- | :--- |
+| **How it Works** | Uses **one single key** to both lock and unlock the data. | Uses a **pair of keys**: a Public Key and a Private Key. |
+| **Key Sharing** | Both people must secretly share and use the exact same key. | The Public key is shared openly; the Private key is kept a secret. |
+| **Speed** | Very fast; great for big files or heavy network traffic. | Slower; mostly used for safely sharing keys and digital certificates. |
+| **Analogy** | A heavy lockbox where only one key can open or lock it. | A mailbox where anyone can drop mail inside, but only the owner can unlock it. |
 
  ----
  ----
