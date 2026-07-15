@@ -27,7 +27,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | JavaScript: Simple Demo | Sec 17 | Client-side scripting execution, variables, event logic, and web application flow | ✅ Completed  |
 | Database & SQL Basics | Sec 18 | Relational structures, Data Query Language (DQL), data selection, and conditional filters | ✅ Completed |
 | Introduction to the CIA Triad | Sec 19 | Core security frameworks, data protection models, and risk management baselines | ✅ Completed |
-| Cryptography Concepts | Sec 20 | Encryption basics, keys, algorithms, symmetric vs. asymmetric systems | 🟩 In Progress |
+| Cryptography Concepts | Sec 20 | Encryption basics, keys, algorithms, symmetric vs. asymmetric systems | ✅ Completed |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -481,6 +481,19 @@ This lab covers the basic foundations of cryptography. It explains how mathemati
 | **Speed** | Very fast; great for big files or heavy network traffic. | Slower; mostly used for safely sharing keys and digital certificates. |
 | **Analogy** | A heavy lockbox where only one key can open or lock it. | A mailbox where anyone can drop mail inside, but only the owner can unlock it. |
 
+---
+
+## 🔍 Key Takeaways
+- **No Math Needed:** Cryptography relies on simple rules to hide secrets. Anyone can know the algorithm, but the secret stays safe as long as the key is kept secret.
+- **Symmetric is for Speed:** Using a single key is very efficient for encrypting bulk data, like files on your computer.
+- **Asymmetric is for Sharing:** Using two keys lets two strangers communicate securely over the internet without sharing their secret passwords first.
+- **In practice, real systems use both:**
+
+-Asymmetric encryption initiates a connection and securely shares a symmetric key.
+-Symmetric encryption takes over for the remainder of the session to efficiently handle data.
+
+
+---
  ----
  ----
  ----
