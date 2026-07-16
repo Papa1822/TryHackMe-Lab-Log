@@ -507,6 +507,10 @@ This lab introduces the world of offensive cybersecurity. It covers the core car
 *   **Red Teaming:** An advanced security operation that simulates full-scale, real-world cyberattacks against a company to test how well their defensive teams respond.
 *   **Ethical Hacking:** The practice of hacking into a computer system with explicit, written permission from the owner to improve system security.
 *   **Vulnerability:** A weakness or security flaw in a computer system or software application that allows an attacker to compromise the system.
+---
+
+![Offensive-Security-Lab](images/finding-weakness.png)
+
 
 
 
