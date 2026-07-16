@@ -501,6 +501,14 @@ This lab covers the basic foundations of cryptography. It explains how mathemati
 ## 🖥️ Overview
 This lab introduces the world of offensive cybersecurity. It covers the core career paths in ethical hacking, explains the legality of authorized testing, and provides a guided scenario to exploit a web vulnerability to retrieve a hidden flag.
 
+## 📖 Key Concepts 
+
+*   **Penetration Testing:** A structured security assessment where an authorized tester attempts to find and exploit security vulnerabilities before real malicious actors can do so.
+*   **Red Teaming:** An advanced security operation that simulates full-scale, real-world cyberattacks against a company to test how well their defensive teams respond.
+*   **Ethical Hacking:** The practice of hacking into a computer system with explicit, written permission from the owner to improve system security.
+*   **Vulnerability:** A weakness or security flaw in a computer system or software application that allows an attacker to compromise the system.
+
+
 
 ---
  ----
