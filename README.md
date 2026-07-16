@@ -522,6 +522,15 @@ The hands-on exercise in this room involves running a web browser exploit agains
 2. **Exploitation:** Modifying URL strings or input data to manipulate how the backend application executes instructions.
 3. **Retrieving the Flag:** Successful unauthorized entry into the directory allows access to the target tracking string or flag file.
 
+---
+
+## 🔍 Key Takeaways
+- **Hacking Requires Permission:** Legal hacking is called "offensive security" and must have formal paperwork. Running exploits without authorization is illegal.
+- **Thinking Like the Enemy:** To properly protect a network, defenders must learn how attackers choose their targets and execute exploits.
+- **Breaking Down Complex Controls:** Small bugs or human mistakes in web pages are often all it takes for a hacker to compromise an entire machine.
+
+---
+
 
 
 ---
