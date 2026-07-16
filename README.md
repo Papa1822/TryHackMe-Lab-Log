@@ -510,7 +510,7 @@ This lab introduces the world of offensive cybersecurity. It covers the core car
 ---
 
 ![Offensive-Security-Lab](images/finding-weakness.png)
-
+![Offensive-Security-Lab](images/exploiting-weakness.png)
 
 
 
