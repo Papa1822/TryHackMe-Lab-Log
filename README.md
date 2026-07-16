@@ -493,6 +493,14 @@ This lab covers the basic foundations of cryptography. It explains how mathemati
 -Asymmetric encryption initiates a connection and securely shares a symmetric key.
 -Symmetric encryption takes over for the remainder of the session to efficiently handle data.
 
+---
+---
+
+## Lab: Intro to Offensive Security (TryHackMe)
+
+## 🖥️ Overview
+This lab introduces the world of offensive cybersecurity. It covers the core career paths in ethical hacking, explains the legality of authorized testing, and provides a guided scenario to exploit a web vulnerability to retrieve a hidden flag.
+
 
 ---
  ----
