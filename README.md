@@ -28,6 +28,7 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Database & SQL Basics | Sec 18 | Relational structures, Data Query Language (DQL), data selection, and conditional filters | ✅ Completed |
 | Introduction to the CIA Triad | Sec 19 | Core security frameworks, data protection models, and risk management baselines | ✅ Completed |
 | Cryptography Concepts | Sec 20 | Encryption basics, keys, algorithms, symmetric vs. asymmetric systems | ✅ Completed |
+| Intro to Offensive Security | Sec 21 | Hacking history, red team roles, and hands-on legal web exploitation | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
