@@ -512,6 +512,16 @@ This lab introduces the world of offensive cybersecurity. It covers the core car
 ![Offensive-Security-Lab](images/finding-weakness.png)
 ![Offensive-Security-Lab](images/exploiting-weakness.png)
 
+---
+
+## ⚡ Hands-on Exploitation (Web Hack Scenario)
+
+The hands-on exercise in this room involves running a web browser exploit against a target application to bypass traditional controls.
+
+1. **Reconnaissance:** Inspecting a website layout to identify hidden parameters or exposed pages.
+2. **Exploitation:** Modifying URL strings or input data to manipulate how the backend application executes instructions.
+3. **Retrieving the Flag:** Successful unauthorized entry into the directory allows access to the target tracking string or flag file.
+
 
 
 ---
