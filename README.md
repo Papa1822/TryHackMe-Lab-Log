@@ -556,7 +556,12 @@ Defending a system requires thinking like a designer and an architect, using fou
 *   **Continuous Adaptation:** Treating security as an ongoing process that evolves as new vulnerabilities and hacker techniques emerge over time.
 
 ---
+## 🔍 Key Takeaways
+- **Systems are Connected:** Attackers rarely hit just one target; they compromise a weak device and pivot to the next, meaning defenders must secure the whole chain.
+- **Visibility is Security:** You cannot protect a server or a computer if you do not know it exists on your network.
+- **Proactive Defending:** Good blue teaming isn't just waiting for an alert to pop up; it means hunting for weaknesses and blocking attack paths before they are used.
 
+---
 
 ---
  ----
