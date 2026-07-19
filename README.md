@@ -537,6 +537,16 @@ The hands-on exercise in this room involves running a web browser exploit agains
 This lab introduces the core responsibilities of Defensive Security (the Blue Team). It covers the mindset needed to look at an entire system infrastructure, anticipate how threat actors pivot through networks, and implement controls to protect high-value assets.
 
 
+## 📖 Key Defensive Concepts
+
+*   **Prevention:** Putting security controls in place to stop attacks before they happen, such as firewalls, antivirus software, and regular patching.
+*   **Detection:** Monitoring systems and networks to identify suspicious or malicious activity through logs, alerts, and security tools.
+*   **Mitigation:** Taking action during an incident to limit damage, such as blocking traffic, isolating affected systems, or disabling compromised accounts.
+*   **Analysis:** Investigating what happened, how it happened, and which systems were affected by reviewing logs and other evidence.
+*   **Response & Improvement:** Recovering from the incident and improving defenses to reduce the risk of similar attacks in the future.
+
+
+
 
 ---
  ----
