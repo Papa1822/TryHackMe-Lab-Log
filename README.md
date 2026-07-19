@@ -546,6 +546,16 @@ This lab introduces the core responsibilities of Defensive Security (the Blue Te
 *   **Response & Improvement:** Recovering from the incident and improving defenses to reduce the risk of similar attacks in the future.
 
 
+## 🛡️ The Core Defender Mindset
+
+Defending a system requires thinking like a designer and an architect, using four simple strategies:
+
+*   **Threat Anticipation:** Looking at your network and asking "What if?" to imagine the realistic paths an attacker might take to steal data.
+*   **Attack Awareness:** Studying common attack steps to understand how a threat actor moves from a basic phishing email to taking over a main server.
+*   **Risk Prioritization:** Identifying your most critical systems (like customer databases) and giving them extra defense layers over low-risk systems.
+*   **Continuous Adaptation:** Treating security as an ongoing process that evolves as new vulnerabilities and hacker techniques emerge over time.
+
+---
 
 
 ---
