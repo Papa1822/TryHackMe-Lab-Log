@@ -28,7 +28,8 @@ This repository documents my journey through multiple Cyber-security labs comple
 | Database & SQL Basics | Sec 18 | Relational structures, Data Query Language (DQL), data selection, and conditional filters | ✅ Completed |
 | Introduction to the CIA Triad | Sec 19 | Core security frameworks, data protection models, and risk management baselines | ✅ Completed |
 | Cryptography Concepts | Sec 20 | Encryption basics, keys, algorithms, symmetric vs. asymmetric systems | ✅ Completed |
-| Intro to Offensive Security | Sec 21 | Hacking history, red team roles, and hands-on legal web exploitation | 🟩 In Progress |
+| Intro to Offensive Security | Sec 21 | Hacking history, red team roles, and hands-on legal web exploitation |  ✅ Completed  |
+| Become a Defender | Sec 21 | Threat anticipation, risk prioritization, asset visibility, and blue team mindsets | 🟩 In Progress |
 ---
 ### 🔍 Technical Evidence & Writeups
 ## Lab: Inside a Computer System (TryHackMe)
@@ -530,6 +531,10 @@ The hands-on exercise in this room involves running a web browser exploit agains
 - **Breaking Down Complex Controls:** Small bugs or human mistakes in web pages are often all it takes for a hacker to compromise an entire machine.
 
 ---
+## Lab: Become a Defender (TryHackMe)
+
+## 🖥️ Overview
+This lab introduces the core responsibilities of Defensive Security (the Blue Team). It covers the mindset needed to look at an entire system infrastructure, anticipate how threat actors pivot through networks, and implement controls to protect high-value assets.
 
 
 
