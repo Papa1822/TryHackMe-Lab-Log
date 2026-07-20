@@ -667,6 +667,20 @@ After gaining SYSTEM access, I dumped the local SAM database hashes. I then perf
 ## 🖥️ Overview
 This lab covers the essential building blocks of web applications. It explores the standard client-server model, how web browsers process and display online content, and how front-end code interacts with back-end servers to make websites functional.
 
+## 🛠️ The Core Web Tech 
+
+Web applications rely on three primary languages to deliver content and process user actions *(Frontend)*:
+
+*   **HTML (HyperText Markup Language):** The skeleton of the webpage. It defines the structure and layout of text, images, and links.
+*   **CSS (Cascading Style Sheets):** The skin and clothes of the webpage. It handles the visual styling, colors, layout variations, and fonts.
+*   **JavaScript:** The muscles and nervous system of the webpage. It adds interactive elements, logic, and dynamic behaviors to the front-end interface.
+  *Backend*
+*  **Database**:** This is where information can be stored, modified, and retrieved.
+*  **Infrastructure:** This includes componenets like the web server, application server, storage, various networking devices and other software the supports the web application.
+*  **Web Application Firewall:** It provides an element of protection by filtering out dangerous requests away from the Web Server.
+
+---
+---
 
 ## 💼 Virtual Internships (Job Simulations)
 
