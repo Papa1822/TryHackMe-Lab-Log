@@ -660,6 +660,14 @@ After gaining SYSTEM access, I dumped the local SAM database hashes. I then perf
 
   Post-Exploitation: Successfully located three system flags hidden across the machine (System Root, SAM Database config, and Administrative Documents) to confirm full system compromise.
 
+  ---
+
+## Lab: Web Application Basics (TryHackMe - Cyber101)
+
+## 🖥️ Overview
+This lab covers the essential building blocks of web applications. It explores the standard client-server model, how web browsers process and display online content, and how front-end code interacts with back-end servers to make websites functional.
+
+
 ## 💼 Virtual Internships (Job Simulations)
 
 | Company | Program | Task Completed | Key Skill |
