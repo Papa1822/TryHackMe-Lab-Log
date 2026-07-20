@@ -680,6 +680,22 @@ Web applications rely on three primary languages to deliver content and process 
 *  **Web Application Firewall:** It provides an element of protection by filtering out dangerous requests away from the Web Server.
 
 ---
+## 🔗 Anatomy of a URL & Component Functions
+
+A Uniform Resource Locator (URL) is the web address used to find a specific resource on the internet. It is broken down into distinct sections that tell the browser exactly how and where to fetch data:
+
+| URL Component | Example Part | Function | Security Significance |
+| :--- | :--- | :--- | :--- |
+| **Scheme / Protocol** | `https://` | Defines the rules the browser uses to talk to the server (e.g., HTTP or HTTPS). | `https` ensures traffic is encrypted, protecting data from being intercepted over the network. |
+| **Domain Name** | `tryhackme.com` | The human-readable name of the specific server or website hosting the content. | High-value target for phishers who use lookalike domains (typosquatting) to steal credentials. |
+| **Port** | `:443` | Specifies the exact gate or door to connect to on the server (Defaults: 80 for HTTP, 443 for HTTPS). | Open or unusual ports found during scanning can indicate exposed management interfaces. |
+| **Path** | `/room/cyber101` | Points to the exact folder or file location on the server's storage system. | Attackers manipulate the path (e.g., using `../`) to try and access restricted system directories. |
+| **Parameters / Query** | `?task=5` | Sends extra data or key-value variables to the backend web application logic. | Frontline target for input injection flaws (like SQLi or XSS) where input must be heavily filtered. |
+| **Anchor / Fragment** | `#notes` | Points to a specific location or subsection within the webpage itself. | Handled entirely by the browser; this data is not sent to the web server in the network request. |
+
+---
+
+---
 ---
 
 ## 💼 Virtual Internships (Job Simulations)
