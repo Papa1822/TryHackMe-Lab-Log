@@ -584,6 +584,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Metasploit Exploitation** | Tools | SMB Enumeration & Credential Auditing | ✅ Completed |
 | **Metasploit Meterpreter** | Post Exploitation | Process Migration, Hash dumping, and Enumeration | ✅ Completed |
 | **Blue (MS17-010)** | Exploitation |  	Full Kill-Chain: Recon, MS17-010 Exploit, PrivEsc & Hash Cracking. | ✅ Completed |
+| **Web Application Basics** | Web Security| Core components of web applications, client-server models, and standard web technologies | 🟩 In Progress |
 
 ---
 
