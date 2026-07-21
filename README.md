@@ -694,7 +694,14 @@ A Uniform Resource Locator (URL) is the web address used to find a specific reso
 | **Anchor / Fragment** | `#notes` | Points to a specific location or subsection within the webpage itself. | Handled entirely by the browser; this data is not sent to the web server in the network request. |
 
 ---
+## ✉️ Understanding HTTP Message Types
 
+HTTP communication relies on an exchange of text-based messages between the client and the server. These are divided into **Requests** and **Responses**.
+
+| Message Component | Main Function | Cybersecurity Perspective |
+| :--- | :--- | :--- |
+| **HTTP Request** | Sent by the browser to ask the server for a resource. Includes a **Method** (like `GET` to read data, or `POST` to submit a form). | Analysts check request methods and data payloads to identify automated attack traffic or exploit attempts. |
+| **HTTP Response** | Sent by the server back to the browser containing the requested files or an error. | The response body is analyzed by defenders to ensure internal system errors do not leak sensitive backend code. |
 ---
 ---
 
