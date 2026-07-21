@@ -702,6 +702,21 @@ HTTP communication relies on an exchange of text-based messages between the clie
 | :--- | :--- | :--- |
 | **HTTP Request** | Sent by the browser to ask the server for a resource. Includes a **Method** (like `GET` to read data, or `POST` to submit a form). | Analysts check request methods and data payloads to identify automated attack traffic or exploit attempts. |
 | **HTTP Response** | Sent by the server back to the browser containing the requested files or an error. | The response body is analyzed by defenders to ensure internal system errors do not leak sensitive backend code. |
+
+---
+
+## ✉️ Structure of an HTTP Message
+
+Every text-based HTTP Request and Response sent across the network is structured into four distinct, chronological parts. Understanding this raw formatting is vital for inspecting network traffic and reading log streams.
+
+| HTTP Message Part | Technical Function | Cybersecurity Relevance |
+| :--- | :--- | :--- |
+| **Start Line** | The very first line of the message. In requests, it lists the **Method** (e.g., `GET`), the **Path**, and the **HTTP version**. In responses, it holds the **Status Code**. | Security tools inspect the method and path here to instantly flag unauthorized request types or directories. |
+| **Headers** | Lines of metadata keys and values that provide extra context about the browser, server configuration, encoding rules, or authorization state. | Critical area where session tokens or `Cookies` are stored. Attackers target headers to intercept or spoof identity data. |
+| **Empty Line** | A blank space consisting of an empty row that explicitly marks the absolute end of the HTTP headers section. | Acts as a strict boundary line telling parsing engines exactly where configurations stop and raw data starts. |
+| **Body** | The optional final section containing the actual payload or asset data being sent (e.g., form data, raw HTML code, or JSON arrays). | Analysts monitor the message body to intercept malicious uploads, hidden commands, or unauthorized data transfers. |
+
+---
 ---
 ---
 
