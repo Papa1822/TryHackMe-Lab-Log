@@ -729,6 +729,16 @@ When a client makes a request, the Start Line contains a specific method that te
 
 ---
 
+
+## 🛠️ Defending the URL Path from Attacks
+
+Attackers often manipulate the URL path to break out of web directories or access files they should not see. To secure your application against these risks, follow these core rules:
+
+*   **Validate the URL path to prevent unauthorised access**
+*   **Sanitise the path to avoid injection attacks**
+*   **Protect sensitive data by conducting privacy and risk assessments**
+---
+---
 ---
 ---
 ---
