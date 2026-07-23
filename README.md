@@ -717,6 +717,19 @@ Every text-based HTTP Request and Response sent across the network is structured
 | **Body** | The optional final section containing the actual payload or asset data being sent (e.g., form data, raw HTML code, or JSON arrays). | Analysts monitor the message body to intercept malicious uploads, hidden commands, or unauthorized data transfers. |
 
 ---
+
+## ⚡ Core HTTP Method Types
+
+When a client makes a request, the Start Line contains a specific method that tells the server what action to perform on the targeted resource:
+
+*   **`GET`:** Used solely to request and retrieve data from the server. It should never modify system files or database records.
+*   **`POST`:** Submits new data (like a login form, comment, or file upload) to be processed by the backend server.
+*   **`PUT`:** Replaces an existing resource or creates a new one at a specific location if it doesn't exist yet.
+*   **`DELETE`:** Requests that the server permanently remove the specified resource or file.
+
+---
+
+---
 ---
 ---
 
