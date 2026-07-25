@@ -737,6 +737,25 @@ Attackers often manipulate the URL path to break out of web directories or acces
 *   **Validate the URL path to prevent unauthorised access**
 *   **Sanitise the path to avoid injection attacks**
 *   **Protect sensitive data by conducting privacy and risk assessments**
+
+---
+
+## 🔑 Deep Dive: HTTP Request Headers
+
+When your browser sends an HTTP request, the **Headers** section acts as a collection of metadata. These key-value pairs provide the server with essential context about the client and the request parameters.
+
+### 🛠️ Common Request Headers & Security Implications
+
+| Header Name | Technical Purpose | Cybersecurity Significance |
+| :--- | :--- | :--- |
+| **`Host`** | Specifies the domain name of the server (e.g., `tryhackme.com`). Required in all HTTP/1.1 requests. | Attackers manipulate this in **Host Header Injection** attacks to redirect password reset links to malicious servers. |
+| **`User-Agent`** | Identifies the client's browser, operating system, and software version. | Threat actors spoof this string to hide malicious automated scrapers or tools (like `nmap` or `sqlmap`) as legitimate traffic. |
+| **`Cookie`** | Sends previously stored session tokens from the browser back to the server to maintain a logged-in state. | High-value target for hackers. If an attacker steals this cookie (via XSS or sniffing), they can hijack the session completely. |
+| **`Authorization`** | Carries credentials (like API keys or Bearer tokens) to authenticate the client to the server. | Must always be encrypted over HTTPS. Weak implementation can allow unauthorized API access or data leakage. |
+| **`Referer`** | Indicates the address of the previous webpage from which a link to the currently requested page was followed. | Can accidentally leak sensitive data (like tokens or internal URLs) contained within the query parameters of the previous page. |
+| **`Accept-Encoding`** | Tells the server which compression algorithms (like `gzip` or `br`) the browser supports for the response. | Generally low risk, but security analysts use unique combinations of these standard headers for **client fingerprinting**. |
+
+---
 ---
 ---
 ---
