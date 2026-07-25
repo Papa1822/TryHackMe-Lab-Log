@@ -756,6 +756,33 @@ When your browser sends an HTTP request, the **Headers** section acts as a colle
 | **`Accept-Encoding`** | Tells the server which compression algorithms (like `gzip` or `br`) the browser supports for the response. | Generally low risk, but security analysts use unique combinations of these standard headers for **client fingerprinting**. |
 
 ---
+
+## 📦 Deep Dive: HTTP Request Body
+
+While headers contain metadata, the **Request Body** carries the actual data payload from the client to the server. It is primarily used with methods like `POST`, `PUT`, and `PATCH`. If a request is just fetching data (like a `GET` request), the body is typically left completely empty.
+
+### 📂 Common Content Types Found in the Request Body
+
+Servers rely on the `Content-Type` header to know how to read the incoming raw data in the body. The most common types include:
+
+*   **`application/x-www-form-urlencoded`:** The standard format for basic web forms. Data is sent as joined key-value pairs (e.g., `username=admin&password=secretpassword`).
+*   **`multipart/form-data`:** Used when a user uploads files (like images or documents) along with form text. It divides the body into separate, bounded parts for each file.
+*   **`application/json`:** The modern standard for APIs and interactive web apps. Data is formatted as a structured JavaScript Object Notation (JSON) string.
+---
+
+### 🛡️ Cybersecurity Perspective on the Request Body
+
+The request body is the frontline boundary where untrusted user input enters system databases and backend logic. Security analysts focus on three main areas here:
+
+| Security Risk Area | Description | Defense Strategy |
+| :--- | :--- | :--- |
+| **Input Injection** | Attackers place malicious code (like SQL strings or system commands) inside form fields to manipulate databases or execution logic. | Implement strict **parameterized queries** and server-side input validation. |
+| **Malicious File Uploads** | Threat actors use file upload forms to send web shells (e.g., `.php` scripts) to the server to gain remote command access. | Enforce file extension **whitelisting**, rename uploaded files, and scan them with antivirus software. |
+| **Data Tampering** | Users modify hidden body variables (like altering a product price from `price=100` to `price=0`) before hitting submit. | Never trust client-side data for critical logic; always re-verify prices and permissions on the **backend server**. |
+
+---
+
+---
 ---
 ---
 ---
