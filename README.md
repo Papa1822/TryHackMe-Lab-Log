@@ -782,6 +782,22 @@ The request body is the frontline boundary where untrusted user input enters sys
 
 ---
 
+## 🛑 Deep Dive: HTTP Status Line & Status Codes
+
+When a web server answers an HTTP request, the very first line of its response is the **Status Line**. This line contains three specific items: the **HTTP version**, a numeric **Status Code**, and a short textual **Reason Phrase** (e.g., `HTTP/1.1 200 OK`).
+
+### 📊 The 5 Status Code Categories
+
+HTTP status codes are three-digit numbers divided into five distinct classes based on the first digit. Knowing these ranges lets you immediately understand the outcome of a request:
+
+*   **`100-199` Informational:** The server received the request and the process is continuing (rarely seen in basic web logs).
+*   **`200-299` Success:** The action was successfully received, understood, and accepted (e.g., `200 OK`, `201 Created`).
+*   **`300-399` Redirection:** Further action must be taken by the browser to complete the request (e.g., `301 Moved Permanently`, `302 Found`).
+*   **`400-499` Client Error:** The request contains bad syntax or cannot be fulfilled by the client (e.g., `403 Forbidden`, `404 Not Found`).
+*   **`500-599` Server Error:** The server failed to fulfill an apparently valid request due to an internal glitch (e.g., `500 Internal Server Error`, `503 Service Unavailable`).
+
+---
+
 ---
 ---
 ---
