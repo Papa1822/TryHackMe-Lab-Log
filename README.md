@@ -797,7 +797,20 @@ HTTP status codes are three-digit numbers divided into five distinct classes bas
 *   **`500-599` Server Error:** The server failed to fulfill an apparently valid request due to an internal glitch (e.g., `500 Internal Server Error`, `503 Service Unavailable`).
 
 ---
+### 🕵️‍♂️ Analyzing Status Codes for Security Events
 
+Security analysts monitor status codes closely in SIEM tools and web proxy logs to detect early stages of a cyberattack:
+
+| Status Code | Standard Meaning | Attack Indicator / Security Meaning |
+| :--- | :--- | :--- |
+| **`200 OK`** | Request succeeded. | Can indicate a successful data exfiltration or a web shell actively executing commands. |
+| **`301 / 302`** | Page redirected. | Attackers use unvalidated redirects to send users from a real site to a fake phishing page. |
+| **`401 Unauthorized`** | Credentials missing. | A massive spike of `401` errors on a login page indicates an active brute-force or credential-stuffing attack. |
+| **`403 Forbidden`** | No permission to view. | Shows an attacker is actively guessing folder names and trying to access restricted admin paths. |
+| **`404 Not Found`** | Resource doesn't exist. | A rapid flood of `404` logs reveals automated directory busting tools (like Gobuster or Dirbuster) mapping out the site. |
+| **`500 Internal Error`** | Server crashed. | Frequently triggers when an attacker injects malformed code into a database query, exposing a potential SQL injection vulnerability. |
+
+---
 ---
 ---
 ---
