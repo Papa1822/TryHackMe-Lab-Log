@@ -828,6 +828,24 @@ Response headers are heavily leveraged by security teams to configure defensive 
 | **`Cache-Control`** | Holds instructions detailing who can cache the response, where to store it, and for how long. | Sensitive pages must be set to `no-store` so browsers do not save corporate files or passwords to shared local disks. |
 | **`Location`** | Used in redirection responses (`3xx`) to tell the browser the new URL path it needs to jump to. | Attackers exploit this via **Open Redirects**, changing the path to seamlessly push victims to a fake phishing site. |
 
+---
+
+## 🔒 Deep Dive: HTTP Security Headers
+
+While standard response headers handle application performance and state, **Security Headers** are explicit defense instructions sent by the server. They tell the user's browser to activate built-in security mechanisms, drastically reducing the success rate of client-side attacks.
+
+### 🛠️ Core Security Headers & Defensive Functions
+
+| Header Name | Technical Purpose | Vulnerability Prevented |
+| :--- | :--- | :--- |
+| **`Content-Security-Policy` (CSP)** | Restricts the exact domains, scripts, images, and styles that the browser is allowed to load for that specific webpage. | **Cross-Site Scripting (XSS):** It stops the execution of unauthorized, injected malicious scripts by only trusting approved sources. |
+| **`Strict-Transport-Security` (HSTS)** | Forces the browser to strictly connect to the website using secure HTTPS links only, ignoring any unencrypted HTTP requests. | **Man-in-the-Middle (MitM):** It blocks packet sniffing and protocol downgrade attacks (like SSL Stripping) on insecure networks. |
+| **`X-Content-Type-Options`** | Disables the browser's default behavior of guessing file types, forcing it to strictly follow the declared `Content-Type` header (`nosniff`). | **MIME-Sniffing Attacks:** It stops malicious users from disguising an executable script or file as a harmless image or text upload. |
+| **`Referrer-Policy`** | Controls how much technical path information is included in the `Referer` header when a user navigates away to another link. | **Information Leakage:** It protects private user data, internal directory maps, or unique session tokens from leaking via the URL path. |
+| **`Permissions-Policy`** | Explicitly allows or blocks the webpage from accessing physical device hardware components or browser capabilities. | **Privacy Violations:** It locks down unauthorized background utilization of the user's webcam, microphone, geolocation, or payment APIs. |
+
+---
+
 
 ---
 ---
