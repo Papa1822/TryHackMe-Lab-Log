@@ -846,6 +846,7 @@ While standard response headers handle application performance and state, **Secu
 
 ---
 1.**Delete Request to /api/user/1:** ![Web Application Basics Lab Screenshot](images/web-app-basics-delete.png)
+1.**Get Request to /api/users:** ![Web Application Basics Lab Screenshot](images/web-app-basics-get.png)
 
 ---
 ---
