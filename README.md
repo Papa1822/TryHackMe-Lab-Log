@@ -845,7 +845,7 @@ While standard response headers handle application performance and state, **Secu
 | **`Permissions-Policy`** | Explicitly allows or blocks the webpage from accessing physical device hardware components or browser capabilities. | **Privacy Violations:** It locks down unauthorized background utilization of the user's webcam, microphone, geolocation, or payment APIs. |
 
 ---
-
+1.**Delete Request to /api/user/1:** ![Web Application Basics Lab Screenshot](images/web-app-basics-delete.png)
 
 ---
 ---
