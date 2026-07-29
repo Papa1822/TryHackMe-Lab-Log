@@ -949,6 +949,18 @@ Security analysts must unravel these configurations during an audit to understan
 
 ---
 
+---
+
+## 🛡️ Secure Development Best Practices
+
+Implementing standard coding baseline habits reduces a web application's active attack surface and minimizes successful exploitation opportunities:
+
+*   **Avoid Relying on Client-Side Validation Only:** Users can easily disable or manipulate JavaScript directly inside their web browsers. Always perform critical input validation on the server side.
+*   **Refrain from Adding Untrusted Libraries:** Attackers upload malicious packages using names that mimic legitimate ones (typosquatting). Only load script resources from verified, trusted sources.
+*   **Avoid Hardcoded Secrets:** Sensitive variables like API keys, tokens, and access credentials are publicly visible via source code tools. Keep secrets completely out of your client-side files.
+*   **Minify and Obfuscate Production Code:** Compressing and scrambling your scripts shrinks file delivery sizes, improves load speeds, and forces adversaries to expend significant effort reverse-engineering your logic.
+
+---
 
 ---
 ---
