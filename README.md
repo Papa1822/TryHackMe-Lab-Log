@@ -912,7 +912,14 @@ While auditing the application's client-side code, a critical vulnerability was 
 ![Bypassing Login Forms](images/bypassing-login-forms.png)
 ---
 
+### 🛠️ Remediation: How to Fix It Properly
 
+To fix hardcoded client-side credential flaws, security architecture must follow these rules:
+*   **Move Validation to the Backend:** Never check passwords inside client-side JavaScript. Send the password securely to a protected backend server (like a Node.js, Python, or PHP environment) via an encrypted HTTP `POST` request.
+*   **Use Hashed Database Queries:** The backend server must check the password against a securely hashed value stored in a restricted database (using strong algorithms like `bcrypt` or `Argon2`).
+*   **Implement Environment Variables:** Keep all API keys, system passwords, and secrets completely out of the source code repository. Store them in secure server-side environment configuration files.
+
+---
 ---
 ---
 ---
