@@ -885,6 +885,16 @@ JavaScript features built-in UI popup mechanics called dialogue functions. While
 
 ---
 
+---
+
+## 🔁 Control Flow Statements 
+
+Control flow statements determine the path your application logic takes based on specific conditions. In security, understanding these structures is critical for identifying logical flaws where an attacker can trick the script into executing unauthorized code blocks.
+
+### ⚙️ Core Flow Structures
+
+*   **Conditional Statements (`if`, `else if`, `else`):** Directs the code execution path based on whether an expression evaluates to `true` or `false`.
+*   **Loops (`for`, `while`):** Automates the repeated execution of a specific code block as long as a set condition remains active.
 
 ---
 ---
