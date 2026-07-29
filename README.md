@@ -897,6 +897,19 @@ Control flow statements determine the path your application logic takes based on
 *   **Loops (`for`, `while`):** Automates the repeated execution of a specific code block as long as a set condition remains active.
 
 ---
+
+## 🚨 Lab Finding: Hardcoded Credentials in Source Code
+
+While auditing the application's client-side code, a critical vulnerability was discovered: **sensitive authentication passwords were found hardcoded directly inside the JavaScript file.**
+
+### 🕵️‍♂️ The Vulnerability Breakdown
+
+*   **The Flaw:** The developers handled login validation entirely on the client side using a basic `if` statement (e.g., `if (inputPassword === "SecretPassword123")`).
+*   **The Risk:** Because JavaScript executes entirely within the victim's browser, the raw code is completely public. Anyone using **View Page Source** or Developer Tools (F12) can read the password without needing access to the backend database.
+*   **The Impact:** Attackers can bypass the login screen instantly, leading to total account takeover and unauthorized administrative access.
+
+
+---
 ---
 ---
 ---
