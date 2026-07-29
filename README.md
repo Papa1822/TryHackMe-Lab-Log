@@ -850,6 +850,20 @@ While standard response headers handle application performance and state, **Secu
 3.**Post Request to /api/user/2:** ![Web Application Basics Lab Screenshot](images/web-app-basics-post.png)
 
 ---
+
+
+## Lab: JavaScript Essentials (TryHackMe - Cyber101)
+
+## 🖥️ Overview
+This lab covers the fundamental programming building blocks of JavaScript (JS). It explores how browsers execute code on the client side, manipulate web page content dynamically, and how developers (and attackers) use variables, data types, and functions to control application logic.
+
+## ⚙️ Core Concepts of Client-Side Execution
+*   **The Engine:** Web browsers have built-in engines (like Google Chrome's V8) that read and execute JavaScript directly on the user's computer, reducing the processing load on backend servers.
+*   **The DOM (Document Object Model):** JavaScript treats a webpage as a structured tree of objects. By interacting with the DOM, JS can change text, modify colors, or add elements on the fly without refreshing the page.
+*   **Cybersecurity Context:** Because JavaScript runs entirely inside the user's browser, the raw code is completely visible to anyone using Developer Tools. Security logic should never rely strictly on client-side JS.
+
+
+---
 ---
 ---
 ---
