@@ -907,6 +907,10 @@ While auditing the application's client-side code, a critical vulnerability was 
 *   **The Flaw:** The developers handled login validation entirely on the client side using a basic `if` statement (e.g., `if (inputPassword === "SecretPassword123")`).
 *   **The Risk:** Because JavaScript executes entirely within the victim's browser, the raw code is completely public. Anyone using **View Page Source** or Developer Tools (F12) can read the password without needing access to the backend database.
 *   **The Impact:** Attackers can bypass the login screen instantly, leading to total account takeover and unauthorized administrative access.
+---
+
+![Bypassing Login Forms](images/bypassing-login-forms.png)
+---
 
 
 ---
