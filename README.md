@@ -862,6 +862,29 @@ This lab covers the fundamental programming building blocks of JavaScript (JS). 
 *   **The DOM (Document Object Model):** JavaScript treats a webpage as a structured tree of objects. By interacting with the DOM, JS can change text, modify colors, or add elements on the fly without refreshing the page.
 *   **Cybersecurity Context:** Because JavaScript runs entirely inside the user's browser, the raw code is completely visible to anyone using Developer Tools. Security logic should never rely strictly on client-side JS.
 
+## 🔗 Integrating JavaScript: Internal vs. External
+
+Developers use two primary methods to load and execute JavaScript within an HTML document. Understanding where this code lives is essential for auditing attack vectors.
+
+*   **Internal JavaScript:** Code written directly inside an HTML file wrapped between `<script>` and `</script>` tags. 
+    *   *Security Context:* Makes code auditing easy but heavily increases the risk of **Stored or Reflected XSS** if user input is printed directly inside these tags.
+*   **External JavaScript:** Code saved in a separate standalone file (with a `.js` extension) and linked inside the HTML using the `src` attribute, such as `<script src="app.js"></script>`.
+    *   *Security Context:* Highly preferred for clean code architecture. However, if an attacker gains write access to that external hosting server or poisons the third-party URL link (**Supply Chain Attack**), they can instantly run malicious scripts on every machine loading that page.
+
+---
+
+## ⚠️ Abusing Dialogue Functions
+
+JavaScript features built-in UI popup mechanics called dialogue functions. While designed for simple user interactions, they are heavily abused by both malicious threat actors and penetration testers.
+
+| Dialogue Function | Core Developer Purpose | How It Is Abused by Attackers |
+| :--- | :--- | :--- |
+| **`alert()`** | Displays a simple, modal popup box with a message and an "OK" button. It pauses code execution until dismissed. | **Proof of Concept (PoC):** Primarily used by security researchers to visually prove a Cross-Site Scripting (XSS) vulnerability exists on a page. |
+| **`prompt()`** | Displays a dialog box that asks the user for a text input response before moving forward. | **Credential Phishing:** Attackers inject this function via XSS to trick victims with a realistic looking popup stating *"Your session expired, please re-type your password"*. |
+| **`confirm()`** | Displays a popup window showing a message alongside an "OK" and a "Cancel" option, returning a true/false value. | **Social Engineering:** Used to force malicious actions, such as presenting false choices like *"An error occurred. Click OK to download the critical system update"* to drop malware. |
+
+---
+
 
 ---
 ---
