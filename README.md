@@ -991,6 +991,28 @@ Databases are categorized by how they organize data. Relational databases use ri
 *   **Foreign Keys:** A column in one table that references a Primary Key in another table, physically linking the two data sets together.
 
 ---
+---
+
+## 🛠️ Data Definition Language (DDL): Managing Structural Elements
+
+DDL statements modify the structural layout of your databases and tables rather than editing individual entries. In security engineering, audit logs track these commands closely to identify rogue structural modifications.
+
+### 🗃️ Database Administration Commands
+*   **`CREATE DATABASE name;`** Generates a brand new, empty database container on the DBMS server host.
+*   **`SHOW DATABASES;`** Lists every database configuration file available on the active DBMS cluster interface.
+*   **`USE name;`** Tells the engine to target and execute all subsequent incoming queries inside that explicit database.
+*   **`DROP DATABASE name;`** Permanently deletes an entire database container along with all contained data tables.
+    *   *Security Risk:* Frontline injection target for destructive adversaries attempting localized Denial of Service (DoS) attacks.
+
+### 📋 Table Infrastructure Commands
+*   **`CREATE TABLE name (col type, ...);`** Establishes a raw data storage grid detailing specific column attributes and constraints.
+*   **`SHOW TABLES;`** Displays a directory index of all established tables inside the currently active database workspace.
+*   **`DESCRIBE name;`** Inspects and prints out the exact schema data types, keys, and null parameters of a table.
+*   **`ALTER TABLE name ADD col type;`** Modifies an active schema layout to append, delete, or re-type live column attributes.
+*   **`DROP TABLE name;`** Erases an individual structural data grid instantly from active storage disks.
+    *   *Security Control:* Access to `ALTER` and `DROP` routines must be restricted using strict Principle of Least Privilege role permissions.
+
+---
 
 ---
 ---
