@@ -969,6 +969,26 @@ Implementing standard coding baseline habits reduces a web application's active 
 ## 🖥️ Overview
 This lab covers the core principles of Structured Query Language (SQL).
 ---
+
+## 🗄️ Database Architecture & Key Concepts
+
+Databases are categorized by how they organize data. Relational databases use rigid tables, while non-relational databases use flexible document formats.
+
+### 📁 Database Categories
+*   **Relational Databases (SQL):** Organizes data into structured tables with fixed rows and columns (e.g., MySQL, PostgreSQL, SQLite).
+*   **Non-Relational Databases (NoSQL):** Stores unstructured data using loose collections, graphs, or JSON documents instead of tables (e.g., MongoDB, Redis).
+
+### 📊 Structural Components
+*   **Columns (Attributes):** The vertical fields in a table that define the specific type of data being stored (e.g., `username`, `email`, `created_at`).
+*   **Rows (Records):** The horizontal entries in a table representing a single, unique data item or user profile.
+
+### 🔑 Database Keys & Relationships
+*   **Primary Keys:** A unique identifier column (like `user_id`) that ensures no two rows in the same table can be identical.
+*   **Foreign Keys:** A column in one table that references a Primary Key in another table, physically linking the two data sets together.
+
+---
+
+---
 ---
 ---
 ---
