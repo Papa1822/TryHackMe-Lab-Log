@@ -962,7 +962,12 @@ Implementing standard coding baseline habits reduces a web application's active 
 *   **Minify and Obfuscate Production Code:** Compressing and scrambling your scripts shrinks file delivery sizes, improves load speeds, and forces adversaries to expend significant effort reverse-engineering your logic.
 
 ---
+---
 
+## Lab: SQL Fundamentals (TryHackMe - Cyber101)
+
+## 🖥️ Overview
+This lab covers the core principles of Structured Query Language (SQL).
 ---
 ---
 ---
