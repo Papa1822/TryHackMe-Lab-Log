@@ -970,6 +970,10 @@ Implementing standard coding baseline habits reduces a web application's active 
 This lab covers the core principles of Structured Query Language (SQL).
 ---
 
+### 🏛️ Definitions: SQL vs. DBMS
+*   **DBMS (Database Management System):** The master software suite used to create, manage, and administrative control over database files (e.g., MySQL, Microsoft SQL Server, Oracle).
+*   **SQL (Structured Query Language):** The universal, standardized programming language used specifically to send commands to a relational DBMS to read, write, and modify records.
+
 ## 🗄️ Database Architecture & Key Concepts
 
 Databases are categorized by how they organize data. Relational databases use rigid tables, while non-relational databases use flexible document formats.
