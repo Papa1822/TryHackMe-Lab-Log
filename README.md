@@ -1022,6 +1022,24 @@ CRUD operations form the core functionality of any database-driven web applicati
 * **Read (SELECT statement) ** - Retrieves record from the table.
 * **Update (UPDATE statement) ** - Modifies existing data in the table.
 * **Delete (DELETE statement) ** - Removes record from the table.
+
+  ---
+
+## 📊 SQL Aggregation, De-duplication, & Sorting Clauses
+
+Advanced SQL clauses allow you to group, clean, and refine query outputs. Defenders monitor these parameters closely, as attackers utilize them to footprint database schemas and map backend structural tables.
+
+### ⚙️ Clause Definitions, Syntaxes, & Functions
+
+*   **`DISTINCT`:** Eliminates all duplicate rows from a query result, returning only completely unique data values.
+    *   *Example:* `SELECT DISTINCT role FROM users;` (Returns only unique roles like `Admin`, `User`, `Guest`, filtering out repetitive entries).
+*   **`GROUP BY`:** Arranges identical data rows into summary groups, typically paired with aggregate functions like `COUNT()`, `MAX()`, or `SUM()`.
+    *   *Example:* `SELECT role, COUNT(*) FROM users GROUP BY role;` (Counts and groups users by their assigned role profile type).
+*   **`ORDER BY`:** Sorts the retrieved data records in ascending (`ASC`) or descending (`DESC`) numerical or alphabetical sequence.
+    *   *Example:* `SELECT username FROM users ORDER BY created_at DESC;` (Displays users starting from the newest registration down to the oldest).
+*   **`HAVING`:** Filters grouped records compiled by a `GROUP BY` clause, functioning exactly like a `WHERE` statement but specifically for aggregated data sets.
+    *   *Example:* `SELECT role, COUNT(*) FROM users GROUP BY role HAVING COUNT(*) > 5;` (Only displays roles that have more than five total users assigned).
+
 ---
 ---
 ---
