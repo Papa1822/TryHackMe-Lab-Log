@@ -1040,6 +1040,16 @@ Advanced SQL clauses allow you to group, clean, and refine query outputs. Defend
 *   **`HAVING`:** Filters grouped records compiled by a `GROUP BY` clause, functioning exactly like a `WHERE` statement but specifically for aggregated data sets.
     *   *Example:* `SELECT role, COUNT(*) FROM users GROUP BY role HAVING COUNT(*) > 5;` (Only displays roles that have more than five total users assigned).
 
+    ### 🕵️‍♂️ Cybersecurity Perspectives
+
+| Clause Name | Structural Exploitation & Analysis Use Cases |
+| :--- | :--- |
+| **`DISTINCT`** | Used by attackers during data reconnaissance to quickly extract unique database roles, domain names, or system layout architectures. |
+| **`GROUP BY`** | Threat actors abuse grouping functions to systematically map out backend column configurations when exploiting error-based vulnerabilities. |
+| **`ORDER BY`** | The primary tool for **Blind SQL Injection** mapping. Attackers sort by non-existent columns (e.g., `ORDER BY 5`) to determine the exact number of active columns. |
+| **`HAVING`** | Injected by adversaries to trigger explicit system database errors, forcing the backend host to leak private schema names or table structures. |
+
+
 ---
 ---
 ---
