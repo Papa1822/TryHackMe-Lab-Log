@@ -1013,7 +1013,15 @@ DDL statements modify the structural layout of your databases and tables rather 
     *   *Security Control:* Access to `ALTER` and `DROP` routines must be restricted using strict Principle of Least Privilege role permissions.
 
 ---
+## 💾 Data Manipulation Language (DML): CRUD Operations
 
+CRUD operations form the core functionality of any database-driven web application. They map directly to specific Data Manipulation Language (DML) statements used to interact with data records.
+
+### 🔄 The CRUD to SQL Mapping
+* ** Create (INSERT statement) ** - Adds a new record to the table.
+* **Read (SELECT statement) ** - Retrieves record from the table.
+* **Update (UPDATE statement) ** - Modifies existing data in the table.
+* **Delete (DELETE statement) ** - Removes record from the table.
 ---
 ---
 ---
