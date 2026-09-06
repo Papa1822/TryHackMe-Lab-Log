@@ -1049,6 +1049,38 @@ Advanced SQL clauses allow you to group, clean, and refine query outputs. Defend
 | **`ORDER BY`** | The primary tool for **Blind SQL Injection** mapping. Attackers sort by non-existent columns (e.g., `ORDER BY 5`) to determine the exact number of active columns. |
 | **`HAVING`** | Injected by adversaries to trigger explicit system database errors, forcing the backend host to leak private schema names or table structures. |
 
+---
+---
+
+## ⚡ Mastering SQL Operators
+
+Operators are symbols and keywords used within SQL statements to perform comparisons, arithmetic calculations, and complex logical filtering. In database hacking, manipulating these operators allows attackers to rewrite query logic completely.
+
+### 🧩 Core Operator Categories
+
+#### 1. Logical Operators
+Used to combine multiple conditions or negate expressions within a `WHERE` or `HAVING` clause.
+
+| Operator | Function | Example Syntax | Security Significance |
+| :--- | :--- | :--- | :--- |
+| **`AND`** | Returns true if **all** combined conditions separated by the operator are true. | `WHERE status = 'Active' AND role = 'User'` | Restricts access; both parameters must pass for data to return. |
+| **`OR`** | Returns true if **any** condition separated by the operator is true. | `WHERE username = 'admin' OR 1=1` | **Primary Injection Target:** Attackers append `OR 1=1` to force queries to always return true, bypassing login forms. |
+| **`NOT`** | Inverts the true/false value of the condition that follows it. | `WHERE NOT role = 'Administrator'` | Used by analysts to filter out known corporate safe traffic during incident triage. |
+| **`IN`** | Checks if a value matches any entry inside a specified list or subquery. | `WHERE id IN (1, 2, 3)` | Attackers abuse this to pull massive lists of target profiles simultaneously. |
+
+#### 2. Comparison Operators
+Used to determine equality or data ranges between columns and values.
+
+| Operator | Function | Example Syntax | Security Significance |
+| :--- | :--- | :--- | :--- |
+| **`=`** | Checks if two values are equal. | `WHERE username = 'guest'` | Strict equality mapping; frequently targeted for basic injection string bypasses. |
+| **`!=` or `<>`** | Checks if two values are not equal. | `WHERE salary <> 0` | Used in logic bypass payloads to systematically filter out baseline system checks. |
+| **`>` / `<`** | Checks if a value is greater than or less than another value. | `WHERE user_id > 100` | Critical for **Blind SQLi numerical extraction** to guess character values step-by-step. |
+| **`LIKE`** | Searches for a specific text pattern using wildcards like `%`. | `WHERE email LIKE '%@corp.com'` | Threat actors use wildcards to brute-force map hidden schema tables or system files. |
+
+---
+
+
 
 ---
 ---
