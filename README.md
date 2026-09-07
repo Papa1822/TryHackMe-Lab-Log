@@ -586,7 +586,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Blue (MS17-010)** | Exploitation |  	Full Kill-Chain: Recon, MS17-010 Exploit, PrivEsc & Hash Cracking. | ✅ Completed |
 | **Web Application Basics** | Web Security| Core components of web applications, client-server models, and standard web technologies | ✅ Completed|
 | **Javascript Essentials** | Web Security |Client-Side Execution, DOM, & XSS Dialogue Abuse |  ✅ Completed |
-| **SQL Fundamentals** | 🗄️ Database Security  | Database Types, Structural Elements, & Relational Keys | | 🟡 In Progress |
+| **SQL Fundamentals** | 🗄️ Database Security  | Database Types, Structural Elements, & Relational Keys | |  ✅ Completed |
 ---
 
 ### 🔍 Technical Evidence & Writeups
