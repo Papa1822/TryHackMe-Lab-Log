@@ -1080,6 +1080,45 @@ Used to determine equality or data ranges between columns and values.
 
 ---
 
+---
+
+## 🔢 Mastering SQL Functions
+
+SQL Functions are built-in tools used to perform calculations or manipulate text strings directly within a query. Security analysts evaluate function usage closely, as threat actors leverage them to map backend metadata or extract protected credentials.
+
+### 🧵 1. String Functions
+These functions operate on individual text string fields to manipulate characters, format outputs, or combine data.
+
+*   **`CONCAT()`:** Joins two or more text strings together into a single string.
+    *   *Example:* `SELECT CONCAT(first_name, ' ', last_name) FROM users;`
+    *   *Security Impact:* Attackers use this to combine extracted database names and table structures into a single line to exfiltrate data cleaner.
+*   **`GROUP_CONCAT()`:** Concatenates multiple values from separate rows into a single, comma-separated text string.
+    *   *Example:* `SELECT GROUP_CONCAT(username) FROM users;`
+    *   *Security Impact:* **High-Value Reconnaissance:** Allows attackers to dump an entire column of data (like all usernames) in a single query response.
+*   **`SUBSTRING()`:** Extracts a specific portion of characters from a text string based on a starting position and a defined length.
+    *   *Example:* `SELECT SUBSTRING(password, 1, 1) FROM users WHERE username = 'admin';`
+    *   *Security Impact:* **Blind SQLi Extraction:** Combined with logic checks to isolate and steal passwords or flags character-by-character.
+*   **`LENGTH()`:** Measures and returns the total character count of a specified text string.
+    *   *Example:* `SELECT LENGTH(password) FROM users WHERE username = 'admin';`
+    *   *Security Impact:* Used in data brute-forcing to first figure out exactly how long a target password hash is before attempting to dump it.
+
+### 📊 2. Aggregate Functions
+These functions perform a mathematical calculation on a set of values across multiple rows and return a single summarizing value.
+
+*   **`COUNT()`:** Returns the total number of rows that match your specific query criteria.
+    *   *Example:* `SELECT COUNT(*) FROM users WHERE role = 'Admin';`
+    *   *Security Impact:* Helps threat actors quickly verify the exact number of administrative or high-value accounts present.
+*   **`SUM()`:** Calculates the total added sum of a numeric column.
+    *   *Example:* `SELECT SUM(balance) FROM bank_accounts;`
+    *   *Security Impact:* A primary target during financial data exfiltration or auditing for anomalous transaction volumes.
+*   **`MAX()`:** Retrieves the absolute highest value within a specific numeric column.
+    *   *Example:* `SELECT MAX(user_id) FROM users;`
+    *   *Security Impact:* Used by adversaries to identify the most recently created user account or the highest privilege group ID.
+*   **`MIN()`:** Retrieves the absolute lowest value within a specific numeric column.
+    *   *Example:* `SELECT MIN(user_id) FROM users;`
+    *   *Security Impact:* Helps map database index limits and locate the primary default administrator profile (usually `user_id = 1`).
+
+---
 
 
 ---
