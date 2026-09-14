@@ -1232,7 +1232,22 @@ To establish the data stream between the browser interface and Burp Suite, execu
 - **Port Matching is Vital:** If the port numbers in your browser extension configuration do not match the listener settings inside Burp Suite exactly, your browser will return a network connection error.
 
 ---
+##Sitemap and issue definitions:
 
+## ⚙️ Core Mapping Concepts
+*   **The Site Map Tree:** As you browse a web application while proxied through Burp, the tool automatically compiles a hierarchical folder structure of every directory, file, and script it observes.
+*   **Passive vs. Active Crawling:** Black text entries represent pages your browser has explicitly loaded (visited), while grayed-out entries indicate paths Burp has inferred or found linked in source code but hasn't directly requested yet.
+*   **Vulnerability Definitions:** The built-in issue reference library details exactly what various web vulnerabilities are, their risk severity levels, and standard remediation advice.
+
+---
+
+## 🛠️ Target Component Breakdown & Operational Settings
+
+| Component Name | Technical Purpose | Penetration Testing Workflow Value |
+| :--- | :--- | :--- |
+| **Site Map** | Displays a real-time, visual tree map of all target web domains and subdirectory assets [1.1]. | **Reconnaissance:** Allows an auditor to map out hidden endpoints or administrative folders exposed in traffic. |
+| **Scope Control** | Filters out noisy background traffic, locking Burp's tools to focus strictly on defined target URLs [1.1]. | **Legal Protection:** Ensures automated fuzzing strings do not hit unauthorized, out-of-scope third-party servers. |
+| **Issue Definitions** | A comprehensive baseline directory of web vulnerabilities containing severity scales and CVE backgrounds [1.1]. | **Reporting:** Serves as a direct reference guide to copy standardized definitions into client penetration test reports. |
 ---
 ---
 ---
