@@ -1178,6 +1178,32 @@ The **Dashboard** tab is the central monitoring hub of Burp Suite. It provides a
 ---
 
 
+## 🧭 Navigating the Burp Suite Interface
+
+Navigating Burp Suite efficiently is key to maintaining a fast operational workflow during an assessment. The interface relies on a top-level tabbed menu layout, global configurations, and productivity shortcuts.
+
+### ⚙️ Core Navigation Elements
+
+*   **Top-Level Tabs:** The primary navigation bar used to jump between main tool modules (e.g., Dashboard, Target, Proxy, Intruder, Repeater).
+*   **Sub-Tabs:** Located directly beneath the top-level tabs when a specific tool is active, allowing you to access granular options (e.g., `Proxy -> Intercept`, `Proxy -> HTTP history`).
+*   **Settings Menu (Global vs. Project):** Accessible via the gear icon or the top menu. **Global Settings** apply to the entire Burp Suite application across all launches, while **Project Settings** apply strictly to the currently active save file.
+*   **Detached Windows:** Burp allows you to pop out individual tabs into separate windows, making it highly effective for multi-monitor setups.
+---
+
+### ⚡ Essential Navigation & Workflow Shortcuts
+
+Mastering keyboard shortcuts drastically cuts down on manual right-clicking and streamlines packet manipulation:
+
+| Keyboard Shortcut | Targeted Tab Interface Component |
+| :--- | :--- |
+| **`Ctrl + Shift + D`** | Dashboard |
+| **`Ctrl + Shift + T`** | Target tab |
+| **`Ctrl + Shift + P`** | Proxy tab |
+| **`Ctrl + Shift + I`** | Intruder tab |
+| **`Ctrl + Shift + R`** | Repeater tab |
+
+---
+
 ---
 ---
 ---
