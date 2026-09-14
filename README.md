@@ -1120,7 +1120,25 @@ These functions perform a mathematical calculation on a set of values across mul
     *   *Security Impact:* Helps map database index limits and locate the primary default administrator profile (usually `user_id = 1`).
 
 ---
+---
+---
 
+## Lab: Burp Suite Basics (TryHackMe - Cyber101)
+
+## 🖥️ Overview
+This lab covers the fundamentals of **Burp Suite**, the industry-standard web proxy tool used for security auditing and web application penetration testing. It explores how to intercept network traffic, analyze raw HTTP requests/responses, and manipulate data parameters to uncover hidden vulnerabilities.
+
+---
+ ## 🏗️ Burp Suite Editions & Multi-Tool Architecture
+
+Burp Suite is a Java-based framework designed as a unified suite of tools for auditing web and mobile application security. Depending on the scale of an engagement, professionals leverage three primary editions:
+
+### 🏢 The Three Available Editions
+*   **Community Edition:** The free tier optimized for manual security testing. It lacks an automated scanner and throttles background rate-limiting features, but contains all core packet manipulation utilities.
+*   **Professional Edition:** The standard toolkit for penetration testers. It features an advanced automated vulnerability scanner, unrestrained fuzzing, project saving, and custom script extensions.
+*   **Enterprise Edition:** A server-based automated suite designed for organizations. It schedules continuous, automated scanning routines across entire corporate web estates without local machine installation.
+
+---
 
 ---
 ---
@@ -1136,4 +1154,4 @@ These functions perform a mathematical calculation on a set of values across mul
 | Company | Program | Task Completed | Key Skill |
 | :--- | :--- | :--- | :--- |
 | **Mastercard** | [Cybersecurity](https://www.theforage.com) | Phishing Analysis (Task 1) | Threat Detection & Social Engineering |
-.
+
