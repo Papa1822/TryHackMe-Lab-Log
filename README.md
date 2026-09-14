@@ -1139,6 +1139,19 @@ Burp Suite is a Java-based framework designed as a unified suite of tools for au
 *   **Enterprise Edition:** A server-based automated suite designed for organizations. It schedules continuous, automated scanning routines across entire corporate web estates without local machine installation.
 
 ---
+## 🛠️ The Internal Core Tool Toolkit
+
+Burp Suite consolidates several independent security utilities into a single tabbed interface. Each tool handles a specific phase of a web application assessment:
+
+| Core Tool Component | Technical Purpose | Operational Penetration Testing Action |
+| :--- | :--- | :--- |
+| **Proxy** | Intercepts, views, and modifies live HTTP/HTTPS traffic moving between the browser and the target. | The foundational tool. It pauses requests mid-flight, letting analysts inspect headers or alter request parameters manually. |
+| **Target** | Compiles structural site directories, defining exactly which hosts are in-scope or out-of-scope. | **Site Mapping:** Automatically logs all crawled directories and folders into a clean visual tree to minimize accidental out-of-scope testing. |
+| **Repeater** | Captures individual HTTP requests and lets users modify them and resend them manually multiple times. | **Input Fuzzing:** Used to quickly tweak authentication payloads or injection strings without re-filling forms inside the web browser interface. |
+| **Intruder** | Automates customized, structured requests against web endpoints for fuzzing or credential-stuffing. | **Brute-Forcing:** Iteratively injects massive dictionary wordlists (e.g., passwords or hidden directories) into specified request positions. |
+| **Sequencer** | Analyzes the quality of randomness in a sample of data tokens, session IDs, or anti-CSRF tokens. | **Entropy Analysis:** Used to determine if session identifiers are mathematically predictable, which could allow session hijacking attacks. |
+| **Decoder** | Encodes or decodes text elements instantly using various data formats (Base64, Hex, URL, HTML). | **Payload Translation:** Used to unscramble base64 cookies or encode complex payload bypass characters so the backend interpreter executes them properly. |
+| **Comparer** | Performs a word-by-word or byte-by-byte visual comparison between two separate HTTP requests or responses. | **Differential Analysis:** Helps pinpoint exactly how a server's code responses differ when a successful payload executes versus a failed attempt. |
 
 ---
 ---
