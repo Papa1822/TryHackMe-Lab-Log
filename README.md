@@ -587,6 +587,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Web Application Basics** | Web Security| Core components of web applications, client-server models, and standard web technologies | ✅ Completed|
 | **Javascript Essentials** | Web Security |Client-Side Execution, DOM, & XSS Dialogue Abuse |  ✅ Completed |
 | **SQL Fundamentals** | 🗄️ Database Security  | Database Types, Structural Elements, & Relational Keys | |  ✅ Completed |
+| **Burp Suite Basics** | 🛠️ Security Tools | Intercepting Proxies, Tool Architecture, & Traffic Auditing |  🟡 In Progress |
 ---
 
 ### 🔍 Technical Evidence & Writeups
