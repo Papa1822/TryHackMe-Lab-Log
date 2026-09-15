@@ -587,7 +587,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Web Application Basics** | Web Security| Core components of web applications, client-server models, and standard web technologies | ✅ Completed|
 | **Javascript Essentials** | Web Security |Client-Side Execution, DOM, & XSS Dialogue Abuse |  ✅ Completed |
 | **SQL Fundamentals** | 🗄️ Database Security  | Database Types, Structural Elements, & Relational Keys | |  ✅ Completed |
-| **Burp Suite Basics** | 🛠️ Security Tools | Intercepting Proxies, Tool Architecture, & Traffic Auditing |  🟡 In Progress |
+| **Burp Suite Basics** | 🛠️ Security Tools | Intercepting Proxies, Tool Architecture, & Traffic Auditing |  ✅ Completed |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1281,6 +1281,38 @@ To establish a trusted HTTPS bridge between your custom browser profile and Burp
 
 ---
 
+## Example Attack (Exploitation & Parameter Manipulation)
+
+## 🖥️ Overview
+This section covers a practical **Example Attack** using Burp Suite to intercept, analyze, and manipulate active web application traffic. By intercepting data packets mid-flight, client-side input validation controls were completely bypassed to change the intended logic of the application.
+
+## ⚙️ Core Attack Concepts
+*   **Parameter Tampering:** Changing values inside an HTTP request (like a user ID, price, or boolean flag) after the browser sends it, but before the server processes it.
+*   **Intercept-and-Modify Workflow:** Turning on Burp's Intercept switch freezes a specific request. This lets the operator inspect the payload, insert a malicious string, and forward the modified packet to the server.
+*   **Bypassing Client Restrictions:** Proves that security controls built strictly on the front-end (like hidden form inputs or locked drop-down menus) offer zero actual security against a proxy tool.
+
+---
+<!-- Linked lab screenshot showing your successful parameter manipulation exploit -->
+![Burp Suite Example Attack](images/burp-suite-example-attack.png)
+---
+
+## 🛠️ Step-by-Step Exploitation Routine
+
+To successfully manipulate the target parameters and capture the objective flag, execute these operational steps:
+
+*   **Stage the Environment:** Turn on your browser proxy via FoxyProxy and navigate to the target web application page.
+*   **Arm the Proxy:** Open Burp Suite, head to `Proxy -> Intercept`, and verify that **Intercept is on**.
+*   **Trigger the Request:** Perform the action on the webpage (such as submitting a form or clicking a login button) to catch the packet in Burp.
+*   **Modify the Parameter:** Locate the target variable inside the raw request body or headers and alter its value (e.g., changing a price variable or inserting an administrative user string).
+*   **Forward the Exploit:** Click the **Forward** button to send your modified request to the server, then turn intercept off to view your captured flag or altered response page.
+
+---
+
+## 🔍 Key Takeaways
+- **The Client-Side Fallacy:** Front-end code cannot restrict what a user sends to a backend server. If the server does not independently validate the data it receives, the application is inherently vulnerable.
+- **Precision Traffic Tuning:** Using the intercept toggle button carefully allows you to isolate and target a single specific network transaction without halting the rest of your background browser activities.
+
+---
 ---
 ---
 ---
