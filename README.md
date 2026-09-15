@@ -1123,7 +1123,7 @@ These functions perform a mathematical calculation on a set of values across mul
 ---
 ---
 
-## Lab: Burp Suite Basics (TryHackMe - Cyber101)
+### Lab: Burp Suite Basics (TryHackMe - Cyber101)
 
 ## 🖥️ Overview
 This lab covers the fundamentals of **Burp Suite**, the industry-standard web proxy tool used for security auditing and web application penetration testing. It explores how to intercept network traffic, analyze raw HTTP requests/responses, and manipulate data parameters to uncover hidden vulnerabilities.
@@ -1182,7 +1182,7 @@ The **Dashboard** tab is the central monitoring hub of Burp Suite. It provides a
 
 Navigating Burp Suite efficiently is key to maintaining a fast operational workflow during an assessment. The interface relies on a top-level tabbed menu layout, global configurations, and productivity shortcuts.
 
-### ⚙️ Core Navigation Elements
+## ⚙️ Core Navigation Elements
 
 *   **Top-Level Tabs:** The primary navigation bar used to jump between main tool modules (e.g., Dashboard, Target, Proxy, Intruder, Repeater).
 *   **Sub-Tabs:** Located directly beneath the top-level tabs when a specific tool is active, allowing you to access granular options (e.g., `Proxy -> Intercept`, `Proxy -> HTTP history`).
@@ -1232,7 +1232,7 @@ To establish the data stream between the browser interface and Burp Suite, execu
 - **Port Matching is Vital:** If the port numbers in your browser extension configuration do not match the listener settings inside Burp Suite exactly, your browser will return a network connection error.
 
 ---
-##Sitemap and issue definitions:
+## Sitemap and issue definitions:
 
 ## ⚙️ Core Mapping Concepts
 *   **The Site Map Tree:** As you browse a web application while proxied through Burp, the tool automatically compiles a hierarchical folder structure of every directory, file, and script it observes.
@@ -1249,6 +1249,38 @@ To establish the data stream between the browser interface and Burp Suite, execu
 | **Scope Control** | Filters out noisy background traffic, locking Burp's tools to focus strictly on defined target URLs [1.1]. | **Legal Protection:** Ensures automated fuzzing strings do not hit unauthorized, out-of-scope third-party servers. |
 | **Issue Definitions** | A comprehensive baseline directory of web vulnerabilities containing severity scales and CVE backgrounds [1.1]. | **Reporting:** Serves as a direct reference guide to copy standardized definitions into client penetration test reports. |
 ---
+---
+
+##  Proxying HTTPS (CA Certificate Installation)
+
+## 🖥️ Overview
+This section covers how to configure your browser to safely proxy **HTTPS (TLS encrypted)** traffic through Burp Suite. By importing Burp Suite's custom Certificate Authority (CA), you resolve browser security blocks and allow full packet inspection on secure websites.
+
+## ⚙️ Core HTTPS Interception Concepts
+*   **The TLS Interruption:** HTTPS encrypts traffic to stop Man-in-the-Middle (MitM) viewing. When you route encrypted traffic through Burp, your browser detects the proxy intercepting the packet and blocks the connection with a severe security warning (e.g., "Your connection is not private").
+*   **The CA Certificate Solution:** To cleanly read secure data, you must install Burp's unique Certificate Authority (`cacert.der`) into your browser's trusted certificate root store.
+*   **Decrypt and Re-encrypt Pipeline:** Once installed, your browser trusts Burp to generate on-the-fly SSL certificates for any website you visit. This allows Burp to decrypt, log, and re-encrypt the data stream seamlessly.
+
+---
+
+## 🛠️ Step-by-Step CA Certificate Installation (Firefox Example)
+
+To establish a trusted HTTPS bridge between your custom browser profile and Burp Suite, execute these configuration tasks:
+
+*   **Download the Certificate:** Ensure FoxyProxy is turned on and pointing to Burp. Navigate to `http://http-burp` or `http://burp/cert` in your URL search bar to automatically download the raw `cacert.der` file.
+*   **Open Browser Certificate Settings:** Go to your browser's main settings panel, type `Certificates` into the search bar, and click on **View Certificates**.
+*   **Import the File:** Under the *Authorities* tab, click the **Import** button and select your downloaded `cacert.der` file.
+*   **Assign Trust Permissions:** Check the box that states **"Trust this CA to identify websites"** and hit *OK* to finalize.
+*   **Verify Connection:** Navigate to a secure HTTPS website (like `https://google.com`). The page should load without errors, and the raw HTTPS stream will populate inside Burp's **HTTP history** tab.
+
+---
+
+## 🔍 Key Takeaways
+- **Bypassing the Security Guard:** Browsers are designed to flag unauthorized packet parsing. Manually installing the CA certificate establishes an explicit exception rule, allowing you to audit encrypted web application logic legally.
+- **AttackBox Advantage:** If you choose to use the built-in TryHackMe AttackBox environment instead of a local machine setup, this entire HTTPS CA certificate chain is already completely pre-configured for you out of the box.
+
+---
+
 ---
 ---
 ---
