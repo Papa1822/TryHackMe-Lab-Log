@@ -1123,7 +1123,7 @@ These functions perform a mathematical calculation on a set of values across mul
 ---
 ---
 
-### Lab: Burp Suite Basics (TryHackMe - Cyber101)
+# Lab: Burp Suite Basics (TryHackMe - Cyber101)
 
 ## 🖥️ Overview
 This lab covers the fundamentals of **Burp Suite**, the industry-standard web proxy tool used for security auditing and web application penetration testing. It explores how to intercept network traffic, analyze raw HTTP requests/responses, and manipulate data parameters to uncover hidden vulnerabilities.
