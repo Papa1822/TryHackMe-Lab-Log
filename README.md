@@ -1333,7 +1333,41 @@ This lab covers the fundamentals of **THC-Hydra**, an industry-standard parallel
 ![Hydra Lab](images/hydra-webform.png)
 ---
 
+---
 
+## 🛠️ Operational Command Execution Playbook
+
+Hydra requires highly specific syntax strings depending on whether you are attacking a simple network protocol (like SSH) or a web-based login interface (like an HTTP Form).
+
+### 🔑 1. Attack Vector: SSH Service Brute-Forcing
+Used to target network infrastructure management ports where a single username is known but the password needs to be audited:
+
+```bash
+hydra -l username -P /usr/share/wordlists/rockyou.txt ssh://TARGET_IP
+```
+*   **`-l`:** Specifies a single, known target username.
+*   **`-P`:** Points to the absolute file path of the password wordlist (dictionary).
+*   **`ssh://`:** Defines the network protocol scheme and target destination host.
+
+### 🌐 2. Attack Vector: HTTP Web Form Brute-Forcing
+A highly specialized attack vector targeting standard web application login panels. This requires capturing the raw form parameters using web developer tools or a proxy:
+
+```bash
+hydra -l admin -P /usr/share/wordlists/rockyou.txt TARGET_IP http-post-form "/login.php:username=^USER^&password=^PASS^:F=Invalid password"
+```
+*   **`http-post-form`:** Tells Hydra to utilize an HTTP POST request to submit the form data.
+*   **`"/login.php..."`:** The arguments block split cleanly into three sections by colons (`:`):
+    1.  `/login.php` ➡️ The precise URL directory path where the form is submitted.
+    2.  `username=^USER^&password=^PASS^` ➡️ The exact parameter input fields (Hydra automatically injects wordlist items into the `^USER^` and `^PASS^` placeholders).
+    3.  `F=Invalid password` ➡️ The **Failure Condition**. This tells Hydra exactly what text string to look for on the page to know a password guess failed.
+
+---
+
+## 🔍 Key Takeaways
+- **The Account Lockout Threat:** Because online brute-forcing interacts directly with live services, it creates massive noise in system logs and can easily trigger account lockout policies, disrupting business operations.
+- **Precision in Web Forms:** Web form cracking requires absolute string accuracy. If the failure message (`F=`) or form parameter names do not match the raw page source code perfectly, Hydra will false-positive or fail completely.
+
+---
 ---
 ---
 ---
