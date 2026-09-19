@@ -588,6 +588,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Javascript Essentials** | Web Security |Client-Side Execution, DOM, & XSS Dialogue Abuse |  ✅ Completed |
 | **SQL Fundamentals** | 🗄️ Database Security  | Database Types, Structural Elements, & Relational Keys | |  ✅ Completed |
 | **Burp Suite Basics** | 🛠️ Security Tools | Intercepting Proxies, Tool Architecture, & Traffic Auditing |  ✅ Completed |
+| **Hydra** | 🛠️ Security Tools | Online Password Attacks, Wordlists, & Protocol Brute-forcing |  🟡 In Progress |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1292,7 +1293,7 @@ This section covers a practical **Example Attack** using Burp Suite to intercept
 *   **Bypassing Client Restrictions:** Proves that security controls built strictly on the front-end (like hidden form inputs or locked drop-down menus) offer zero actual security against a proxy tool.
 
 ---
-<!-- Linked lab screenshot showing your successful parameter manipulation exploit -->
+<!-- Linked lab screenshot showing  successful parameter manipulation exploit -->
 ![Burp Suite Example Attack](images/burp-suite-example-attack.png)
 ---
 
@@ -1311,6 +1312,27 @@ To successfully manipulate the target parameters and capture the objective flag,
 ## 🔍 Key Takeaways
 - **The Client-Side Fallacy:** Front-end code cannot restrict what a user sends to a backend server. If the server does not independently validate the data it receives, the application is inherently vulnerable.
 - **Precision Traffic Tuning:** Using the intercept toggle button carefully allows you to isolate and target a single specific network transaction without halting the rest of your background browser activities.
+
+---
+---
+---
+---
+
+## Lab: Hydra (Network Brute-Forcing & Password Cracking)
+
+## 🖥️ Overview
+This lab covers the fundamentals of **THC-Hydra**, an industry-standard parallelized login cracker. It explores how to perform online brute-force and dictionary attacks against authentication gates, helping penetration testers audit password strength and spot weak account defenses across diverse network protocols.
+
+## ⚙️ Core Brute-Forcing Concepts
+*   **Online Password Cracking:** Unlike offline tools (like John the Ripper or Hashcat) that crack stolen hashes locally, Hydra cracks passwords **online** by interacting directly with a live network login interface in real-time.
+*   **Dictionary Attacks:** Rather than randomly guessing every character combination, Hydra uses targeted wordlists containing thousands of common, pre-compiled passwords (like `rockyou.txt`) to hit the login service sequentially.
+*   **Parallelization / Threading:** Hydra speeds up online cracking by establishing multiple simultaneous network connections (threads) to test multiple password possibilities at the exact same time.
+
+---
+
+![Hydra Lab](images/hydra-webform.png)
+---
+
 
 ---
 ---
