@@ -588,7 +588,8 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Javascript Essentials** | Web Security |Client-Side Execution, DOM, & XSS Dialogue Abuse |  ✅ Completed |
 | **SQL Fundamentals** | 🗄️ Database Security  | Database Types, Structural Elements, & Relational Keys | |  ✅ Completed |
 | **Burp Suite Basics** | 🛠️ Security Tools | Intercepting Proxies, Tool Architecture, & Traffic Auditing |  ✅ Completed |
-| **Hydra** | 🛠️ Security Tools | Online Password Attacks, Wordlists, & Protocol Brute-forcing |  🟡 In Progress |
+| **Hydra** | 🛠️ Security Tools | Online Password Attacks, Wordlists, & Protocol Brute-forcing |   ✅ Completed  |
+| **Gobuster Basics** | 🛠️ Security Tools | Directory Busting, DNS Subdomain Hunting, & Status Codes |  🟡 In Progress 
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1366,7 +1367,22 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt TARGET_IP http-post-form "/lo
 ## 🔍 Key Takeaways
 - **The Account Lockout Threat:** Because online brute-forcing interacts directly with live services, it creates massive noise in system logs and can easily trigger account lockout policies, disrupting business operations.
 - **Precision in Web Forms:** Web form cracking requires absolute string accuracy. If the failure message (`F=`) or form parameter names do not match the raw page source code perfectly, Hydra will false-positive or fail completely.
+---
+---
+---
+---
 
+## Lab: Gobuster Basics (TryHackMe - Cyber101)
+
+## 🖥️ Overview
+This lab covers the fundamentals of **Gobuster**, a high-performance command-line utility written in Go. It explores how to perform rapid brute-force attacks against target web application infrastructure to unearth hidden directories, discover unlinked files, and map exposed subdomains.
+
+## ⚙️ Core Enumeration Concepts
+*   **Directory Busting (Dir Mode):** Web administrators often leave sensitive directories or scripts unlinked from the main user interface. Gobuster hunts for these hidden paths by systematically requesting thousands of folder names from a wordlist.
+*   **DNS Subdomain Discovery (DNS Mode):** Used to identify hidden development servers, internal portals, or staging environments by brute-forcing DNS records associated with a root domain.
+*   **The Power of HTTP Status Codes:** Gobuster reads the server's immediate HTTP responses (like `200 OK` for valid files, `403 Forbidden` for restricted paths, or `301` for redirects) to determine if a hidden asset exists.
+
+---
 ---
 ---
 ---
