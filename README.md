@@ -1381,6 +1381,9 @@ This lab covers the fundamentals of **Gobuster**, a high-performance command-lin
 *   **Directory Busting (Dir Mode):** Web administrators often leave sensitive directories or scripts unlinked from the main user interface. Gobuster hunts for these hidden paths by systematically requesting thousands of folder names from a wordlist.
 *   **DNS Subdomain Discovery (DNS Mode):** Used to identify hidden development servers, internal portals, or staging environments by brute-forcing DNS records associated with a root domain.
 *   **The Power of HTTP Status Codes:** Gobuster reads the server's immediate HTTP responses (like `200 OK` for valid files, `403 Forbidden` for restricted paths, or `301` for redirects) to determine if a hidden asset exists.
+---
+![Gobuster Basics Lab](images/gobuster.png)
+---
 
 ---
 ---
