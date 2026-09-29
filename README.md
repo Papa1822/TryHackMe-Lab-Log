@@ -1385,6 +1385,42 @@ This lab covers the fundamentals of **Gobuster**, a high-performance command-lin
 ![Gobuster Basics Lab](images/gobuster.png)
 ---
 
+
+## 🛠️ Operational Command Execution Playbook
+
+Gobuster requires distinct operational switches depending on the targeted discovery objective. The primary execution flags include:
+
+### 📁 1. Target Directory & File Discovery (`dir` mode)
+Used to brute-force web servers for hidden directories and unlinked configuration files:
+
+```bash
+gobuster dir -u http://TARGET_IP -w /usr/share/wordlists/dirb/common.txt -x php,txt,bak
+```
+*   **`dir`:** Sets the operational mode to look for directories and files [1.1].
+*   **`-u`:** Defines the target URL or destination host IP address [1.1].
+*   **`-w`:** Specifies the directory path to the user's preferred wordlist dictionary [1.1].
+*   **`-x`:** Searches for specific file extensions appended to the words (e.g., hunting for backup scripts or text files) [1.1].
+
+### 🕵️‍♂️ 2. DNS Subdomain Mapping (`dns` mode)
+Used to identify valid, unlinked subdomains belonging to a primary root domain:
+
+```bash
+gobuster dns -d targetdomain.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1mil-5000.txt
+```
+*   **`dns`:** Toggles the operational mode to perform domain name server queries [1.1].
+*   **`-d`:** Sets the specific target base domain to append subdomains onto [1.1].
+
+### 🌐 3. Virtual Host Enumeration (`vhost` mode)
+Used to brute-force a web server to discover valid virtual hosts (vhosts). This is essential when multiple websites are hosted on a single IP address and rely on different host headers:
+
+```bash
+gobuster vhost -u http://TARGET_IP -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1mil-5000.txt
+```
+*   **`vhost`:** Toggles the operational mode to check for virtual host configurations on the web server.
+*   **`-u`:** Points to the base URL or target server IP hosting the services [1.1].
+
+---
+
 ---
 ---
 ---
