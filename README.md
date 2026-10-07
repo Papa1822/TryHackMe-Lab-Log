@@ -1451,6 +1451,10 @@ A shell listener is a utility configured on the attacker's machine to keep a spe
     *   `-v`: Enables **Verbose** tracking to output logs when a host hits the port.
     *   `-n`: Disables DNS resolution to speed up connections.
     *   `-p 443`: Specifies the exact local incoming port to monitor.
+---
+---
+---
+
 
 ---
 ---
