@@ -590,7 +590,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Burp Suite Basics** | 🛠️ Security Tools | Intercepting Proxies, Tool Architecture, & Traffic Auditing |  ✅ Completed |
 | **Hydra** | 🛠️ Security Tools | Online Password Attacks, Wordlists, & Protocol Brute-forcing |   ✅ Completed  |
 | **Gobuster Basics** | 🛠️ Security Tools | Directory Busting, DNS Subdomain Hunting, & Status Codes |  ✅ Completed |
-| **Shells Overview** | Infrastructure Security | Reverse/Bind Shells, Netcat/Socat Listeners, & Web Shell Uploads | 🟡 In Progress |
+| **Shells Overview** | Infrastructure Security | Reverse/Bind Shells, Netcat/Socat Listeners, & Web Shell Uploads | ✅ Completed |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1469,6 +1469,10 @@ A web shell is a malicious script uploaded to a compromised web server that allo
 <!-- Exploit Visual 2: Bypassing restrictions to execute commands via the Web Shell -->
 ![Web Shell Remote Code Execution](images/webshell-rce.png)
 ---
+
+## 🔍 Key Takeaways
+- **Direction Dictates Success:** Choosing between a reverse or bind shell configuration depends entirely on the target network's firewall architecture. Outbound setups remain the most reliable vector.
+- **Web Shell Persistence:** Web shells provide an excellent foothold because they use existing web channels rather than launching persistent listener processes, making them harder for basic firewall monitors to instantly detect.
 
 
 ---
