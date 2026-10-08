@@ -1452,6 +1452,8 @@ A shell listener is a utility configured on the attacker's machine to keep a spe
     *   `-n`: Disables DNS resolution to speed up connections.
     *   `-p 443`: Specifies the exact local incoming port to monitor.
 ---
+<!-- Exploit Visual 1: Catching the active reverse shell connection pipeline -->
+![Reverse Shell Connection Captured](images/reverse-shell-catch.png)
 ---
 ---
 
