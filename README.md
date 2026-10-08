@@ -1455,6 +1455,19 @@ A shell listener is a utility configured on the attacker's machine to keep a spe
 <!-- Exploit Visual 1: Catching the active reverse shell connection pipeline -->
 ![Reverse Shell Connection Captured](images/reverse-shell-catch.png)
 ---
+
+
+## 🌐 Web Shell
+A web shell is a malicious script uploaded to a compromised web server that allows attackers to execute system commands directly through a web browser. 
+*   **The Execution Pipeline:** Operates entirely over standard web communication (`HTTP/80` or `HTTPS/443`). The attacker passes commands into web parameters, and the server runs them using backend code execution engines before printing the output back onto the webpage.
+*   **Basic PHP Implementation Example:**
+    ```php
+    <?php system(\$_GET['cmd']); ?>
+    ```
+
+---
+<!-- Exploit Visual 2: Bypassing restrictions to execute commands via the Web Shell -->
+![Web Shell Remote Code Execution](images/webshell-rce.png)
 ---
 
 
