@@ -1531,6 +1531,9 @@ sqlmap --wizard
 *   **The Setup Flow:** It will ask you to input your target URL, choose a payload injection thoroughness level (1 to 3), and select your desired action (such as enumerating databases or grabbing system banners), constructing and running the exploit command automatically.
 
 ---
+# SQLmap dump
+![SQLmap Basics Lab](images/sqlmap.png)
+---
 
 
 
