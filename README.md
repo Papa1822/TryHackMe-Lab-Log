@@ -591,7 +591,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Hydra** | 🛠️ Security Tools | Online Password Attacks, Wordlists, & Protocol Brute-forcing |   ✅ Completed  |
 | **Gobuster Basics** | 🛠️ Security Tools | Directory Busting, DNS Subdomain Hunting, & Status Codes |  ✅ Completed |
 | **Shells Overview** | Infrastructure Security | Reverse/Bind Shells, Netcat/Socat Listeners, & Web Shell Uploads | ✅ Completed |
-| **SQLmap Basics** | 🛠️ Security Tools | Automated SQLi Testing, Database Footprinting, & Data Dumping | 🟡 In Progress |
+| **SQLmap Basics** | 🛠️ Security Tools | Automated SQLi Testing, Database Footprinting, & Data Dumping | ✅ Completed |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1531,8 +1531,15 @@ sqlmap --wizard
 *   **The Setup Flow:** It will ask you to input your target URL, choose a payload injection thoroughness level (1 to 3), and select your desired action (such as enumerating databases or grabbing system banners), constructing and running the exploit command automatically.
 
 ---
-# SQLmap dump
+### SQLmap dump
 ![SQLmap Basics Lab](images/sqlmap.png)
+---
+---
+
+## 🔍 Key Takeaways
+- **Automation Efficiency:** SQLmap saves immense time during late-stage penetration testing, turning what would be hours of manual character-by-character blind testing into an automated data-dumping process.
+- **Precision vs. Blind Scanning:** Running SQLmap blindly against unverified multi-parameter forms is extremely noisy and slow. Best practices dictate isolating the exact parameter first (often via Burp Suite) before invoking SQLmap with precise options like `-p` or targeting specific queries like `cat=1`.
+
 ---
 
 
