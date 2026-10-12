@@ -1519,6 +1519,18 @@ sqlmap -u "http://TARGET_IP/gallery.php?cat=1" -D bloodbank -T users --dump
 *   **`--dump`**: Retrieves and exports the table entries and records locally.
 
 ---
+---
+## 🧙‍♂️ Streamlining with the SQLmap Wizard
+
+For beginners or quick triage assessments, SQLmap provides a built-in step-by-step assistant via the wizard interface:
+
+```bash
+sqlmap --wizard
+```
+*   **How it Works:** Instead of requiring you to memorize complex command-line flags, the wizard prompts you with a series of simple multiple-choice questions directly in your terminal.
+*   **The Setup Flow:** It will ask you to input your target URL, choose a payload injection thoroughness level (1 to 3), and select your desired action (such as enumerating databases or grabbing system banners), constructing and running the exploit command automatically.
+
+---
 
 
 
