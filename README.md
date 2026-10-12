@@ -591,6 +591,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Hydra** | 🛠️ Security Tools | Online Password Attacks, Wordlists, & Protocol Brute-forcing |   ✅ Completed  |
 | **Gobuster Basics** | 🛠️ Security Tools | Directory Busting, DNS Subdomain Hunting, & Status Codes |  ✅ Completed |
 | **Shells Overview** | Infrastructure Security | Reverse/Bind Shells, Netcat/Socat Listeners, & Web Shell Uploads | ✅ Completed |
+| **SQLmap Basics** | 🛠️ Security Tools | Automated SQLi Testing, Database Footprinting, & Data Dumping | 🟡 In Progress |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1473,6 +1474,21 @@ A web shell is a malicious script uploaded to a compromised web server that allo
 ## 🔍 Key Takeaways
 - **Direction Dictates Success:** Choosing between a reverse or bind shell configuration depends entirely on the target network's firewall architecture. Outbound setups remain the most reliable vector.
 - **Web Shell Persistence:** Web shells provide an excellent foothold because they use existing web channels rather than launching persistent listener processes, making them harder for basic firewall monitors to instantly detect.
+---
+---
+---
+---
+
+## Lab: SQLmap Basics (TryHackMe - Cyber101)
+
+## 🖥️ Overview
+This lab covers the fundamentals of **SQLmap**, an open-source penetration testing tool that automates the process of detecting and exploiting SQL injection (SQLi) vulnerabilities. It explores how to interact with vulnerable web forms, map backend database structures, and extract protected data records automatically.
+
+## ⚙️ Core Automated Injection Concepts
+*   **Vulnerability Detection:** SQLmap sends a massive array of specialized payloads to targeted parameters (via GET, POST, or cookies) to monitor how the server responds, automatically identifying weak input validation rules.
+*   **Database Footprinting (Enumeration):** Once an injection vector is confirmed, SQLmap bypasses manually constructed queries to enumerate structural data maps, extracting system banners, database names, schemas, and tables.
+*   **Data Extraction (Dumping):** The tool automates the recursive extraction of data records, converting raw tabular database elements into scannable text files or downloading encrypted password hashes locally.
+
 
 
 ---
