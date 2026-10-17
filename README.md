@@ -592,7 +592,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Gobuster Basics** | 🛠️ Security Tools | Directory Busting, DNS Subdomain Hunting, & Status Codes |  ✅ Completed |
 | **Shells Overview** | Infrastructure Security | Reverse/Bind Shells, Netcat/Socat Listeners, & Web Shell Uploads | ✅ Completed |
 | **SQLmap Basics** | 🛠️ Security Tools | Automated SQLi Testing, Database Footprinting, & Data Dumping | ✅ Completed |
-| **SOC Fundamentals** | 🛡️ Defensive Security | SOC Roles, Alert Triage Pipelines, & Telemetry Ingestion | 🟡 In Progress |
+| **SOC Fundamentals** | 🛡️ Defensive Security | SOC Roles, Alert Triage Pipelines, & Telemetry Ingestion | ✅ Completed |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1570,6 +1570,9 @@ A successful SOC does not rely on software alone. It requires an exact balance o
 *   **Process (The Playbooks):** The standardized steps, compliance rules, and operational guidelines followed during an investigation. Processes guarantee that every analyst responds to a critical threat (like ransomware or data theft) with identical, predictable efficiency.
 *   **Technology (The Tools):** The underlying software and hardware framework deployed to give analysts network-wide visibility. This includes **SIEM engines** (to aggregate and index logs) and **EDR agents** (to block malicious actions directly on user endpoints).
 
+---
+---
+![SOC Fundamentals Practical Exercise](images/soc-fundamentals.png)
 ---
 
 ---
