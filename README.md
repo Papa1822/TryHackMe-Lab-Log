@@ -1593,6 +1593,16 @@ The forensic process follows a strict four-stage lifecycle to ensure all digital
 *   **Analysis:** Inspecting the data by correlating it with multiple pieces of evidence to draw conclusions. It also answers the core investigative questions of *what*, *how*, and *who*.
 *   **Reporting:** Documenting the investigation conclusions into a formal, structured report that details the evidence uncovered, the tools utilized, the methodology and actionable remediation steps.
 
+### 🔍 Core Types of Digital Forensics
+Depending on where the malicious footprint occurred, investigators pivot between distinct tactical branches:
+*   **Computer Forensics:** Retrieving and analyzing artifacts from local storage media, file systems, operating system registries, and volatile RAM caches.
+*   **Network Forensics:** Intercepting and inspecting network traffic logs, packet captures (`PCAPs`), and firewall streams to trace unauthorized network entry points.
+*   **Mobile Forensics:** Extracting unique telemetry, call logs, geographic coordinates, and application data states from smartphone and tablet hardware.
+*   **Database Forensics:** Inspecting database logs, transaction history, and raw database storage files to track unauthorized data edits or corporate data theft.
+*   **Cloud Forensics:** Analyzing logs and configurations from cloud service providers (like AWS, Azure, or Google Cloud) to trace attacks against virtual infrastructure or storage buckets.
+*   **Email Forensics:** Examining email headers, server routing logs, and hidden message metadata to verify the true sender identity and trace phishing attacks or scams.
+
+
 ---
 ---
 ---
