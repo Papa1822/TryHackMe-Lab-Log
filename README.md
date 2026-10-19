@@ -1619,7 +1619,7 @@ When performing an investigation on a Windows system, analysts extract two prima
 ---
 
 ---
-
+###Using exiftool to extract meta-data of an image:
 ![Digital Forensics Lab](images/digital-forensics.png)
 ---
 ---
