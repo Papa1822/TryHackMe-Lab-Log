@@ -593,7 +593,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Shells Overview** | Infrastructure Security | Reverse/Bind Shells, Netcat/Socat Listeners, & Web Shell Uploads | ✅ Completed |
 | **SQLmap Basics** | 🛠️ Security Tools | Automated SQLi Testing, Database Footprinting, & Data Dumping | ✅ Completed |
 | **SOC Fundamentals** | 🛡️ Defensive Security | SOC Roles, Alert Triage Pipelines, & Telemetry Ingestion | ✅ Completed |
-| **Digital Forensics Basics**| 🔍 Incident Response | Evidence Preservation, Volatility, & Artifact Analysis | 🟡 In Progress |
+| **Digital Forensics Basics**| 🔍 Incident Response | Evidence Preservation, Volatility, & Artifact Analysis | ✅ Completed  |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1619,8 +1619,18 @@ When performing an investigation on a Windows system, analysts extract two prima
 ---
 
 ---
-###Using exiftool to extract meta-data of an image:
+### Using exiftool to extract meta-data of an image:
 ![Digital Forensics Lab](images/digital-forensics.png)
+---
+---
+### 🔍 Artifact Analysis: Command-Line Metadata Forensics
+When examining files for hidden clues, investigators parse metadata—the underlying "data about data" embedded within documents and images. This lab utilized two powerful command-line forensic utilities to extract these hidden attributes:
+
+*   **`pdfinfo`:** A specialized utility used to extract structural metadata from PDF documents. It reveals critical timeline attributes like creation dates, modification history, author names, and the software tools used to generate the document.
+    *   *Example Syntax:* `pdfinfo document.pdf`
+*   **`exiftool`:** An advanced, cross-platform command-line application used to read, write, and alter metadata across a vast array of file types (images, videos, and documents). 
+    *   *Example Syntax:* `exiftool image.jpg`
+    *   *Forensic Significance:* Threat actors often forget to scrub metadata before uploading files. Investigators use ExifTool to uncover geographic GPS coordinates, camera serial numbers, or hidden comment strings left behind by an attacker.
 ---
 ---
 ---
