@@ -1602,6 +1602,13 @@ Depending on where the malicious footprint occurred, investigators pivot between
 *   **Cloud Forensics:** Analyzing logs and configurations from cloud service providers (like AWS, Azure, or Google Cloud) to trace attacks against virtual infrastructure or storage buckets.
 *   **Email Forensics:** Examining email headers, server routing logs, and hidden message metadata to verify the true sender identity and trace phishing attacks or scams.
 
+---
+---
+### 🛡️ Critical Controls in Evidence Acquisition
+When gathering data from a device, investigators must enforce strict procedural protections to guarantee the evidence remains untampered and legally admissible in court:
+*   **Proper Authorization:** Investigators must secure explicit legal permission before touching any system or collecting data. This usually comes in the form of a formal warrant, corporate consent documentation, or written authorization from the system owner to ensure the investigation complies with legal guidelines.
+*   **Chain of Custody:** A meticulous, unbroken paper trail tracking everyone who has touched, transferred, or stored a piece of physical or digital evidence. If any gap in this timeline occurs, the evidence can be thrown out of court.
+*   **Write Blockers:** Specialized hardware adapters or software configuration locks placed between the analyst's computer and the target drive. They physically block the analyst's computer from accidentally writing metadata, files, or background timestamps to the original evidence disk, ensuring complete data preservation.
 
 ---
 ---
