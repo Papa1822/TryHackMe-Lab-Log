@@ -593,6 +593,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Shells Overview** | Infrastructure Security | Reverse/Bind Shells, Netcat/Socat Listeners, & Web Shell Uploads | ✅ Completed |
 | **SQLmap Basics** | 🛠️ Security Tools | Automated SQLi Testing, Database Footprinting, & Data Dumping | ✅ Completed |
 | **SOC Fundamentals** | 🛡️ Defensive Security | SOC Roles, Alert Triage Pipelines, & Telemetry Ingestion | ✅ Completed |
+| **Digital Forensics Basics**| 🔍 Incident Response | Evidence Preservation, Volatility, & Artifact Analysis | 🟡 In Progress |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1574,7 +1575,25 @@ A successful SOC does not rely on software alone. It requires an exact balance o
 ---
 ![SOC Fundamentals Practical Exercise](images/soc-fundamentals.png)
 ---
+---
+---
+---
+---
 
+## Lab: Digital Forensics Basics (TryHackMe - Cyber101)
+
+## 🖥️ Overview
+This lab covers the fundamental principles and methodologies of **Digital Forensics**. It explores how cyber investigators collect, preserve, and analyze digital artifacts from computer systems to reconstruct security incidents, track malicious actor footprints, and uncover evidence without altering the underlying data.
+
+## ⚙️ Digital Forensics Methodology
+The forensic process follows a strict four-stage lifecycle to ensure all digital artifacts are processed correctly and remain legally untampered:
+
+*   **Collection:** Gathering the volatile and non-volatile data and devices from the target systems while strictly preserving data integrity (evidence) using cryptographic hashing and maintaining an unbroken **Chain of Custody** log.
+*   **Examination:** Processing the collected raw data images using specialized forensics tools to isolate relevant files, uncover deleted items, and make the extracted information visible for review.(filtering out information relevant to the investigation)
+*   **Analysis:** Inspecting the data by correlating it with multiple pieces of evidence to draw conclusions. It also answers the core investigative questions of *what*, *how*, and *who*.
+*   **Reporting:** Documenting the investigation conclusions into a formal, structured report that details the evidence uncovered, the tools utilized, the methodology and actionable remediation steps.
+
+---
 ---
 ---
 ---
