@@ -1615,7 +1615,13 @@ When gathering data from a device, investigators must enforce strict procedural 
 When performing an investigation on a Windows system, analysts extract two primary categories of forensic images depending on whether they need persistent or volatile artifacts:
 *   **Disk Image:** A complete, bit-stream duplicate copy of the target hard drive or solid-state storage media. It captures persistent files, the master file table, system logs, registries, and unallocated disk space where deleted data might still hide.
 *   **Memory Image:** A raw snapshot capture of the target machine's volatile **RAM (Random Access Memory)**. Because RAM clears completely when a machine powers down, a memory image must be taken from a live system to catch volatile data like active running processes, open network connections, unencrypted passwords, and malware running directly in memory.
+---
+---
 
+---
+
+![Digital Forensics Lab](images/digital-forensics.png)
+---
 ---
 ---
 ---
