@@ -1656,6 +1656,32 @@ When an alert is confirmed as a True Positive, it is classified under one of fiv
 *   **Data Leaks:** The unauthorized transmission, exposure, or theft of sensitive corporate data, intellectual property, or personally identifiable information (PII) to an untrusted external environment.
 *   **Insider Attacks:** Malicious security threats originating from within the organization, where trusted employees or contractors misuse their valid access privileges to steal assets or sabotage infrastructure.
 *   **DoS (Denial of Service):** An aggressive network attack designed to completely overwhelm server resources with a flood of junk traffic, crashing online business operations and making services unavailable to legitimate users.
+---
+---
+---
+---
+
+## 🛠️ Incident Response Techniques & Automation Tools
+
+To execute the PICERL or NIST cycles effectively, incident response teams deploy specific software tools and standardized documentation blocks to speed up triage times.
+
+### 🧰 Technical Enforcement Utilities
+
+*   **SIEM (Security Information and Event Management):** A centralized platform that collects, aggregates, and indexes log data streams from across the entire corporate network (e.g., Splunk, Elastic Security).
+    *   *IR Technique:* Responders use SIEM search queries during the **Identification** phase to correlate different log files, track threat footprints, and map attack timelines.
+*   **AV (Antivirus):** A legacy signature-based endpoint control designed to scan, detect, and quarantine known malicious software payloads sitting on a local hard drive.
+    *   *IR Technique:* Acts as the first line of defense during **Eradication**, catching baseline malware hashes and blocking standard automated script payloads.
+*   **EDR (Endpoint Detection and Response):** An advanced endpoint tool that records continuous system telemetry, monitors process behavior live, and flags zero-day anomalies on a device.
+    *   *IR Technique:* Vital for the **Containment** phase. EDR tools allow responders to click a button and instantly isolate a compromised host from the network digitally, cutting off an attacker's interactive shell.
+
+### 📄 Operational Documentation: Playbooks vs. Runbooks
+
+When an incident hits, responders do not guess their next steps. They rely on two distinct categories of instructional documentation to guide their actions:
+
+| Documentation Type | Scope & Context | Core Operational Content |
+| :--- | :--- | :--- |
+| **Playbook** | **High-Level Strategy:** Focuses on the overarching process flow and organizational strategy for a specific threat category (e.g., *Ransomware Incident Playbook*). | Outlines organizational notification chains, legal rules, compliance mandates, escalation paths, and distinct ownership boundaries between tiers. |
+| **Runbook** | **Low-Level Execution:** A granular, highly specific technical step-by-step checklist written for a practical asset type or tool. | Contains exact terminal commands, SIEM search filters, API integration lines, configuration steps, and specific buttons to click to isolate a server. |
 
 ---
 ---
