@@ -594,6 +594,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **SQLmap Basics** | 🛠️ Security Tools | Automated SQLi Testing, Database Footprinting, & Data Dumping | ✅ Completed |
 | **SOC Fundamentals** | 🛡️ Defensive Security | SOC Roles, Alert Triage Pipelines, & Telemetry Ingestion | ✅ Completed |
 | **Digital Forensics Basics**| 🔍 Incident Response | Evidence Preservation, Volatility, & Artifact Analysis | ✅ Completed  |
+| **Incident Response Fundamentals** | 🛡️ Defensive Security | IR Lifecycles, Threat Containment, & Eradication Playbooks | 🟡 In Progress |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1631,6 +1632,32 @@ When examining files for hidden clues, investigators parse metadata—the underl
 *   **`exiftool`:** An advanced, cross-platform command-line application used to read, write, and alter metadata across a vast array of file types (images, videos, and documents). 
     *   *Example Syntax:* `exiftool image.jpg`
     *   *Forensic Significance:* Threat actors often forget to scrub metadata before uploading files. Investigators use ExifTool to uncover geographic GPS coordinates, camera serial numbers, or hidden comment strings left behind by an attacker.
+---
+---
+---
+---
+---
+
+## Lab: Incident Response Fundamentals (TryHackMe - Cyber101)
+
+## 🖥️ Overview
+This lab covers the core principles, lifecycles, and tactical playbooks utilized in **Incident Response (IR)**. It explores how security teams rapidly detect live security incidents, execute containment steps to halt lateral movement, eradicate threat actor footholds, and systematically recover systems to restore normal business operations.
+
+## ⚙️ Alert Triage: True Positives vs. False Positives
+Before kicking off an official incident response playbook, responders must validate incoming alert signals to ensure they are chasing actual threats:
+*   **True Positive:** An alert that correctly identifies an actual security threat or malicious event occurring on the network (e.g., a firewall correctly flagging a backdoor reverse shell connection). This requires immediate response.
+*   **False Positive:** An alert that incorrectly flags legitimate, harmless behavior as a security threat (e.g., an antivirus engine blocking a benign custom administrative script). These are logged as white noise to prevent analyst alert fatigue.
+
+## 🖧 Classification: Core Incident Types
+When an alert is confirmed as a True Positive, it is classified under one of five primary incident categories to determine the exact containment playbook to execute:
+
+*   **Malware Infections:** The execution of unauthorized, malicious software (such as ransomware, trojans, web shells, or keyloggers) designed to compromise or steal data from an endpoint host.
+*   **Security Breaches:** Unauthorized access events where an attacker successfully bypasses authentication barriers, firewalls, or permission structures to compromise a restricted target system.
+*   **Data Leaks:** The unauthorized transmission, exposure, or theft of sensitive corporate data, intellectual property, or personally identifiable information (PII) to an untrusted external environment.
+*   **Insider Attacks:** Malicious security threats originating from within the organization, where trusted employees or contractors misuse their valid access privileges to steal assets or sabotage infrastructure.
+*   **DoS (Denial of Service):** An aggressive network attack designed to completely overwhelm server resources with a flood of junk traffic, crashing online business operations and making services unavailable to legitimate users.
+
+---
 ---
 ---
 ---
