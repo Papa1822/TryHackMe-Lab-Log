@@ -1661,7 +1661,7 @@ When an alert is confirmed as a True Positive, it is classified under one of fiv
 ---
 ---
 ---
-##Incident-Response Process Timeline
+## Incident-Response Process Timeline
 ![Incident Response Process Timeline](images/incident-response.png)
 ---
 ---
