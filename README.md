@@ -594,7 +594,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **SQLmap Basics** | 🛠️ Security Tools | Automated SQLi Testing, Database Footprinting, & Data Dumping | ✅ Completed |
 | **SOC Fundamentals** | 🛡️ Defensive Security | SOC Roles, Alert Triage Pipelines, & Telemetry Ingestion | ✅ Completed |
 | **Digital Forensics Basics**| 🔍 Incident Response | Evidence Preservation, Volatility, & Artifact Analysis | ✅ Completed  |
-| **Incident Response Fundamentals** | 🛡️ Defensive Security | IR Lifecycles, Threat Containment, & Eradication Playbooks | 🟡 In Progress |
+| **Incident Response Fundamentals** | 🛡️ Defensive Security | IR Lifecycles, Threat Containment, & Eradication Playbooks | ✅ Completed  |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1656,6 +1656,14 @@ When an alert is confirmed as a True Positive, it is classified under one of fiv
 *   **Data Leaks:** The unauthorized transmission, exposure, or theft of sensitive corporate data, intellectual property, or personally identifiable information (PII) to an untrusted external environment.
 *   **Insider Attacks:** Malicious security threats originating from within the organization, where trusted employees or contractors misuse their valid access privileges to steal assets or sabotage infrastructure.
 *   **DoS (Denial of Service):** An aggressive network attack designed to completely overwhelm server resources with a flood of junk traffic, crashing online business operations and making services unavailable to legitimate users.
+---
+---
+---
+---
+---
+##Incident-Response Process Timeline
+![Incident Response Process Timeline](images/incident-response.png)
+---
 ---
 ---
 ---
