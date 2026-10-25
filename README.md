@@ -1660,7 +1660,29 @@ When an alert is confirmed as a True Positive, it is classified under one of fiv
 ---
 ---
 ---
+## 🔄 Incident Response Process Frameworks: SANS (PICERL) and NIST
 
+Security operations teams rely on structured lifecycles to manage active breaches. The industry standard frameworks are defined by **SANS (PICERL)** and **NIST**, mapping out identical defensive actions into slightly different phases.
+
+## ⚙️ SANS: The PICERL Process Breakdown
+*   **Preparation:** Training the response team, assembling toolkits, and deploying visibility agents (EDR/SIEM) before an incident strikes.
+*   **Identification:** Analyzing system logs and firewall telemetry to identify, validate, and scope active threat actor activities.
+*   **Containment:** Implementing short-term and long-term isolation rules (like revoking tokens or locking network ports) to contain the blast radius.
+*   **Eradication:** Rooting out the threat entirely by cleaning systems, purging persistence mechanisms, and patching the initial entry vulnerability.
+*   **Recovery:** Rebuilding compromised systems from verified configurations and returning production operations to normal status.
+*   **Lessons Learned:** Reviewing the incident timeline to patch process gaps and improve organizational response capabilities against future attack loops.
+
+## ⚙️ NIST: SP 800-61 Rev. 2 Lifecycle Breakdown
+Unlike SANS, the National Institute of Standards and Technology (NIST) groups containment, eradication, and recovery into a single, cyclical engineering wheel:
+*   **Preparation:** Establishing response plans, communication channels, and training frameworks.
+*   **Detection & Analysis:** Utilizing proactive monitoring matrices to quickly alert on indicators of compromise (IoCs) and analyze data streams.
+*   **Containment, Eradication, & Recovery:** A continuous loop where threat groups are isolated, wiped out, and verified clean incrementally across the infrastructure asset list.
+*   **Post-Incident Activity:** Formalizing documentation to create a feedback loop that hardens the initial *Preparation* baseline phase.
+
+---
+---
+---
+---
 ## 🛠️ Incident Response Techniques & Automation Tools
 
 To execute the PICERL or NIST cycles effectively, incident response teams deploy specific software tools and standardized documentation blocks to speed up triage times.
