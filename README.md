@@ -595,6 +595,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **SOC Fundamentals** | 🛡️ Defensive Security | SOC Roles, Alert Triage Pipelines, & Telemetry Ingestion | ✅ Completed |
 | **Digital Forensics Basics**| 🔍 Incident Response | Evidence Preservation, Volatility, & Artifact Analysis | ✅ Completed  |
 | **Incident Response Fundamentals** | 🛡️ Defensive Security | IR Lifecycles, Threat Containment, & Eradication Playbooks | ✅ Completed  |
+| **Logs Fundamentals** | 🛡️ Defensive Security | Log Formats, System Event Tracking, & Telemetry Ingestion | 🟡 In Progress |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1712,6 +1713,32 @@ When an incident hits, responders do not guess their next steps. They rely on tw
 | :--- | :--- | :--- |
 | **Playbook** | **High-Level Strategy:** Focuses on the overarching process flow and organizational strategy for a specific threat category (e.g., *Ransomware Incident Playbook*). | Outlines organizational notification chains, legal rules, compliance mandates, escalation paths, and distinct ownership boundaries between tiers. |
 | **Runbook** | **Low-Level Execution:** A granular, highly specific technical step-by-step checklist written for a practical asset type or tool. | Contains exact terminal commands, SIEM search filters, API integration lines, configuration steps, and specific buttons to click to isolate a server. |
+---
+---
+---
+---
+---
+## Lab: Logs Fundamentals (TryHackMe - Cyber101)
+
+## 🖥️ Overview
+This lab covers the core principles, formats, and tracking value of **Logs**. It explores how operating systems, web applications, and network appliances generate diagnostic and security events, providing the fundamental telemetry required for proactive security monitoring and incident investigation.
+
+## ⚙️ Introduction to Logs
+A log is a comprehensive, chronological data record generated automatically by computing systems, software applications, and network equipment [1.1]. Logs record system state changes, operational issues, actions taken by software components, and user behaviors [1.1]. In cybersecurity, logs serve as the digital footprints left behind by any activity—whether benign or malicious—making it significantly easier to trace back an event and identify the individual behind its execution.
+
+
+## 🖧 Classification: The Six Core Types of Logs
+
+In order to maintain absolute visibility during an incident triage, logs are segregated into distinct operational categories based on the specific type of information they provide:
+
+*   **System Logs:** Provide detailed information on operating system activities, tracking background functions like service states, system boot/shutdown strings, device driver performance, and hardware events. Primarily referenced for system troubleshooting.
+*   **Application Logs:** Record specific interactive and non-interactive events happening inside software tools, databases, or content frameworks. These document application errors, update histories, and internal software actions.
+*   **Network Logs:** Capture details regarding the physical transmission data pathway, logging information on incoming and outgoing network traffic. Vital for troubleshooting network anomalies and mapping connection pathways during investigations.
+*   **Security Logs:** Capture critical security-related activities across a system. These register authentication and authorization events—such as successful or failed user login attempts and security policy changes—making them the primary anchor for detecting active threats.
+*   **Access Logs:** Offer detailed information about direct user or service requests targeting specific shared network resources, such as web servers, backend database clusters, remote servers, or API endpoints.
+*   **Audit Logs:** Track chronological configuration records detailing structural system adjustments and raw user events. These are heavily relied on to monitor malicious modifications and satisfy compliance or forensic auditing requirements.
+
+---
 
 ---
 ---
