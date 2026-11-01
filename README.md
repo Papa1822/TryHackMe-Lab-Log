@@ -595,7 +595,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **SOC Fundamentals** | 🛡️ Defensive Security | SOC Roles, Alert Triage Pipelines, & Telemetry Ingestion | ✅ Completed |
 | **Digital Forensics Basics**| 🔍 Incident Response | Evidence Preservation, Volatility, & Artifact Analysis | ✅ Completed  |
 | **Incident Response Fundamentals** | 🛡️ Defensive Security | IR Lifecycles, Threat Containment, & Eradication Playbooks | ✅ Completed  |
-| **Logs Fundamentals** | 🛡️ Defensive Security | Log Formats, System Event Tracking, & Telemetry Ingestion | 🟡 In Progress |
+| **Logs Fundamentals** | 🛡️ Defensive Security | Log Formats, System Event Tracking, & Telemetry Ingestion | ✅ Completed |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1737,6 +1737,32 @@ In order to maintain absolute visibility during an incident triage, logs are seg
 *   **Security Logs:** Capture critical security-related activities across a system. These register authentication and authorization events—such as successful or failed user login attempts and security policy changes—making them the primary anchor for detecting active threats.
 *   **Access Logs:** Offer detailed information about direct user or service requests targeting specific shared network resources, such as web servers, backend database clusters, remote servers, or API endpoints.
 *   **Audit Logs:** Track chronological configuration records detailing structural system adjustments and raw user events. These are heavily relied on to monitor malicious modifications and satisfy compliance or forensic auditing requirements.
+
+---
+---
+#### 🔑 Critical Security Event IDs to Monitor
+When auditing Windows endpoints, responders watch for specific structural Event IDs to map out unauthorized access, account creation, or privilege manipulation loops:
+- **Event ID 4624:** Indicates a successful account login. Analyzing the *Logon Type* field within this event reveals *how* the user logged in (e.g., Logon Type `2` indicates interactive local keyboard usage, while Logon Type `3` indicates a network connection).
+- **Event ID 4625:** Documents a failed account authentication attempt. High volumes of this ID targeting a single username are the primary indicator of an ongoing **brute-force attack**.
+- **Event ID 4634:** Flags a successful account logoff event, indicating when an explicit user session was cleanly terminated on the system.
+- **Event ID 4720:** Flags the creation of a brand-new local system user account. Attackers often spawn unexpected back-door accounts to maintain persistent access.
+- **Event ID 4722:** Indicates a local user account was successfully enabled. Responders look out for this when an attacker activates a dormant or disabled default account.
+- **Event ID 4724:** Logs an explicit attempt by an administrator or service to reset an existing account's password.
+- **Event ID 4725:** Logs that a local system user account was disabled, cutting off access parameters.
+- **Event ID 4726:** Records that a local user account was permanently deleted from the security accounts manager.
+
+---
+---
+#### 📊 The Anatomy of an Access Log Entry
+A standard web access log breaks down incoming traffic down into distinct attributes:
+`192.168.10.45 - - [01/Nov/2026:12:34:00 +0000] "GET /admin/login.php HTTP/1.1" 200 4502 "-" "Mozilla/5.0"`
+
+*   **Client IP (`192.168.10.45`):** The source network address initiating the connection request.
+*   **Timestamp (`[01/Nov/2026:12:34:00]`):** The exact date and chronological time the server processed the interaction.
+*   **HTTP Method (`GET`):** The action requested by the client (e.g., `GET` to read a page, `POST` to submit a form).
+*   **Requested URI (`/admin/login.php`):** The precise file directory or endpoint route targeted by the traffic loop.
+*   **Status Code (`200`):** The server's technical response code. Security teams hunt for anomalies like sequential `404` errors (indicating active directory fuzzing via Gobuster) or `500` errors (indicating system code crashes from exploit inputs).
+*   **User Agent (`Mozilla/5.0...`):** The browser type and OS signature of the client. Attackers using automated scanners (like SQLmap or Nikto) often leave behind signature user agents that can be easily spotted and blocked.
 
 ---
 
