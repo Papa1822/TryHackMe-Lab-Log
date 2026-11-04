@@ -1834,6 +1834,49 @@ Ingestion is the mechanism used to transmit or ingest data from external sources
 | **Syslog** | A standard protocol used by network and Unix-like devices to stream raw text event data directly across the network to a listening SIEM collector. | Network infrastructure appliances like firewalls, switches, and routers. | **Agentless:** Excellent for devices where third-party software installation is locked down or explicitly unsupported. |
 | **Manual Upload** | A user manually uploads static, historical log files (such as `.csv`, `.log`, or `.json` formats) directly into the SIEM web interface. | One-time forensic analysis, retroactive troubleshooting, or offline lab sandboxes. | **Static:** Non-continuous data feed; strictly historical context and entirely useless for live threat alerting. |
 | **Port Forwarding** | Configuring network routing rules to redirect log traffic from a specific port on an external device or gateway directly to an internal SIEM port. | Directing external network streams or offsite logs into an isolated collector. | **Network Configuration:** Requires meticulous firewall rules to ensure the exposed ingestion ports do not leak internal system structures to the public web. |
+---
+---
+---
+## 🚨 Alert Processing & Analysis
+Once logs are ingested, the SIEM processes them to identify potential threats. An analyst must understand how the platform transforms a raw string of text into an actionable, high-priority security alert.
+
+### ⚙️ 1. Log Parsing & Field Extraction
+Before an alert can trigger, the SIEM breaks down raw log data into searchable variables. This process relies heavily on string parsing and key-value pair mapping:
+
+*   **Raw Log String:** `2026-11-04 14:23:10 AuthFail src=192.168.1.50 user=admin status=failed`
+*   **Extracted Fields:** The parsing engine converts this string into structured metadata fields that can be systematically queried:
+    *   `timestamp`: `2026-11-04 14:23:10`
+    *   `event_type`: `AuthFail`
+    *   `src_ip`: `192.168.1.50`
+    *   `user`: `admin`
+    *   `status`: `failed`
+
+---
+
+### 🛡️ 2. Rule Execution & Alert Generation
+The SIEM continuously monitors these extracted fields against a repository of **Correlation Rules**. A rule matches specific criteria to generate an alert:
+
+*   **Sample Correlation Rule Logic:** 
+    ```text
+    IF (event_type == "AuthFail" AND status == "failed") 
+    COUNT > 5 
+    WITHIN 10 seconds 
+    GROUP BY src_ip
+    THEN TRIGGER ALERT: "Potential Brute Force Attack Detected"
+    ```
+*   **The Result:** Instead of an analyst manually browsing through thousands of raw login logs, the SIEM automatically bubbles up a single actionable alert for triage.
+
+---
+
+### 🔍 3. The Analyst Triage Workflow
+When an alert triggers on the dashboard, SOC analysts conduct a thorough investigation to determine its legitimacy:
+
+| Analysis Step | Operational Action | Goal |
+| :--- | :--- | :--- |
+| **1. Verification** | Check if the alert is a **True Positive** (real threat) or a **False Positive** (benign activity flagged as malicious, such as a user forgetting their password). | Filter out noise and prevent alert fatigue. |
+| **2. Context Gathering** | Drill down into the host-centric logs (`/var/log/auth.log` or Windows Event ID `4624/4625`) and network-centric logs to see what the user/host did immediately before and after the alert. | Build a chronological timeline of the attacker's activities. |
+| **3. Scope Estimation** | Determine if the attack was isolated to a single machine or if the threat actor successfully moved laterally across the network. | Identify the full blast radius of the incident. |
+| **4. Escalation / Response** | If verified as a true security incident, escalate the ticket to Tier 2/Incident Response teams to isolate the host and remediate the threat. | Contain the attack before data exfiltration occurs. |
 
 ---
 ---
