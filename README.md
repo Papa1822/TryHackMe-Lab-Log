@@ -596,7 +596,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Digital Forensics Basics**| 🔍 Incident Response | Evidence Preservation, Volatility, & Artifact Analysis | ✅ Completed  |
 | **Incident Response Fundamentals** | 🛡️ Defensive Security | IR Lifecycles, Threat Containment, & Eradication Playbooks | ✅ Completed  |
 | **Logs Fundamentals** | 🛡️ Defensive Security | Log Formats, System Event Tracking, & Telemetry Ingestion | ✅ Completed |
-| **Introduction to SIEM** | Security Operations (SecOps) | Centralized log ingestion, log normalization, cross-platform event correlation, and alerting | 🔄 In Progress |
+| **Introduction to SIEM** | Security Operations (SecOps) | Centralized log ingestion, log normalization, cross-platform event correlation, and alerting | ✅ Completed |
 ---
 
 ### 🔍 Technical Evidence & Writeups
