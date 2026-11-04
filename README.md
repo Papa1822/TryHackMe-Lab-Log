@@ -1881,6 +1881,17 @@ When an alert triggers on the dashboard, SOC analysts conduct a thorough investi
 ---
 ---
 ---
+### 📊 SIEM Console Investigation
+Below is the dashboard visualization monitored during the lab, tracking the correlation engine as it surfaces anomalous event spikes:
+
+---
+![SIEM Dashboard Analysis](images/siem-dashboard-analysis.png)
+---
+
+
+---
+---
+---
 ---
 ---
 ---
