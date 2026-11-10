@@ -597,6 +597,7 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Incident Response Fundamentals** | 🛡️ Defensive Security | IR Lifecycles, Threat Containment, & Eradication Playbooks | ✅ Completed  |
 | **Logs Fundamentals** | 🛡️ Defensive Security | Log Formats, System Event Tracking, & Telemetry Ingestion | ✅ Completed |
 | **Introduction to SIEM** | Security Operations (SecOps) | Centralized log ingestion, log normalization, cross-platform event correlation, and alerting | ✅ Completed |
+| Firewall Fundamentals | Network Security | Packet filtering, stateless vs. stateful rules, and inbound/outbound traffic controls | 🔄 In Progress |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1887,7 +1888,23 @@ Below is the dashboard visualization monitored during the lab, tracking the corr
 ---
 ![SIEM Dashboard Analysis](images/siem-dashboard-analysis.png)
 ---
+---
+---
+---
+## Lab: Firewall Fundamentals (TryHackMe)
+## 🖥️ Overview
+This module explores the mechanics of network firewalls—hardware or software barriers that control incoming and outgoing network traffic based on predetermined security rules. Understanding firewall behavior is essential for mapping network attack surfaces and diagnosing access restrictions.
 
+### 🛡️ Core Types of Firewalls
+
+| Firewall Type | How It Inspects Traffic | Security Perspective / Limitations |
+| :--- | :--- | :--- |
+| **Stateless Firewall** | Inspects individual packets in isolation based on static headers (Source/Destination IP, Port, Protocol). | **Fast but Blind:** Fast processing speeds, but easily bypassed by spoofing because it cannot track connection context or packet relationships. |
+| **Stateful Firewall** | Tracks the active state of network connections by maintaining a "state table" of the entire conversation. | **Context Aware:** Highly secure; automatically blocks unsolicited inbound traffic while dynamically allowing legitimate return traffic. |
+| **Proxy Firewall** | Acts as an intermediary gateway, establishing a fresh connection to the destination on behalf of the client. | **Complete Isolation:** Deeply inspects application data and hides internal network structures, but introduces noticeable network latency. |
+| **Next-Generation (NGFW)** | Combines stateful inspection with deep packet inspection (DPI), Intrusion Prevention (IPS), and application-aware filtering. | **Full Stack Defense:** Can identify specific applications (e.g., blocking Facebook Messenger while allowing Facebook) and detects embedded malware in real-time. |
+
+---
 
 ---
 ---
