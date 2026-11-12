@@ -1905,6 +1905,31 @@ This module explores the mechanics of network firewalls—hardware or software b
 | **Next-Generation (NGFW)** | Combines stateful inspection with deep packet inspection (DPI), Intrusion Prevention (IPS), and application-aware filtering. | **Full Stack Defense:** Can identify specific applications (e.g., blocking Facebook Messenger while allowing Facebook) and detects embedded malware in real-time. |
 
 ---
+---
+---
+### 📜 Firewall Rules: Actions & Directionality
+Firewall policies dictate how network packets are handled based on two critical dimensions: the **action** applied to a matched packet and the **direction** the traffic is flowing relative to the network boundary.
+
+#### 🚦 1. Core Rule Actions
+When a packet matches the specific criteria of a firewall rule (Source IP, Destination IP, Port, Protocol), the firewall executes one of three primary actions:
+
+| Rule Action | Technical Behavior | Security Perspective |
+| :--- | :--- | :--- |
+| **Allow (Accept)** | Permits the packet to pass through the firewall to its intended destination. | **Controlled Access:** Only explicitly required business services (e.g., HTTPS on Port `443`) should be allowed. |
+| **Deny (Drop / Reject)** | Blocks the packet from passing through. **Drop** discards it silently; **Reject** sends an error reply (e.g., ICMP Unreachable) back to the sender. | **Stealth vs. Speed:** **Dropping** is preferred against external attackers because it slows down network reconnaissance scans by forcing them to wait for timeouts. |
+| **Forward** | Redirects the packet to a different destination IP, port, or network interface (commonly used in NAT/Port Forwarding). | **Traffic Routing:** Useful for routing external web traffic safely into an isolated DMZ (Demilitarized Zone) server without exposing internal IPs. |
+
+---
+
+#### 🧭 2. Directionality of Rules
+Firewalls evaluate traffic differently depending on where the packet originates and where it is heading:
+
+*   **Inbound Rules (Ingress):** Control external traffic attempting to **enter** the protected network or host. 
+    *   *Security Goal:* Block unauthorized external connections, port scans, and exploit attempts targeting internal services.
+*   **Outbound Rules (Egress):** Control internal traffic attempting to **leave** the protected network or host toward the outside internet. 
+    *   *Security Goal:* Prevent data exfiltration and stop compromised internal machines from calling back to an attacker's Command & Control (C2) server.
+*   **Forward Rules (Transit):** Control traffic **passing through** the firewall from one network interface/zone to another (e.g., routing between an internal Corporate LAN and a Guest Wi-Fi subnet). 
+    *   *Security Goal:* Enforce strict network segmentation so a breach in one subnet cannot easily pivot into critical infrastructure.
 
 ---
 ---
