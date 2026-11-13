@@ -1930,6 +1930,33 @@ Firewalls evaluate traffic differently depending on where the packet originates 
     *   *Security Goal:* Prevent data exfiltration and stop compromised internal machines from calling back to an attacker's Command & Control (C2) server.
 *   **Forward Rules (Transit):** Control traffic **passing through** the firewall from one network interface/zone to another (e.g., routing between an internal Corporate LAN and a Guest Wi-Fi subnet). 
     *   *Security Goal:* Enforce strict network segmentation so a breach in one subnet cannot easily pivot into critical infrastructure.
+---
+---
+---
+### 🐧 Linux Host Firewalls: Netfilter & Management Utilities
+Linux manages packet filtering directly inside the OS kernel rather than relying solely on external appliances. At the core of this system is **Netfilter**—the low-level framework built into the Linux kernel that intercepts, inspects, modifies, or drops network packets in real-time.
+
+#### ⚙️ Netfilter Management Frameworks
+Administrators interact with the Netfilter kernel engine using four primary user-space utilities depending on the Linux distribution:
+
+*   **iptables (The Legacy Standard):** The traditional command-line utility used to configure IPv4 packet-filtering rules inside Netfilter. While immensely flexible, its syntax is complex and requires separate tools (like `ip6tables`) for IPv6 traffic.
+*   **nftables (The Modern Successor):** Built to replace `iptables`, `nftables` provides a unified framework that handles IPv4, IPv6, ARP, and network bridging through a single, faster, and cleaner syntax.
+*   **firewalld (Dynamic Zone-Based Management):** Default on RHEL, CentOS, and Fedora systems. It acts as a dynamic front-end that organizes network interfaces into trust **zones** (e.g., *Public*, *Home*, *Trusted*) and allows rule updates without dropping active connections.
+*   **UFW — Uncomplicated Firewall (The User-Friendly Wrapper):** Default on Ubuntu and Debian systems. It provides an intuitive, human-readable CLI wrapper designed to make managing host firewall rules fast and less prone to configuration errors.
+
+---
+
+#### 💻 Essential UFW CLI Syntax
+Keeping direct CLI syntax in your lab log serves as an immediate operational cheat sheet for Linux host hardening:
+
+```bash
+# --- UFW (Uncomplicated Firewall) Commands ---
+sudo ufw enable                  # Activate the firewall
+sudo ufw status verbose          # Check active rules and default policies
+sudo ufw allow 22/tcp            # Allow incoming SSH traffic
+sudo ufw deny from 192.168.1.50  # Block all traffic from a specific suspicious IP
+```
+
 
 ---
 ---
