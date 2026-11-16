@@ -597,7 +597,8 @@ Defending a system requires thinking like a designer and an architect, using fou
 | **Incident Response Fundamentals** | 🛡️ Defensive Security | IR Lifecycles, Threat Containment, & Eradication Playbooks | ✅ Completed  |
 | **Logs Fundamentals** | 🛡️ Defensive Security | Log Formats, System Event Tracking, & Telemetry Ingestion | ✅ Completed |
 | **Introduction to SIEM** | Security Operations (SecOps) | Centralized log ingestion, log normalization, cross-platform event correlation, and alerting | ✅ Completed |
-| Firewall Fundamentals | Network Security | Packet filtering, stateless vs. stateful rules, and inbound/outbound traffic controls | 🔄 In Progress |
+| Firewall Fundamentals | Network Security | Packet filtering, stateless vs. stateful rules, and inbound/outbound traffic controls | ✅ Completed |
+| IDS Fundamentals | Network Security | Signature vs anomaly detection, network monitoring, and alert generation mechanics | 🔄 In Progress |
 ---
 
 ### 🔍 Technical Evidence & Writeups
@@ -1956,6 +1957,35 @@ sudo ufw status verbose          # Check active rules and default policies
 sudo ufw allow 22/tcp            # Allow incoming SSH traffic
 sudo ufw deny from 192.168.1.50  # Block all traffic from a specific suspicious IP
 ```
+---
+---
+---
+---
+---
+## Lab: IDS Fundamentals (TryHackMe)
+## 🖥️ Overview
+This module explores Intrusion Detection Systems (IDS), which are hardware or software applications that monitor network traffic or system activities for malicious policy violations or anomalies. Unlike firewalls that act as inline barriers, an IDS functions primarily as an alert-generation mechanism to provide deep visibility into active threat activity.
+
+### 🛡️ IDS Framework Breakdown
+
+#### 🌐 1. Deployment Modes
+IDS solutions are deployed based on the scope of visibility required within the corporate infrastructure:
+
+*   **HIDS (Host-Based IDS):** Installed directly on a specific endpoint, workstation, or server. It monitors internal system activities, local log files (`auth.log`, Windows Event Viewer), registry changes, and file integrity.
+    *   *Security Value:* Essential for detecting insider threats, post-exploitation privilege escalation, and rootkit installations on high-value targets.
+*   **NIDS (Network-Based IDS):** Placed at strategic network boundaries (like a DMZ or core switch) to analyze traffic passing through an entire subnet. It inspects packet headers and payloads in transit.
+    *   *Security Value:* Provides broad visibility across thousands of devices, catching lateral movement, network scans, and cleartext exploits as they cross the wire.
+
+---
+
+#### 🔍 2. Detection Modes
+Once traffic or system data is collected, the IDS applies one of three primary methodologies to evaluate whether an event is malicious:
+
+| Detection Mode | How It Evaluates Data | Security Perspective / Limitations |
+| :--- | :--- | :--- |
+| **Signature-Based** | Compares active data against a static database of pre-defined patterns, specific text strings, or known malicious file hashes (e.g., matching a Snort rule string). | **High Precision:** Exceptional at catching known threats with near-zero false positives, but completely blind to Zero-Day exploits and heavily modified malware. |
+| **Anomaly-Based** | Establishes a baseline of "normal" system or network behavior over an initial tracking period, then flags any statistical or behavioral deviations. | **Behavioral Insight:** Capable of discovering brand-new, unknown vulnerabilities, but notoriously prone to high False Positive rates from routine network deviations. |
+| **Hybrid IDS** | Combines both Signature and Anomaly-based logic simultaneously into a unified engine to process incoming event streams. | **Full-Spectrum Defense:** Delivers the absolute best of both worlds—leveraging fast signature matching for known threats while relying on anomaly models to catch stealthy zero-days. |
 
 
 ---
