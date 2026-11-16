@@ -1986,6 +1986,18 @@ Once traffic or system data is collected, the IDS applies one of three primary m
 | **Signature-Based** | Compares active data against a static database of pre-defined patterns, specific text strings, or known malicious file hashes (e.g., matching a Snort rule string). | **High Precision:** Exceptional at catching known threats with near-zero false positives, but completely blind to Zero-Day exploits and heavily modified malware. |
 | **Anomaly-Based** | Establishes a baseline of "normal" system or network behavior over an initial tracking period, then flags any statistical or behavioral deviations. | **Behavioral Insight:** Capable of discovering brand-new, unknown vulnerabilities, but notoriously prone to high False Positive rates from routine network deviations. |
 | **Hybrid IDS** | Combines both Signature and Anomaly-based logic simultaneously into a unified engine to process incoming event streams. | **Full-Spectrum Defense:** Delivers the absolute best of both worlds—leveraging fast signature matching for known threats while relying on anomaly models to catch stealthy zero-days. |
+---
+---
+---
+### 🐷 Snort Operational Modes
+Snort is an open-source, lightweight Network Intrusion Detection and Prevention system (NIDS/NIPS). Depending on how the command-line flags are configured, Snort can be executed in one of three primary operational modes:
+
+| Snort Mode | CLI Flag Example | Technical Function | Security Use Case |
+| :--- | :--- | :--- | :--- |
+| **Packet Sniffer Mode** | `snort -v` or `snort -vd` | Reads raw network packets off the wire and displays them in real-time directly to the terminal console screen. | Quick live traffic monitoring or verifying that a network interface is correctly capturing packets. |
+| **Packet Logging Mode** | `snort -dev -l ./log` | Intercepts packets and saves them directly to a specified directory on the disk as a log file (often in binary PCAP format). | Recording traffic streams for retroactive forensic analysis or deeper investigation using tools like Wireshark. |
+| **Network Intrusion Detection System (NIDS) Mode** | `snort -c snort.conf` | Analyzes network traffic against a custom configuration file (`snort.conf`) populated with signature threat rules. | Active enterprise security monitoring; triggers instant alerts the moment malicious signatures are detected on the network. |
+
 
 
 ---
