@@ -1998,6 +1998,22 @@ Snort is an open-source, lightweight Network Intrusion Detection and Prevention 
 | **Packet Logging Mode** | `snort -dev -l ./log` | Intercepts packets and saves them directly to a specified directory on the disk as a log file (often in binary PCAP format). | Recording traffic streams for retroactive forensic analysis or deeper investigation using tools like Wireshark. |
 | **Network Intrusion Detection System (NIDS) Mode** | `snort -c snort.conf` | Analyzes network traffic against a custom configuration file (`snort.conf`) populated with signature threat rules. | Active enterprise security monitoring; triggers instant alerts the moment malicious signatures are detected on the network. |
 
+---
+---
+---
+#### 🛡️ Snort PCAP Replay Execution
+To analyze the network capture and uncover the malicious activity, Snort was executed in **NIDS Mode** to replay the traffic file against the core configuration rules:
+
+```bash
+sudo snort -q -l /var/log/snort -r /etc/snort/Intro_to_IDS.pcap -A console -c /etc/snort/snort.conf
+```
+
+**Command Flags Breakdown:**
+* `-q` : Quiet mode; suppresses routine banners to keep the output clean.
+* `-l /var/log/snort` : The directory where raw log alerts are saved.
+* `-r` : Replays historical packet capture (PCAP) files instead of listening live on an interface.
+* `-A console` : Directs alerts to print out onto the terminal screen in real-time.
+* `-c` : Points the engine to the main configuration file containing active rules.
 
 
 ---
