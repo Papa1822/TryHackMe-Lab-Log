@@ -1987,8 +1987,6 @@ Once traffic or system data is collected, the IDS applies one of three primary m
 | **Anomaly-Based** | Establishes a baseline of "normal" system or network behavior over an initial tracking period, then flags any statistical or behavioral deviations. | **Behavioral Insight:** Capable of discovering brand-new, unknown vulnerabilities, but notoriously prone to high False Positive rates from routine network deviations. |
 | **Hybrid IDS** | Combines both Signature and Anomaly-based logic simultaneously into a unified engine to process incoming event streams. | **Full-Spectrum Defense:** Delivers the absolute best of both worlds—leveraging fast signature matching for known threats while relying on anomaly models to catch stealthy zero-days. |
 ---
----
----
 ### 🐷 Snort Operational Modes
 Snort is an open-source, lightweight Network Intrusion Detection and Prevention system (NIDS/NIPS). Depending on how the command-line flags are configured, Snort can be executed in one of three primary operational modes:
 
@@ -1998,8 +1996,6 @@ Snort is an open-source, lightweight Network Intrusion Detection and Prevention 
 | **Packet Logging Mode** | `snort -dev -l ./log` | Intercepts packets and saves them directly to a specified directory on the disk as a log file (often in binary PCAP format). | Recording traffic streams for retroactive forensic analysis or deeper investigation using tools like Wireshark. |
 | **Network Intrusion Detection System (NIDS) Mode** | `snort -c snort.conf` | Analyzes network traffic against a custom configuration file (`snort.conf`) populated with signature threat rules. | Active enterprise security monitoring; triggers instant alerts the moment malicious signatures are detected on the network. |
 
----
----
 ---
 #### 🛡️ Snort PCAP Replay Execution
 To analyze the network capture and uncover the malicious activity, Snort was executed in **NIDS Mode** to replay the traffic file against the core configuration rules:
@@ -2014,6 +2010,15 @@ sudo snort -q -l /var/log/snort -r /etc/snort/Intro_to_IDS.pcap -A console -c /e
 * `-r` : Replays historical packet capture (PCAP) files instead of listening live on an interface.
 * `-A console` : Directs alerts to print out onto the terminal screen in real-time.
 * `-c` : Points the engine to the main configuration file containing active rules.
+
+---
+
+#### 🖥️ Snort NIDS Mode Traffic Alerting
+Below is the console output captured during the lab environment, showing Snort operating in active NIDS mode and successfully parsing a stream to generate live alerts on policy matches:
+
+---
+![Snort NIDS Mode Alert](images/snort-nids-mode.png)
+---
 
 
 ---
